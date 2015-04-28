@@ -87,7 +87,7 @@ function Game() {
             this.sheep = new Sheep();
             // set sheep to start in the middle
             var sheepStartX = this.mainCanvas.width/2 - images.sheep.width;
-            var sheepStartY = this.shipCanvas.height/2 + images.sheep.height;
+            var sheepStartY = this.mainCanvas.height/2 + images.sheep.height;
             this.sheep.spawn(sheepStartX, sheepStartY, 1);
             return true;
         } else {
