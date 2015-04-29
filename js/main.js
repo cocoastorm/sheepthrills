@@ -22,8 +22,8 @@ var images = new function() {
         imageLoaded();
     }
     // set images src
-    this.background.src = "img/background.png";
-    this.sheep.src = "img/sheep.png";
+    this.background.src = "img/background.jpg";
+    this.sheep.src = "img/sheep.jpg";
 }
 
 /*
@@ -65,13 +65,41 @@ Background.prototype = new Drawable();
 * Main Game object which will hold everything for the game!
 */
 function Game() {
+    // set up initial values
+    this.width = 320;
+    this.height = 480;
+    this.ratio = null;
+    this.currentWidth = null;
+    this.currentHeight = null;
+    
     this.init = function() {
+        // the proportion of width to height
+        this.ratio = this.width / this.height;
+        // these will change accordingly when screen is resized
+        this.currentWidth = this.width;
+        this.currentHeight = this.height;
+        // these are our canvas
         this.bgCanvas = document.getElementById('background');
         this.mainCanvas = document.getElementById('main');
         // test for support
         if(this.bgCanvas.getContext) {
+            // setting this is important, else browser will default to 320 x 200
+            this.bgCanvas.width = this.width;
+            this.bgCanvas.height = this.height;
+            this.mainCanvas.width = this.width;
+            this.mainCanvas.height = this.height;
+            // get context
             this.bgContext = this.bgCanvas.getContext('2d');
             this.mainContext = this.mainCanvas.getContext('2d');
+            // detect android or ios
+            // so that we can hide the address bar in
+            // our resize function
+            this.ua = navigator.userAgent.toLowerCase();
+            this.android = this.ua.indexOf('android') > -1 ? true : false;
+            this.ios = ( this.ua.indexOf('iphone') > -1 || this.ua.indexOf('ipad') > -1  ) ? 
+                true : false;
+            // resize canvas!
+            this.resize();
             // initialize canvas
             Background.prototype.context = this.bgContext;
             Background.prototype.canvasWidth = this.bgCanvas.width;
@@ -86,17 +114,40 @@ function Game() {
             this.sheep = new Sheep();
             // set sheep to start in the middle
             var sheepStartX = this.mainCanvas.width/2 - images.sheep.width;
-            var sheepStartY = this.mainCanvas.height/2 + images.sheep.height;
+            var sheepStartY = this.mainCanvas.height/2 - images.sheep.height;
             this.sheep.spawn(sheepStartX, sheepStartY, 1);
+            this.sheep.draw();
             return true;
         } else {
             return false;
         }
     };
-
+    // resize canvas function
+    this.resize = function() {
+        this.currentHeight = window.innerHeight;
+        // resize the width in proportion to the new height
+        this.currentWidth = this.currentHeight * this.ratio;
+        
+        // this will create extra space on the page
+        // allow us to scroll past the address bar, effectively hiding it
+        if (this.android || this.ios) {
+            document.body.style.height = (window.innerHeight + 50) + 'px';
+        }
+        // set the new canvas style width and height
+        // canvas is still 320 x 480 but..
+        // we're scaling with CSS
+        this.bgCanvas.style.width = this.currentWidth + 'px';
+        this.bgCanvas.style.height = this.currentHeight + 'px';
+        this.mainCanvas.style.width = this.currentWidth + 'px';
+        this.mainCanvas.style.height = this.currentHeight + 'px';
+        // we use a timeout here because some mobile browsers
+        // don't fire if there isn't a short delay
+        window.setTimeout(function() {
+            window.scrollTo(0, 1);
+        }, 1);
+    };
     // Start animation!
     this.start = function() {
-        this.sheep.draw();
         animate();
     };
 }
