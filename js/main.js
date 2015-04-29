@@ -1,6 +1,5 @@
 /*
 * An object that holds all of our images, so images are only created once.
-* So far no images...
 */
 var images = new function() {
     // define image
