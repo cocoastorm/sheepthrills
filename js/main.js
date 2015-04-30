@@ -79,17 +79,13 @@ function Game() {
         this.currentWidth = this.width;
         this.currentHeight = this.height;
         // these are our canvas
-        this.bgCanvas = document.getElementById('background');
         this.mainCanvas = document.getElementById('main');
         // test for support
-        if(this.bgCanvas.getContext) {
+        if(this.mainCanvas.getContext) {
             // setting this is important, else browser will default to 320 x 200
-            this.bgCanvas.width = this.width;
-            this.bgCanvas.height = this.height;
             this.mainCanvas.width = this.width;
             this.mainCanvas.height = this.height;
             // get context
-            this.bgContext = this.bgCanvas.getContext('2d');
             this.mainContext = this.mainCanvas.getContext('2d');
             // detect android or ios
             // so that we can hide the address bar in
@@ -101,9 +97,9 @@ function Game() {
             // resize canvas!
             this.resize();
             // initialize canvas
-            Background.prototype.context = this.bgContext;
-            Background.prototype.canvasWidth = this.bgCanvas.width;
-            Background.prototype.canvasHeight = this.bgCanvas.height;
+            Background.prototype.context = this.mainContext;
+            Background.prototype.canvasWidth = this.mainCanvas.width;
+            Background.prototype.canvasHeight = this.mainCanvas.height;
             Sheep.prototype.context = this.mainContext;
             Sheep.prototype.canvasWidth = this.mainCanvas.width;
             Sheep.prototype.canvasHeight = this.mainCanvas.height;
@@ -136,8 +132,6 @@ function Game() {
         // set the new canvas style width and height
         // canvas is still 320 x 480 but..
         // we're scaling with CSS
-        this.bgCanvas.style.width = this.currentWidth + 'px';
-        this.bgCanvas.style.height = this.currentHeight + 'px';
         this.mainCanvas.style.width = this.currentWidth + 'px';
         this.mainCanvas.style.height = this.currentHeight + 'px';
         // we use a timeout here because some mobile browsers
