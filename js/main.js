@@ -109,8 +109,8 @@ function Game() {
             // initialise the sheep object
             this.sheep = new Sheep();
             // set sheep to start in the middle
-            var sheepStartX = this.mainCanvas.width/2 - images.sheep.width;
-            var sheepStartY = this.mainCanvas.height/2 - images.sheep.height;
+            var sheepStartX = this.mainCanvas.width/2;
+            var sheepStartY = this.mainCanvas.height/2;
             this.sheep.spawn(sheepStartX, sheepStartY, 1);
             this.sheep.draw();
             return true;
@@ -155,7 +155,7 @@ function Game() {
 function animate() {
 	requestAnimFrame( animate );
 	game.background.draw();
-    game.sheep.move();
+    game.sheep.draw();
 }
 
 /*
@@ -253,13 +253,7 @@ function Sheep() {
      * the sheep.
      */
     this.draw = function() {
-        this.context.clearRect(this.x, this.y, this.width, this.height);
-        if (!this.alive) {
-            return true;
-        }
-        else {
-            this.context.drawImage(images.sheep, this.x, this.y);
-        }
+        this.context.drawImage(images.sheep, this.x, this.y);
     };
     this.move = function() {
         // implement movement
