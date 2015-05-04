@@ -62,15 +62,15 @@ Background.prototype = new Drawable();
 */
 function Game() {
     // set up initial values
-    this.width = 320;
-    this.height = 480;
-    this.ratio = null;
+    this.width = null;
+    this.height = null;
+    this.ratio = window.innerWidth / window.innerHeight;
     this.currentWidth = null;
     this.currentHeight = null;
     
     this.init = function() {
         // the proportion of width to height
-        this.ratio = this.width / this.height;
+        //this.ratio = this.width / this.height;
         // these will change accordingly when screen is resized
         this.currentWidth = this.width;
         this.currentHeight = this.height;
@@ -127,8 +127,8 @@ function Game() {
         }
         // set the new canvas style width and height
         // canvas is still 320 x 480 but.. 
-        this.mainCanvas.width = this.currentWidth;
-        this.mainCanvas.height = this.currentHeight;
+        this.mainCanvas.width = this.currentWidth - 20;
+        this.mainCanvas.height = this.currentHeight - 15;
         // we use a timeout here because some mobile browsers
         // don't fire if there isn't a short delay
         window.setTimeout(function() {
