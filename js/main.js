@@ -59,7 +59,7 @@ function Drawable() {
 function Background() {
     this.speed = 0; // speed set to zero since its not moving
     this.draw = function() {
-        this.context.drawImage(images.background, this.x, this.y);
+        //this.context.drawImage(images.background, this.x, this.y);
     };
 }
 
