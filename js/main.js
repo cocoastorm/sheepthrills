@@ -1,13 +1,3 @@
-var canvas = document.getElementById("main"),
-		ctx = canvas.getContext("2d");
-        
-var W = 350,
-    H = 450;
-
-
-canvas.height = H;
-canvas.width = W;
-
 /*
 * An object that holds all of our images, so images are only created once.
 */
@@ -72,8 +62,8 @@ Background.prototype = new Drawable();
 */
 function Game() {
     // set up initial values
-    this.width = W;
-    this.height = H;
+    this.width = 320;
+    this.height = 480;
     this.ratio = null;
     this.currentWidth = null;
     this.currentHeight = null;
@@ -133,13 +123,12 @@ function Game() {
         // this will create extra space on the page
         // allow us to scroll past the address bar, effectively hiding it
         if (this.android || this.ios) {
-            document.body.style.height = (window.innerHeight + 50) + 'px';
+            document.body.height = (window.innerHeight + 50) + 'px';
         }
         // set the new canvas style width and height
-        // canvas is still 320 x 480 but..
-        // we're scaling with CSS
-        this.mainCanvas.style.width = this.currentWidth + 'px';
-        this.mainCanvas.style.height = this.currentHeight + 'px';
+        // canvas is still 320 x 480 but.. 
+        this.mainCanvas.width = this.currentWidth;
+        this.mainCanvas.height = this.currentHeight;
         // we use a timeout here because some mobile browsers
         // don't fire if there isn't a short delay
         window.setTimeout(function() {
