@@ -16,7 +16,7 @@ var images = new function() {
     this.sheep = new Image();
     
     // Ensure all images have been loaded before starting.
-    var numImages = 2;
+    var numImages = 1;
     var numLoaded = 0;
     function imageLoaded() {
         numLoaded++;
@@ -259,7 +259,7 @@ function Sheep() {
      * the sheep.
      */
     this.draw = function() {
-        this.context.drawImage(images.sheep, this.x, this.y);
+        this.context.drawImage(images.sheep, this.x - 100, this.y - 50, 100, 100);
     };
     this.move = function() {
         // implement movement
