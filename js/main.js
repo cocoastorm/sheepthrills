@@ -1,9 +1,18 @@
+var canvas = document.getElementById("main"),
+		ctx = canvas.getContext("2d");
+        
+var W = 350,
+    H = 450;
+
+
+canvas.height = H;
+canvas.width = W;
+
 /*
 * An object that holds all of our images, so images are only created once.
 */
 var images = new function() {
     // define image
-    this.background = new Image();
     this.sheep = new Image();
     
     // Ensure all images have been loaded before starting.
@@ -15,14 +24,10 @@ var images = new function() {
             window.init();
         }
     }
-    this.background.onload = function() {
-        imageLoaded();
-    }
     this.sheep.onload = function() {
         imageLoaded();
     }
     // set images src
-    this.background.src = "img/background.jpg";
     this.sheep.src = "img/sheep.jpg";
 }
 
@@ -61,13 +66,17 @@ function Background() {
 // Set Background to inherit from Base.
 Background.prototype = new Drawable();
 
+function Ball(int x, int y, int rad){
+    
+}
+
 /*
 * Main Game object which will hold everything for the game!
 */
 function Game() {
     // set up initial values
-    this.width = 320;
-    this.height = 480;
+    this.width = W;
+    this.height = H;
     this.ratio = null;
     this.currentWidth = null;
     this.currentHeight = null;

@@ -7,4 +7,5 @@ canvas {
     display: block;
     margin: 0 auto;
     background: #fff;
+    border: 5px solid red;
 }
