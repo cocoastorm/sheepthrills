@@ -18,7 +18,7 @@ var images = new function() {
         imageLoaded();
     }
     // set images src
-    this.sheep.src = "img/sheep.jpg";
+    this.sheep.src = "img/sheep.png";
 }
 
 /*
