@@ -101,14 +101,18 @@ function Game() {
             Sheep.prototype.canvasHeight = this.mainCanvas.height;
             // initialize background
             this.background = new Background();
-            this.background.init(0,0);
+            this.background.init(0,0); // <<---- Is this supposed to be an emoticon?
             // initialise the sheep object
             this.sheep = new Sheep();
+            this.shep = new Sheep();
             // set sheep to start in the middle
+            this.sheep.context.font = "30px Georgia";
             var sheepStartX = this.mainCanvas.width/2;
             var sheepStartY = this.mainCanvas.height/2;
             this.sheep.spawn(sheepStartX, sheepStartY, 1);
+            this.shep.spawn(sheepStartX, sheepStartY, 1);
             this.sheep.draw();
+            this.shep.draw();
             return true;
         } else {
             return false;
@@ -150,7 +154,8 @@ function Game() {
 function animate() {
 	requestAnimFrame( animate );
 	game.background.draw();
-    game.sheep.draw();
+        game.sheep.move();
+        game.shep.move();
 }
 
 /*
@@ -233,12 +238,13 @@ function Pool(maxSize) {
  * on the "main" canvas.
  */
 function Sheep() {
+    vx = 4;
+    vy = 2;
     this.alive = false; // Is true if the sheep is currently in use
     /* Sets the sheep values */
-    this.spawn = function(x, y, speed) {
+    this.spawn = function(x, y) {
         this.x = x;
         this.y = y;
-        this.speed = speed;
         this.alive = true;
     };
     /*
@@ -248,10 +254,39 @@ function Sheep() {
      * the sheep.
      */
     this.draw = function() {
-        this.context.drawImage(images.sheep, this.x - 100, this.y - 50, 100, 100);
+        this.context.drawImage(images.sheep, this.x, this.y, 100, 100);
+        this.context.fillText("X = " + this.x, 30, 30);
+        this.context.fillText("Y = " + this.y, 30 , 60);
     };
     this.move = function() {
         // implement movement
+        if(this.x + 100 < this.canvasWidth && this.y + 100 < this.canvasHeight && this.x > 0 && this.y > 0){
+        this.x += vx;
+        this.y += vy;
+        this.erase();
+        this.draw();
+    }
+        if(this.y + 100 > this.canvasHeight){
+            this.y -= vy;
+            vy *= -1;
+        }
+        if(this.x + 100 > this.canvasWidth){
+            this.x -= vx;
+            vx *= -1;
+        }
+        if(this.y < 0){
+            this.y += -vy;
+            vy *= -1;
+        }
+        if(this.x < 0){
+            this.x += -vx;
+            vx *= -1;
+        }
+    };
+    this.erase = function() {
+        this.context.clearRect(this.x, this.y, 100, 100);
+        this.context.clearRect(30, 0, 150, 100);
+        this.context.clearRect(30, 60, 150, 100);
     };
     /* Resets the sheep values */
     this.clear = function() {
