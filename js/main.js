@@ -66,9 +66,6 @@ function Background() {
 // Set Background to inherit from Base.
 Background.prototype = new Drawable();
 
-function Ball(int x, int y, int rad){
-    
-}
 
 /*
 * Main Game object which will hold everything for the game!
