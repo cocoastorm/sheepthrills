@@ -4,7 +4,7 @@
 var images = new function() {
     // define image
     this.sheep = new Image();
-    this.distraction = new Image();
+    //this.distraction = new Image();
     
     // Ensure all images have been loaded before starting.
     var numImages = 1;
@@ -20,7 +20,7 @@ var images = new function() {
     }
     // set images src
     this.sheep.src = "img/sheep.png";
-    this.distraction.src = "img/distraction.png";
+    //this.distraction.src = "img/distraction.png";
 }
 
 /*
