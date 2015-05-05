@@ -274,11 +274,11 @@ function Sheep() {
             this.x -= vx;
             vx *= -1;
         }
-        if(this.y < 0){
+        if(this.y  - 1< 0){
             this.y += -vy;
             vy *= -1;
         }
-        if(this.x < 0){
+        if(this.x - 1< 0){
             this.x += -vx;
             vx *= -1;
         }
