@@ -243,6 +243,7 @@ function Pool(maxSize) {
 function Sheep() {
     vx = 4;
     vy = 2;
+    this.colCount = 0;
     this.alive = false; // Is true if the sheep is currently in use
     /* Sets the sheep values */
     this.spawn = function(x, y) {
@@ -264,28 +265,28 @@ function Sheep() {
     * Moves the sheep and bounces the sheep when it hits the walls.
     */
     this.move = function() {
-        if(this.x + 100 < this.canvasWidth && this.y + 100 < this.canvasHeight && this.x > 0 && this.y > 0){
+    if(this.x + 100 < this.canvasWidth && this.y + 100 < this.canvasHeight && this.x > 0 && this.y > 0){
         this.x += vx;
         this.y += vy;
         this.erase();
         this.draw();
     }
-        if(this.y + 100 > this.canvasHeight){
+        if(this.y + 101 > this.canvasHeight){
             this.y -= vy;
             vy *= -1;
             game.bounce();
         }
-        if(this.x + 100 > this.canvasWidth){
+        if(this.x + 101 > this.canvasWidth){
             this.x -= vx;
             vx *= -1;
             game.bounce();
         }
-        if(this.y < 0){
+        if(this.y  - 1< 0){
             this.y += -vy;
             vy *= -1;
             game.bounce();
         }
-        if(this.x < 0){
+        if(this.x - 1< 0){
             this.x += -vx;
             vx *= -1;
             game.bounce();
