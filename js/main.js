@@ -1,5 +1,5 @@
 /*
-* An object that holds all of our images, so images are only created once.
+* An object that holds all of our images, so images are only loaded once.
 */
 var images = new function() {
     // define image
@@ -49,6 +49,7 @@ function Drawable() {
 function Background() {
     this.speed = 0; // speed set to zero since its not moving
     this.draw = function() {
+        //disable for now, no background...
         //this.context.drawImage(images.background, this.x, this.y);
     };
 }
@@ -106,7 +107,6 @@ function Game() {
             this.sheep = new Sheep();
             this.shep = new Sheep();
             // set sheep to start in the middle
-            this.sheep.context.font = "30px Georgia";
             var sheepStartX = this.mainCanvas.width/2;
             var sheepStartY = this.mainCanvas.height/2;
             this.sheep.spawn(sheepStartX, sheepStartY, 1);
@@ -248,18 +248,18 @@ function Sheep() {
         this.alive = true;
     };
     /*
-     * Uses a "dirty rectangle" to erase the sheep and move it.
-     * Returns true if the sheep is ready to be removed, indicating that 
-     * the sheep is ready to be cleared by the pool, otherwise draw
-     * the sheep.
+     * Draws the sheep by drawing the image taken from the images object.
      */
     this.draw = function() {
         this.context.drawImage(images.sheep, this.x, this.y, 100, 100);
+        this.context.font = "30px Georgia";
         this.context.fillText("X = " + this.x, 30, 30);
         this.context.fillText("Y = " + this.y, 30 , 60);
     };
+    /*
+    * Moves the sheep and bounces the sheep when it hits the walls.
+    */
     this.move = function() {
-        // implement movement
         if(this.x + 100 < this.canvasWidth && this.y + 100 < this.canvasHeight && this.x > 0 && this.y > 0){
         this.x += vx;
         this.y += vy;
@@ -283,6 +283,9 @@ function Sheep() {
             vx *= -1;
         }
     };
+    /*
+    * Uses dirty rectangle to clear the sheep before redrawing.
+    */
     this.erase = function() {
         this.context.clearRect(this.x, this.y, 100, 100);
         this.context.clearRect(30, 0, 150, 100);
