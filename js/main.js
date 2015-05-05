@@ -65,10 +65,15 @@ function Game() {
     // set up initial values
     this.width = window.innerWidth;
     this.height = window.innerHeight;
+    this.bounces = 0;
     // set these up later in init
     this.ratio = null;
     this.currentWidth = null;
     this.currentHeight = null;
+    
+    this.bounce = function() {
+        this.bounces++;
+    }
     
     this.init = function() {
         // the proportion of width to height
@@ -110,7 +115,7 @@ function Game() {
             // set sheep to start in the middle
             var sheepStartX = this.mainCanvas.width/2;
             var sheepStartY = this.mainCanvas.height/2;
-            this.sheep.spawn(sheepStartX, sheepStartY, 1);
+            this.sheep.spawn(sheepStartX, sheepStartY);
             this.sheep.draw();
             return true;
         } else {
@@ -154,7 +159,6 @@ function animate() {
 	requestAnimFrame( animate );
 	game.background.draw();
         game.sheep.move();
-        game.shep.move();
 }
 
 /*
@@ -254,6 +258,7 @@ function Sheep() {
         this.context.font = "30px Georgia";
         this.context.fillText("X = " + this.x, 30, 30);
         this.context.fillText("Y = " + this.y, 30 , 60);
+        this.context.fillText("Bounce: " + game.bounces, 30, 90);
     };
     /*
     * Moves the sheep and bounces the sheep when it hits the walls.
@@ -268,18 +273,22 @@ function Sheep() {
         if(this.y + 100 > this.canvasHeight){
             this.y -= vy;
             vy *= -1;
+            game.bounce();
         }
         if(this.x + 100 > this.canvasWidth){
             this.x -= vx;
             vx *= -1;
+            game.bounce();
         }
         if(this.y < 0){
             this.y += -vy;
             vy *= -1;
+            game.bounce();
         }
         if(this.x < 0){
             this.x += -vx;
             vx *= -1;
+            game.bounce();
         }
     };
     /*
@@ -289,6 +298,7 @@ function Sheep() {
         this.context.clearRect(this.x, this.y, 100, 100);
         this.context.clearRect(30, 0, 150, 100);
         this.context.clearRect(30, 60, 150, 100);
+        this.context.clearRect(30, 90, 150, 100);
     };
     /* Resets the sheep values */
     this.clear = function() {
