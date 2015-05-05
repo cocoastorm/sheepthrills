@@ -324,7 +324,7 @@ function Sheep() {
     * Uses dirty rectangle to clear the sheep before redrawing.
     */
     this.erase = function() {
-        this.context.clearRect(this.x, this.y, 101, 100);
+        this.context.clearRect(this.x - 1, this.y - 1, 101, 100);
         this.context.clearRect(30, 0, 150, 100);
         this.context.clearRect(30, 60, 150, 100);
         this.context.clearRect(30, 90, 150, 100);
