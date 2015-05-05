@@ -122,6 +122,10 @@ function Game() {
             var sheepStartY = Math.floor((Math.random() * (this.mainCanvas.height - 200)) + 1);
             this.sheep.spawn(sheepStartX, sheepStartY);
             this.sheep.draw();
+            var shepStartX = Math.floor((Math.random() * (this.mainCanvas.width - 200)) + 1);
+            var shepStartY = Math.floor((Math.random() * (this.mainCanvas.height - 200)) + 1);
+            this.shep.spawn(shepStartX, shepStartY);
+            this.shep.draw();            
             return true;
         } else {
             return false;
@@ -164,6 +168,7 @@ function animate() {
 	requestAnimFrame( animate );
 	game.background.draw();
         game.sheep.move();
+        game.shep.move();
 }
 
 /*
