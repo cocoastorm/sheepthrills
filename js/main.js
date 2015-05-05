@@ -63,15 +63,16 @@ Background.prototype = new Drawable();
 */
 function Game() {
     // set up initial values
-    this.width = null;
-    this.height = null;
-    this.ratio = window.innerWidth / window.innerHeight;
+    this.width = window.innerWidth;
+    this.height = window.innerHeight;
+    // set these up later in init
+    this.ratio = null;
     this.currentWidth = null;
     this.currentHeight = null;
     
     this.init = function() {
         // the proportion of width to height
-        //this.ratio = this.width / this.height;
+        this.ratio = this.width / this.height;
         // these will change accordingly when screen is resized
         this.currentWidth = this.width;
         this.currentHeight = this.height;
@@ -110,9 +111,7 @@ function Game() {
             var sheepStartX = this.mainCanvas.width/2;
             var sheepStartY = this.mainCanvas.height/2;
             this.sheep.spawn(sheepStartX, sheepStartY, 1);
-            this.shep.spawn(sheepStartX, sheepStartY, 1);
             this.sheep.draw();
-            this.shep.draw();
             return true;
         } else {
             return false;
