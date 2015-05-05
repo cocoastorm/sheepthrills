@@ -4,6 +4,7 @@
 var images = new function() {
     // define image
     this.sheep = new Image();
+    this.distraction = new Image();
     
     // Ensure all images have been loaded before starting.
     var numImages = 1;
@@ -19,6 +20,7 @@ var images = new function() {
     }
     // set images src
     this.sheep.src = "img/sheep.png";
+    this.distraction.src = "img/distraction.png";
 }
 
 /*
@@ -106,6 +108,9 @@ function Game() {
             Sheep.prototype.context = this.mainContext;
             Sheep.prototype.canvasWidth = this.mainCanvas.width;
             Sheep.prototype.canvasHeight = this.mainCanvas.height;
+            Distraction.prototype.context = this.mainContext;
+            Distraction.prototype.canvasWidth = this.mainCanvas.width;
+            Distraction.prototype.canvasHeight = this.mainCanvas.height;
             // initialize background
             this.background = new Background();
             this.background.init(0,0); // <<---- Is this supposed to be an emoticon?
@@ -241,9 +246,8 @@ function Pool(maxSize) {
  * on the "main" canvas.
  */
 function Sheep() {
-    vx = 4;
-    vy = 2;
-    this.colCount = 0;
+    this.vx = 4;
+    this.vy = 2;
     this.alive = false; // Is true if the sheep is currently in use
     /* Sets the sheep values */
     this.spawn = function(x, y) {
@@ -266,29 +270,29 @@ function Sheep() {
     */
     this.move = function() {
     if(this.x + 100 < this.canvasWidth && this.y + 100 < this.canvasHeight && this.x > 0 && this.y > 0){
-        this.x += vx;
-        this.y += vy;
+        this.x += this.vx;
+        this.y += this.vy;
         this.erase();
         this.draw();
     }
         if(this.y + 101 > this.canvasHeight){
-            this.y -= vy;
-            vy *= -1;
+            this.y -= this.vy;
+            this.vy *= -1;
             game.bounce();
         }
         if(this.x + 101 > this.canvasWidth){
-            this.x -= vx;
-            vx *= -1;
+            this.x -= this.vx;
+            this.vx *= -1;
             game.bounce();
         }
         if(this.y  - 1< 0){
-            this.y += -vy;
-            vy *= -1;
+            this.y += -this.vy;
+            this.vy *= -1;
             game.bounce();
         }
         if(this.x - 1< 0){
-            this.x += -vx;
-            vx *= -1;
+            this.x += -this.vx;
+            this.vx *= -1;
             game.bounce();
         }
     };
@@ -296,7 +300,7 @@ function Sheep() {
     * Uses dirty rectangle to clear the sheep before redrawing.
     */
     this.erase = function() {
-        this.context.clearRect(this.x, this.y, 100, 100);
+        this.context.clearRect(this.x, this.y, 101, 100);
         this.context.clearRect(30, 0, 150, 100);
         this.context.clearRect(30, 60, 150, 100);
         this.context.clearRect(30, 90, 150, 100);
@@ -310,3 +314,32 @@ function Sheep() {
     };
 }
 Sheep.prototype = new Drawable();
+
+function Distraction() {
+    this.alive = false;
+    /* Sets up the distraction values */
+    this.spawn = function(x, y) {
+        this.x = x;
+        this.y = y;
+        this.alive = true;
+    };
+    /*
+    * Draws the distraction by using the image from the images object.
+    */
+    this.draw = function() {
+        this.context.drawImage(images.distraction, this.x, this.y, 100, 100);
+    };
+    /*
+    * Uses dirty rectangle to clear the distraction before redrawing.
+    */
+    this.erase = function() {
+        this.context.clearRect(this.x, this.y, 100, 100);
+    };
+    /* Resets the sheep values */
+    this.clear = function() {
+        this.x = 0;
+        this.y = 0;
+        this.alive = false;
+    };
+}
+Distraction.prototype = new Drawable();
