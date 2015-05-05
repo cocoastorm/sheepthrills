@@ -328,9 +328,7 @@ function Sheep() {
     */
     this.erase = function() {
         this.context.clearRect(this.x - 1, this.y - 1, 101, 100);
-        this.context.clearRect(30, 0, 150, 100);
-        this.context.clearRect(30, 60, 150, 100);
-        this.context.clearRect(30, 90, 150, 100);
+        this.context.clearRect(0, 0, 160, 50);
     };
     /* Resets the sheep values */
     this.clear = function() {
