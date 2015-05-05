@@ -118,8 +118,8 @@ function Game() {
             this.sheep = new Sheep();
             this.shep = new Sheep();
             // set sheep to start in the middle
-            var sheepStartX = Math.floor((Math.random() * (this.mainCanvas.width - 50)) + 1);
-            var sheepStartY = Math.floor((Math.random() * (this.mainCanvas.height - 50)) + 1);
+            var sheepStartX = Math.floor((Math.random() * (this.mainCanvas.width - 200)) + 1);
+            var sheepStartY = Math.floor((Math.random() * (this.mainCanvas.height - 200)) + 1);
             this.sheep.spawn(sheepStartX, sheepStartY);
             this.sheep.draw();
             return true;
@@ -248,10 +248,20 @@ function Pool(maxSize) {
 function Sheep() {
     this.vx = 0;
     this.vy = 0;
-    this.vx1 = Math.floor((Math.random() * 10) + 4);
-    this.vy1 = Math.floor((Math.random() * 10) + 4);
-    this.vx2 = Math.floor((Math.random() * -10) + 4);
-    this.vy2 = Math.floor((Math.random() * -10) + 4);
+    this.vx1 = Math.floor((Math.random() * 8) + 4);
+    this.vy1 = Math.floor((Math.random() * 8) + 4);
+    this.vx2 = Math.floor((Math.random() * -8) + 4);
+    this.vy2 = Math.floor((Math.random() * -8) + 4);
+    if(this.vx1 == 0)
+        this.vx1 += 1;
+    if(this.vx2 == 0)
+        this.vx2 += 1;
+    if(this.vy1 == 0)
+        this.vy1 += 1;
+    if(this.vy2 == 0)
+        this.vy2 += 1;
+    if(this.vy == 0)
+        this.vy = 3;
     this.dirX = Math.floor((Math.random() * 2) + 1);
     this.dirY = Math.floor((Math.random() * 2) + 1);
     if(this.dirX == 1)
@@ -347,7 +357,7 @@ function Distraction() {
     * Uses dirty rectangle to clear the distraction before redrawing.
     */
     this.erase = function() {
-        this.context.clearRect(this.x, this.y, 100, 100);
+        this.context.clearRect(this.x, this.y, 101, 101);
     };
     /* Resets the sheep values */
     this.clear = function() {
