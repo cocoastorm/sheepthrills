@@ -113,8 +113,8 @@ function Game() {
             this.sheep = new Sheep();
             this.shep = new Sheep();
             // set sheep to start in the middle
-            var sheepStartX = this.mainCanvas.width/2;
-            var sheepStartY = this.mainCanvas.height/2;
+            var sheepStartX = Math.floor((Math.random() * (this.mainCanvas.width - 50)) + 1);
+            var sheepStartY = Math.floor((Math.random() * (this.mainCanvas.height - 50)) + 1);
             this.sheep.spawn(sheepStartX, sheepStartY);
             this.sheep.draw();
             return true;
