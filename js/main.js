@@ -241,8 +241,22 @@ function Pool(maxSize) {
  * on the "main" canvas.
  */
 function Sheep() {
-    vx = 4;
-    vy = 2;
+    vx = 0;
+    vy = 0;
+    vx1 = Math.floor((Math.random() * 10) + 4);
+    vy1 = Math.floor((Math.random() * 10) + 4);
+    vx2 = Math.floor((Math.random() * -10) + 4);
+    vy2 = Math.floor((Math.random() * -10) + 4);
+    dirX = Math.floor((Math.random() * 2) + 1);
+    dirY = Math.floor((Math.random() * 2) + 1);
+    if(dirX == 1)
+        vx = vx1;
+    if(dirX == 2)
+        vx = vx2;
+    if(dirY == 1)
+        vy = vy1;
+    if(dirY == 1)
+        vy = vy2;
     this.colCount = 0;
     this.alive = false; // Is true if the sheep is currently in use
     /* Sets the sheep values */
