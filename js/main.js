@@ -260,7 +260,7 @@ function Sheep() {
         this.vx = this.vx2;
     if(this.dirY == 1)
         this.vy = this.vy1;
-    if(dirY == 1)
+    if(this.dirY == 1)
         this.vy = this.vy2;
     this.alive = false; // Is true if the sheep is currently in use
     /* Sets the sheep values */
@@ -341,7 +341,7 @@ function Distraction() {
     * Draws the distraction by using the image from the images object.
     */
     this.draw = function() {
-        this.context.drawImage(images.distraction, this.x, this.y, 100, 100);
+        //this.context.drawImage(images.distraction, this.x, this.y, 100, 100);
     };
     /*
     * Uses dirty rectangle to clear the distraction before redrawing.
