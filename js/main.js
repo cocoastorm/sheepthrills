@@ -1,3 +1,6 @@
+var sheepSound = new Audio('sounds/sheep.wav');
+var bgm = new Audio('sounds/bgm.mp3');
+
 /*
 * An object that holds all of our images, so images are only loaded once.
 */
@@ -14,14 +17,14 @@ var images = new function() {
         if (numLoaded == numImages) {
             window.init();
         }
-    }
+    };
     this.sheep.onload = function() {
         imageLoaded();
-    }
+    };
     // set images src
     this.sheep.src = "img/sheep.png";
     //this.distraction.src = "img/distraction.png";
-}
+};
 
 /*
 * Base abstract class for all drawable objects in game. Sets up default values
@@ -35,7 +38,7 @@ function Drawable() {
         this.y = y;
         this.width = width;
         this.height = height;
-    }
+    };
     this.speed = 0;
     this.canvasWidth = 0;
     this.canvasHeight = 0;
@@ -75,7 +78,9 @@ function Game() {
     
     this.bounce = function() {
         this.bounces++;
-    }
+        if(this.bounces % 7 == 0)
+            sheepSound.play();
+    };
     
     this.init = function() {
         // the proportion of width to height
@@ -194,6 +199,7 @@ var game = new Game();
 function init() {
 	if(game.init())
 		game.start();
+                bgm.play();
 }
 
 /*
