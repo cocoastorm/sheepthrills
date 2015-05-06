@@ -113,7 +113,7 @@ function Game() {
             Distraction.prototype.canvasHeight = this.mainCanvas.height;
             // initialize background
             this.background = new Background();
-            this.background.init(0,0); // <<---- Is this supposed to be an emoticon?
+            this.background.init(0,0);
             // initialise the sheep object
             this.sheep = new Sheep();
             this.shep = new Sheep();
