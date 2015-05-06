@@ -199,6 +199,10 @@ var game = new Game();
 function init() {
 	if(game.init())
 		game.start();
+                bgm.addEventListener('ended', function() {
+                this.currentTime = 0;
+                this.play();
+                }, false);
                 bgm.play();
 }
 
@@ -308,22 +312,22 @@ function Sheep() {
         this.erase();
         this.draw();
     }
-        if(this.y + 101 > this.canvasHeight){
+        if(this.y + 105 > this.canvasHeight){
             this.y -= this.vy;
             this.vy *= -1;
             game.bounce();
         }
-        if(this.x + 101 > this.canvasWidth){
+        if(this.x + 105 > this.canvasWidth){
             this.x -= this.vx;
             this.vx *= -1;
             game.bounce();
         }
-        if(this.y  - 1< 0){
+        if(this.y  - 6 < 0){
             this.y += -this.vy;
             this.vy *= -1;
             game.bounce();
         }
-        if(this.x - 1< 0){
+        if(this.x - 6 < 0){
             this.x += -this.vx;
             this.vx *= -1;
             game.bounce();
@@ -333,7 +337,7 @@ function Sheep() {
     * Uses dirty rectangle to clear the sheep before redrawing.
     */
     this.erase = function() {
-        this.context.clearRect(this.x - 1, this.y - 1, 101, 100);
+        this.context.clearRect(this.x - 6, this.y - 5, 106, 106);
         this.context.clearRect(0, 0, 160, 50);
     };
     /* Resets the sheep values */
