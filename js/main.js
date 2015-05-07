@@ -1,6 +1,3 @@
-var sheepSound = new Audio('sounds/sheep.wav');
-var bgm = new Audio('sounds/bgm.mp3');
-
 /*
 * An object that holds all of our images, so images are only loaded once.
 */
@@ -79,7 +76,7 @@ function Game() {
     this.bounce = function() {
         this.bounces++;
         if(this.bounces % 7 == 0)
-            sheepSound.play();
+            this.sheepSound.get();
     };
     
     this.init = function() {
@@ -130,7 +127,15 @@ function Game() {
             var shepStartX = Math.floor((Math.random() * (this.mainCanvas.width - 200)) + 1);
             var shepStartY = Math.floor((Math.random() * (this.mainCanvas.height - 200)) + 1);
             this.shep.spawn(shepStartX, shepStartY);
-            this.shep.draw();            
+            this.shep.draw();
+            // Audio files
+            this.sheepSound = new SoundPool(10);
+            this.sheepSound.init("sheep");
+            this.bgm = new Audio("sounds/bgm.mp3");
+            this.bgm.loop = true;
+            this.bgm.volume = .50;
+            this.bgm.load();
+            this.checkAudio = window.setInterval(function(){checkReadyState()}, 1000);            
             return true;
         } else {
             return false;
@@ -159,8 +164,19 @@ function Game() {
     };
     // Start animation!
     this.start = function() {
+        this.bgm.play();
         animate();
     };
+}
+
+/**
+* Ensure the game sound has loaded before starting the game
+*/
+function checkReadyState() {
+    if(game.bgm.readyState == 4) {
+        window.clearInterval(game.checkAudio);
+        game.start();
+    }
 }
 
 /*
@@ -197,13 +213,7 @@ window.requestAnimFrame = (function(){
  */
 var game = new Game();
 function init() {
-	if(game.init())
-		game.start();
-                bgm.addEventListener('ended', function() {
-                this.currentTime = 0;
-                this.play();
-                }, false);
-                bgm.play();
+	game.init();
 }
 
 /*
@@ -253,6 +263,38 @@ function Pool(maxSize) {
             else
                 break;
         }
+    };
+}
+
+/*
+* A sound pool to use for sound effects
+*/
+function SoundPool(maxSize) {
+    var size = maxSize;
+    var pool = {};
+    this.pool = pool;
+    var currSound = 0;
+    /*
+    * Populates the pool array with the given sound
+    */
+    this.init = function(object) {
+      if(object == "sheep") {
+        for(var i = 0; i < size; i++) {
+            sheep = new Audio("sounds/sheep.wav");
+            sheep.volume = .12;
+            sheep.load();
+            pool[i] = sheep;
+        }
+      }
+    };
+    /*
+    * Plays the sound required.
+    */
+    this.get = function() {
+        if(pool[currSound].currentTime == 0 || pool[currSound].ended) {
+            pool[currSound].play();
+        }
+        currSound = (currSound + 1) % size;
     };
 }
 
