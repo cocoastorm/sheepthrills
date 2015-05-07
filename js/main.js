@@ -11,7 +11,7 @@ var images = new function() {
     var numLoaded = 0;
     function imageLoaded() {
         numLoaded++;
-        if (numLoaded == numImages) {
+        if (numLoaded === numImages) {
             window.init();
         }
     };
@@ -309,25 +309,25 @@ function Sheep() {
     this.vy1 = Math.floor((Math.random() * 8) + 4);
     this.vx2 = Math.floor((Math.random() * -8) + 4);
     this.vy2 = Math.floor((Math.random() * -8) + 4);
-    if(this.vx1 == 0)
+    if(this.vx1 === 0)
         this.vx1 += 1;
-    if(this.vx2 == 0)
+    if(this.vx2 === 0)
         this.vx2 += 1;
-    if(this.vy1 == 0)
+    if(this.vy1 === 0)
         this.vy1 += 1;
-    if(this.vy2 == 0)
+    if(this.vy2 === 0)
         this.vy2 += 1;
-    if(this.vy == 0)
+    if(this.vy === 0)
         this.vy = 3;
     this.dirX = Math.floor((Math.random() * 2) + 1);
     this.dirY = Math.floor((Math.random() * 2) + 1);
-    if(this.dirX == 1)
+    if(this.dirX === 1)
         this.vx = this.vx1;
-    if(this.dirX == 2)
+    if(this.dirX === 2)
         this.vx = this.vx2;
-    if(this.dirY == 1)
+    if(this.dirY === 1)
         this.vy = this.vy1;
-    if(this.dirY == 1)
+    if(this.dirY === 1)
         this.vy = this.vy2;
     this.alive = false; // Is true if the sheep is currently in use
     /* Sets the sheep values */
