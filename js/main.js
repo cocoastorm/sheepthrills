@@ -237,6 +237,10 @@ function Game() {
             this.bgm.loop = true;
             this.bgm.volume = .50;
             this.bgm.load();
+            this.gameOverAudio = new Audio("sounds/gameover.mp3");
+            this.gameOverAudio.loop = true;
+            this.gameOverAudio.volume = .25;
+            this.gameOverAudio.load();
             this.checkAudio = window.setInterval(function(){checkReadyState()}, 1000);            
             return true;
         } else {
@@ -248,6 +252,27 @@ function Game() {
     this.start = function() {
         this.bgm.play();
         animate();
+    };
+
+    // GAME OVER!
+    this.gameOver = function() {
+        this.bgm.pause();
+        this.gameOverAudio.currentTime = 0;
+        this.gameOverAudio.play();
+        // cue in something to signify game over
+    };
+
+    // Restart game
+    this.restart = function() {
+        this.gameOverAudio.pause();
+        // get rid of game over signal
+        this.mainContext.clearRect(0, 0, this.mainCanvas.width, this.mainCanvas.height);
+        this.background.init(0, 0);
+        // spawn sheep
+        this.bgm.currentTime = 0;
+        this.bgm.play();
+
+        this.start();
     };
 }
 
@@ -285,7 +310,7 @@ function resize() {
 * Ensure the game sound has loaded before starting the game
 */
 function checkReadyState() {
-    if(game.bgm.readyState == 4) {
+    if(game.bgm.readyState == 4 && game.backgroundAudio.readyState == 4) {
         window.clearInterval(game.checkAudio);
         game.start();
     }
@@ -300,8 +325,8 @@ function checkReadyState() {
 function animate() {
 	requestAnimFrame( animate );
 	game.background.draw();
-        game.sheep.move();
-        game.shep.move();
+    game.sheep.move();
+    game.shep.move();
 }
 
 /*
