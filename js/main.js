@@ -147,7 +147,6 @@ function Sheep() {
     this.clear = function() {
         this.x = 0;
         this.y = 0;
-        this.speed = 0;
         this.alive = false;
     };
 }
@@ -187,15 +186,8 @@ Distraction.prototype = new Drawable();
 * Main Game object which will hold everything for the game!
 */
 function Game() {
-    // set up initial values
-    this.width = window.innerWidth;
-    this.height = window.innerHeight;
+    // keep track of bounces
     this.bounces = 0;
-    // set these up later in init
-    this.ratio = null;
-    this.currentWidth = null;
-    this.currentHeight = null;
-    
     this.bounce = function() {
         this.bounces++;
         if(this.bounces % 7 == 0)
@@ -203,29 +195,16 @@ function Game() {
     };
     
     this.init = function() {
-        // the proportion of width to height
-        this.ratio = this.width / this.height;
-        // these will change accordingly when screen is resized
-        this.currentWidth = this.width;
-        this.currentHeight = this.height;
         // these are our canvas
         this.mainCanvas = document.getElementById('main');
         // test for support
         if(this.mainCanvas.getContext) {
-            // setting this is important, else browser will default to 320 x 200
-            this.mainCanvas.width = this.width;
-            this.mainCanvas.height = this.height;
             // get context
             this.mainContext = this.mainCanvas.getContext('2d');
-            // detect android or ios
-            // so that we can hide the address bar in
-            // our resize function
-            this.ua = navigator.userAgent.toLowerCase();
-            this.android = this.ua.indexOf('android') > -1 ? true : false;
-            this.ios = ( this.ua.indexOf('iphone') > -1 || this.ua.indexOf('ipad') > -1  ) ? 
-                true : false;
             // resize canvas!
-            this.resize();
+            window.addEventListener('resize', resize, false);
+            window.addEventListener('orientationchange', resize, false);
+            resize();
             // initialize canvas
             Background.prototype.context = this.mainContext;
             Background.prototype.canvasWidth = this.mainCanvas.width;
@@ -264,32 +243,42 @@ function Game() {
             return false;
         }
     };
-    // resize canvas function
-    this.resize = function() {
-        this.currentHeight = window.innerHeight;
-        // resize the width in proportion to the new height
-        this.currentWidth = this.currentHeight * this.ratio;
-        
-        // this will create extra space on the page
-        // allow us to scroll past the address bar, effectively hiding it
-        if (this.android || this.ios) {
-            document.body.height = (window.innerHeight + 50) + 'px';
-        }
-        // set the new canvas style width and height
-        // canvas is still 320 x 480 but.. 
-        this.mainCanvas.width = this.currentWidth - 20;
-        this.mainCanvas.height = this.currentHeight - 15;
-        // we use a timeout here because some mobile browsers
-        // don't fire if there isn't a short delay
-        window.setTimeout(function() {
-            window.scrollTo(0, 1);
-        }, 1);
-    };
+
     // Start animation!
     this.start = function() {
         this.bgm.play();
         animate();
     };
+}
+
+/**
+* Resizes the canvas according to the window.
+*/
+function resize() {
+    var gameArea = document.getElementById('gameArea');
+    var widthToHeight = 4/3;
+    var newWidth = window.innerWidth;
+    var newHeight = window.innerHeight;
+    var newWidthToHeight = newWidth / newHeight;
+
+    if (newWidthToHeight > widthToHeight) {
+      // window width is too wide relative to desired game width
+      newWidth = newHeight * widthToHeight;
+      gameArea.style.height = newHeight + 'px';
+      gameArea.style.width = newWidth + 'px';
+    } else { // window height is too high relative to desired game height
+      newHeight = newWidth / widthToHeight;
+      gameArea.style.width = newWidth + 'px';
+      gameArea.style.height = newHeight + 'px';
+    }
+
+    gameArea.style.marginTop = (-newHeight / 2) + 'px';
+    gameArea.style.marginLeft = (-newWidth / 2) + 'px';
+
+    gameArea.style.fontSize = (newWidth / 400) + 'em';
+
+    game.mainCanvas.width = newWidth;
+    game.mainCanvas.height = newHeight;
 }
 
 /**
