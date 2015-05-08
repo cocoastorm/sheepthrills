@@ -59,6 +59,129 @@ function Background() {
 // Set Background to inherit from Base.
 Background.prototype = new Drawable();
 
+/**
+ * The Sheep object which is spawned in game. The sheeps are drawn
+ * on the "main" canvas.
+ */
+function Sheep() {
+    this.vx = 0;
+    this.vy = 0;
+    this.vx1 = Math.floor((Math.random() * 8) + 4);
+    this.vy1 = Math.floor((Math.random() * 8) + 4);
+    this.vx2 = Math.floor((Math.random() * -8) + 4);
+    this.vy2 = Math.floor((Math.random() * -8) + 4);
+    if(this.vx1 === 0)
+        this.vx1 += 1;
+    if(this.vx2 === 0)
+        this.vx2 += 1;
+    if(this.vy1 === 0)
+        this.vy1 += 1;
+    if(this.vy2 === 0)
+        this.vy2 += 1;
+    if(this.vy === 0)
+        this.vy = 3;
+    this.dirX = Math.floor((Math.random() * 2) + 1);
+    this.dirY = Math.floor((Math.random() * 2) + 1);
+    if(this.dirX === 1)
+        this.vx = this.vx1;
+    if(this.dirX === 2)
+        this.vx = this.vx2;
+    if(this.dirY === 1)
+        this.vy = this.vy1;
+    if(this.dirY === 1)
+        this.vy = this.vy2;
+    this.alive = false; // Is true if the sheep is currently in use
+    /* Sets the sheep values */
+    this.spawn = function(x, y) {
+        this.x = x;
+        this.y = y;
+        this.alive = true;
+    };
+    /*
+     * Draws the sheep by drawing the image taken from the images object.
+     */
+    this.draw = function() {
+        this.context.drawImage(images.sheep, this.x, this.y, 100, 100);
+        this.context.font = "30px Georgia";
+        this.context.fillText("Bounce: " + game.bounces, 10, 30);
+    };
+    /*
+    * Moves the sheep and bounces the sheep when it hits the walls.
+    */
+    this.move = function() {
+    if(this.x + 100 < this.canvasWidth && this.y + 100 < this.canvasHeight && this.x > 0 && this.y > 0){
+        this.x += this.vx;
+        this.y += this.vy;
+        this.erase();
+        this.draw();
+    }
+        if(this.y + 105 > this.canvasHeight){
+            this.y -= this.vy;
+            this.vy *= -1;
+            game.bounce();
+        }
+        if(this.x + 105 > this.canvasWidth){
+            this.x -= this.vx;
+            this.vx *= -1;
+            game.bounce();
+        }
+        if(this.y  - 6 < 0){
+            this.y += -this.vy;
+            this.vy *= -1;
+            game.bounce();
+        }
+        if(this.x - 6 < 0){
+            this.x += -this.vx;
+            this.vx *= -1;
+            game.bounce();
+        }
+    };
+    /*
+    * Uses dirty rectangle to clear the sheep before redrawing.
+    */
+    this.erase = function() {
+        this.context.clearRect(this.x - 6, this.y - 5, 106, 106);
+        this.context.clearRect(0, 0, 160, 50);
+    };
+    /* Resets the sheep values */
+    this.clear = function() {
+        this.x = 0;
+        this.y = 0;
+        this.speed = 0;
+        this.alive = false;
+    };
+}
+Sheep.prototype = new Drawable();
+
+function Distraction() {
+    this.alive = false;
+    /* Sets up the distraction values */
+    this.spawn = function(x, y) {
+        this.x = x;
+        this.y = y;
+        this.alive = true;
+    };
+    /*
+    * Draws the distraction by using the image from the images object.
+    */
+    this.draw = function() {
+        //this.context.drawImage(images.distraction, this.x, this.y, 100, 100);
+    };
+    /*
+    * Uses dirty rectangle to clear the distraction before redrawing.
+    */
+    this.erase = function() {
+        this.context.clearRect(this.x, this.y, 101, 101);
+    };
+    /* Resets the sheep values */
+    this.clear = function() {
+        this.x = 0;
+        this.y = 0;
+        this.alive = false;
+    };
+}
+Distraction.prototype = new Drawable();
+
 
 /*
 * Main Game object which will hold everything for the game!
@@ -297,126 +420,3 @@ function SoundPool(maxSize) {
         currSound = (currSound + 1) % size;
     };
 }
-
-/**
- * The Sheep object which is spawned in game. The sheeps are drawn
- * on the "main" canvas.
- */
-function Sheep() {
-    this.vx = 0;
-    this.vy = 0;
-    this.vx1 = Math.floor((Math.random() * 8) + 4);
-    this.vy1 = Math.floor((Math.random() * 8) + 4);
-    this.vx2 = Math.floor((Math.random() * -8) + 4);
-    this.vy2 = Math.floor((Math.random() * -8) + 4);
-    if(this.vx1 === 0)
-        this.vx1 += 1;
-    if(this.vx2 === 0)
-        this.vx2 += 1;
-    if(this.vy1 === 0)
-        this.vy1 += 1;
-    if(this.vy2 === 0)
-        this.vy2 += 1;
-    if(this.vy === 0)
-        this.vy = 3;
-    this.dirX = Math.floor((Math.random() * 2) + 1);
-    this.dirY = Math.floor((Math.random() * 2) + 1);
-    if(this.dirX === 1)
-        this.vx = this.vx1;
-    if(this.dirX === 2)
-        this.vx = this.vx2;
-    if(this.dirY === 1)
-        this.vy = this.vy1;
-    if(this.dirY === 1)
-        this.vy = this.vy2;
-    this.alive = false; // Is true if the sheep is currently in use
-    /* Sets the sheep values */
-    this.spawn = function(x, y) {
-        this.x = x;
-        this.y = y;
-        this.alive = true;
-    };
-    /*
-     * Draws the sheep by drawing the image taken from the images object.
-     */
-    this.draw = function() {
-        this.context.drawImage(images.sheep, this.x, this.y, 100, 100);
-        this.context.font = "30px Georgia";
-        this.context.fillText("Bounce: " + game.bounces, 10, 30);
-    };
-    /*
-    * Moves the sheep and bounces the sheep when it hits the walls.
-    */
-    this.move = function() {
-    if(this.x + 100 < this.canvasWidth && this.y + 100 < this.canvasHeight && this.x > 0 && this.y > 0){
-        this.x += this.vx;
-        this.y += this.vy;
-        this.erase();
-        this.draw();
-    }
-        if(this.y + 105 > this.canvasHeight){
-            this.y -= this.vy;
-            this.vy *= -1;
-            game.bounce();
-        }
-        if(this.x + 105 > this.canvasWidth){
-            this.x -= this.vx;
-            this.vx *= -1;
-            game.bounce();
-        }
-        if(this.y  - 6 < 0){
-            this.y += -this.vy;
-            this.vy *= -1;
-            game.bounce();
-        }
-        if(this.x - 6 < 0){
-            this.x += -this.vx;
-            this.vx *= -1;
-            game.bounce();
-        }
-    };
-    /*
-    * Uses dirty rectangle to clear the sheep before redrawing.
-    */
-    this.erase = function() {
-        this.context.clearRect(this.x - 6, this.y - 5, 106, 106);
-        this.context.clearRect(0, 0, 160, 50);
-    };
-    /* Resets the sheep values */
-    this.clear = function() {
-        this.x = 0;
-        this.y = 0;
-        this.speed = 0;
-        this.alive = false;
-    };
-}
-Sheep.prototype = new Drawable();
-
-function Distraction() {
-    this.alive = false;
-    /* Sets up the distraction values */
-    this.spawn = function(x, y) {
-        this.x = x;
-        this.y = y;
-        this.alive = true;
-    };
-    /*
-    * Draws the distraction by using the image from the images object.
-    */
-    this.draw = function() {
-        //this.context.drawImage(images.distraction, this.x, this.y, 100, 100);
-    };
-    /*
-    * Uses dirty rectangle to clear the distraction before redrawing.
-    */
-    this.erase = function() {
-        this.context.clearRect(this.x, this.y, 101, 101);
-    };
-    /* Resets the sheep values */
-    this.clear = function() {
-        this.x = 0;
-        this.y = 0;
-        this.alive = false;
-    };
-}
-Distraction.prototype = new Drawable();
