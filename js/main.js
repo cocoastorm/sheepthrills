@@ -233,7 +233,7 @@ function Game() {
             // Audio files
             this.sheepSound = new SoundPool(10);
             this.sheepSound.init("sheep");
-            this.bgm = new Audio("sounds/bgm.mp3");
+            this.bgm = new Audio("sounds/amok.mp3");
             this.bgm.loop = true;
             this.bgm.volume = .50;
             this.bgm.load();

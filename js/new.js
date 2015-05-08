@@ -24,3 +24,9 @@ function start(){
 	context.clearRect ( 0 , 0 , canvas.width, canvas.height );
 }
 
+zebra.ready(function() {
+	var canvas = new zebra.ui.zCanvas("can");
+	canvas.root.setLayout(new zebra.ui.layout.BorderLayout(8));
+	var btn = new zebra.ui.Button(new zebra.ui.ImagePan("./img/start.png"));
+	canvas.root.add(BOTTOM, btn);
+});
