@@ -64,7 +64,6 @@ Background.prototype = new Drawable();
  * on the "main" canvas.
  */
 function Sheep() {
-    this.lives = Math.floor((Math.random() * 5) + 1);
     this.vx = 0;
     this.vy = 0;
     this.vx1 = Math.floor((Math.random() * 8) + 4);
@@ -103,9 +102,6 @@ function Sheep() {
      */
     this.draw = function() {
         this.context.drawImage(images.sheep, this.x, this.y, 100, 100);
-        if(this.lives === 0){
-        this.context.clearRect(this.x, this.y, 100, 100);
-    }
         this.context.font = "30px Georgia";
         this.context.fillText("Bounce: " + Game.bounces, 10, 30);
     };
@@ -113,7 +109,7 @@ function Sheep() {
     * Moves the sheep and bounces the sheep when it hits the walls.
     */
     this.move = function() {
-    if(this.x + 100 < this.canvasWidth && this.y + 100 < this.canvasHeight && this.x > 0 && this.y > 0 && this.lives >= 0){
+    if(this.x + 100 < this.canvasWidth && this.y + 100 < this.canvasHeight && this.x > 0 && this.y > 0){
         this.x += this.vx;
         this.y += this.vy;
         this.erase();
@@ -122,34 +118,30 @@ function Sheep() {
         if(this.y + 105 > this.canvasHeight){
             this.y -= this.vy;
             this.vy *= -1;
-            Game.bounce();
-            this.lives--;
+            game.bounce();
         }
         if(this.x + 105 > this.canvasWidth){
             this.x -= this.vx;
             this.vx *= -1;
-            Game.bounce();
-            this.lives--;
+            game.bounce();
         }
         if(this.y  - 6 < 0){
             this.y += -this.vy;
             this.vy *= -1;
-            Game.bounce();
-            this.lives--;
+            game.bounce();
         }
         if(this.x - 6 < 0){
             this.x += -this.vx;
             this.vx *= -1;
-            Game.bounce();
-            this.lives--;
+            game.bounce();
         }
     };
     /*
     * Uses dirty rectangle to clear the sheep before redrawing.
     */
     this.erase = function() {
-        this.context.clearRect(this.x - 10, this.y - 5, 117, 106);
-        this.context.clearRect(0, 0, 190, 50);
+        this.context.clearRect(this.x - 6, this.y - 5, 106, 106);
+        this.context.clearRect(0, 0, 160, 50);
     };
     /* Resets the sheep values */
     this.clear = function() {
@@ -198,7 +190,7 @@ function Game() {
     this.bounces = 0;
     this.bounce = function() {
         this.bounces++;
-        if(this.bounces % 7 === 0)
+        if(this.bounces % 7 == 0)
             this.sheepSound.get();
     };
     
@@ -245,7 +237,7 @@ function Game() {
             this.bgm.loop = true;
             this.bgm.volume = .50;
             this.bgm.load();
-            this.checkAudio = window.setInterval(function(){checkReadyState();}, 1000);            
+            this.checkAudio = window.setInterval(function(){checkReadyState()}, 1000);            
             return true;
         } else {
             return false;
@@ -257,7 +249,6 @@ function Game() {
         this.bgm.play();
         animate();
     };
-   
 }
 
 /**
@@ -294,7 +285,7 @@ function resize() {
 * Ensure the game sound has loaded before starting the game
 */
 function checkReadyState() {
-    if(game.bgm.readyState == 4 && game.backgroundAudio.readyState == 4) {
+    if(game.bgm.readyState == 4) {
         window.clearInterval(game.checkAudio);
         game.start();
     }
@@ -399,7 +390,7 @@ function SoundPool(maxSize) {
     * Populates the pool array with the given sound
     */
     this.init = function(object) {
-      if(object === "sheep") {
+      if(object == "sheep") {
         for(var i = 0; i < size; i++) {
             sheep = new Audio("sounds/sheep.wav");
             sheep.volume = .12;
@@ -412,7 +403,7 @@ function SoundPool(maxSize) {
     * Plays the sound required.
     */
     this.get = function() {
-        if(pool[currSound].currentTime === 0 || pool[currSound].ended) {
+        if(pool[currSound].currentTime == 0 || pool[currSound].ended) {
             pool[currSound].play();
         }
         currSound = (currSound + 1) % size;
