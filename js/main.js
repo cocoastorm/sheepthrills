@@ -103,7 +103,7 @@ function Sheep() {
     this.draw = function() {
         this.context.drawImage(images.sheep, this.x, this.y, 100, 100);
         this.context.font = "30px Georgia";
-        this.context.fillText("Bounce: " + Game.bounces, 10, 30);
+        this.context.fillText("Bounce: " + game.bounces, 10, 30);
     };
     /*
     * Moves the sheep and bounces the sheep when it hits the walls.
@@ -277,8 +277,8 @@ function resize() {
 
     gameArea.style.fontSize = (newWidth / 400) + 'em';
 
-    Game.mainCanvas.width = newWidth;
-    Game.mainCanvas.height = newHeight;
+    game.mainCanvas.width = newWidth;
+    game.mainCanvas.height = newHeight;
 }
 
 /**
