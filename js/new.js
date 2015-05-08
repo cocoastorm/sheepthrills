@@ -1,13 +1,13 @@
 this.start = new Image();
-this.start.src = "start.png";
+this.start.src = "img/start.png";
 this.how = new Image();
-this.how.src = "how.png";
+this.how.src = "img/how.png";
 this.fence = new Image();
-this.fence.src = "fence.png";
+this.fence.src = "img/fence.png";
 this.sheep = new Image();
-this.sheep.src = "sheep.png";
+this.sheep.src = "img/sheep.png";
 this.title = new Image();
-this.title.src = "title.png";
+this.title.src = "img/title.png";
 
 function testing() {
     var c = document.getElementById("gameCanvas");
