@@ -294,7 +294,7 @@ function resize() {
 * Ensure the game sound has loaded before starting the game
 */
 function checkReadyState() {
-    if(game.bgm.readyState === 4) {
+    if(game.bgm.readyState == 4 && game.backgroundAudio.readyState == 4) {
         window.clearInterval(game.checkAudio);
         game.start();
     }
