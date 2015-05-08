@@ -107,7 +107,7 @@ function Sheep() {
         this.context.clearRect(this.x, this.y, 100, 100);
     }
         this.context.font = "30px Georgia";
-        this.context.fillText("Bounce: " + game.bounces, 10, 30);
+        this.context.fillText("Bounce: " + Game.bounces, 10, 30);
     };
     /*
     * Moves the sheep and bounces the sheep when it hits the walls.
@@ -122,25 +122,25 @@ function Sheep() {
         if(this.y + 105 > this.canvasHeight){
             this.y -= this.vy;
             this.vy *= -1;
-            game.bounce();
+            Game.bounce();
             this.lives--;
         }
         if(this.x + 105 > this.canvasWidth){
             this.x -= this.vx;
             this.vx *= -1;
-            game.bounce();
+            Game.bounce();
             this.lives--;
         }
         if(this.y  - 6 < 0){
             this.y += -this.vy;
             this.vy *= -1;
-            game.bounce();
+            Game.bounce();
             this.lives--;
         }
         if(this.x - 6 < 0){
             this.x += -this.vx;
             this.vx *= -1;
-            game.bounce();
+            Game.bounce();
             this.lives--;
         }
     };
@@ -286,8 +286,8 @@ function resize() {
 
     gameArea.style.fontSize = (newWidth / 400) + 'em';
 
-    game.mainCanvas.width = newWidth;
-    game.mainCanvas.height = newHeight;
+    Game.mainCanvas.width = newWidth;
+    Game.mainCanvas.height = newHeight;
 }
 
 /**
