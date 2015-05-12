@@ -1,0 +1,306 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>SheepThrills</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>20000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
+        <behavior author="Scirra" id="Physics" version="1">Physics</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>480</width>
+        <height>640</height>
+    </window-size>
+    <pixel-rounding>0</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Portrait</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Linear</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Sprite2" sid="1395248052503903">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="550766180172252">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="733179239210758">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="2178578939536705">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="5540911778777982">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6369882941399419" speed="5">
+                    <frame duration="1" hotspotX="0.549839" hotspotY="0.461832" original-source="E:\Users\Amanda\Documents\Google Drive\BCIT CST\Term2\Comp2910\sheep.png">
+                        <collision-poly>
+                            <point x="0.131833" y="0.183206" />
+                            <point x="0.398714" y="0.00381682" />
+                            <point x="0.781351" y="0.0992363" />
+                            <point x="0.977492" y="0.431298" />
+                            <point x="0.864952" y="0.698473" />
+                            <point x="0.44373" y="0.820611" />
+                            <point x="0.199357" y="0.660305" />
+                            <point x="0.106109" y="0.385496" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite" sid="6123584605170782">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5559097211212342" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Users\Amanda\Documents\Google Drive\BCIT CST\Term2\Comp2910\title.png">
+                        <collision-poly>
+                            <point x="0.0217391" y="0.0520833" />
+                            <point x="0.5" y="0.53125" />
+                            <point x="0.743478" y="0.614583" />
+                            <point x="0.965217" y="0.916667" />
+                            <point x="0.5" y="0.958333" />
+                            <point x="0.278261" y="0.333333" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite3" sid="4073674177365755">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8084038148371193" speed="5">
+                    <frame duration="1" hotspotX="0.501567" hotspotY="0.504673" original-source="E:\Users\Amanda\Documents\Google Drive\BCIT CST\Term2\Comp2910\fence.png">
+                        <collision-poly>
+                            <point x="0.0532915" y="0.158879" />
+                            <point x="0.498433" y="0.46729" />
+                            <point x="0.943574" y="0.168224" />
+                            <point x="1" y="0.495327" />
+                            <point x="0.959248" y="0.878505" />
+                            <point x="0.498433" y="0.579439" />
+                            <point x="0.0407524" y="0.878505" />
+                            <point x="0" y="0.495327" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="SideBars" sid="8848495698288396">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="7240126000579311">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9543366738905175" speed="5">
+                    <frame duration="1" hotspotX="0.6" hotspotY="0.6" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="6027726163101794">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1987678935605242" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Users\Amanda\Documents\Google Drive\BCIT CST\Term2\Comp2910\bg.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite7" sid="4963627964611596">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7991018567382504" speed="5">
+                    <frame duration="1" hotspotX="0.5025" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.120448" y="0.195455" />
+                            <point x="0.498599" y="0.0136364" />
+                            <point x="0.859944" y="0.227273" />
+                            <point x="0.938375" y="0.5" />
+                            <point x="0.854342" y="0.763636" />
+                            <point x="0.498599" y="0.972727" />
+                            <point x="0.123249" y="0.8" />
+                            <point x="0.0168067" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501401" hotspotY="0.5" original-source="E:\Users\Amanda\Documents\Google Drive\BCIT CST\Term2\Comp2910\start.png">
+                        <collision-poly>
+                            <point x="0.120448" y="0.195455" />
+                            <point x="0.498599" y="0.0136364" />
+                            <point x="0.859944" y="0.227273" />
+                            <point x="0.938375" y="0.5" />
+                            <point x="0.854342" y="0.763636" />
+                            <point x="0.498599" y="0.972727" />
+                            <point x="0.123249" y="0.8" />
+                            <point x="0.0168067" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite8" sid="1155849753590599">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2293549278596661" speed="5">
+                    <frame duration="1" hotspotX="0.5025" hotspotY="0.5" original-source="E:\Users\Amanda\Documents\Google Drive\BCIT CST\Term2\Comp2910\how.png">
+                        <collision-poly>
+                            <point x="0.132743" y="0.204545" />
+                            <point x="0.498525" y="0.0136364" />
+                            <point x="0.884956" y="0.177273" />
+                            <point x="1" y="0.5" />
+                            <point x="0.876106" y="0.809091" />
+                            <point x="0.498525" y="0.972727" />
+                            <point x="0.132743" y="0.795455" />
+                            <point x="0.0294985" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.501475" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.132743" y="0.204545" />
+                            <point x="0.498525" y="0.0136364" />
+                            <point x="0.884956" y="0.177273" />
+                            <point x="1" y="0.5" />
+                            <point x="0.876106" y="0.809091" />
+                            <point x="0.498525" y="0.972727" />
+                            <point x="0.132743" y="0.795455" />
+                            <point x="0.0294985" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Mouse" sid="6050584942834407">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Sprite9" sid="6628640723784205">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8943306855862622" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Users\Amanda\Documents\Google Drive\BCIT CST\Term2\Comp2910\sheep.png">
+                        <collision-poly>
+                            <point x="0.213656" y="0.285294" />
+                            <point x="0.5" y="0.173529" />
+                            <point x="0.751101" y="0.332353" />
+                            <point x="0.795154" y="0.5" />
+                            <point x="0.748899" y="0.664706" />
+                            <point x="0.5" y="0.752941" />
+                            <point x="0.259912" y="0.652941" />
+                            <point x="0.211454" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Counter" sid="5806829045237172">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite4" sid="202398167613152">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3580749323199944" speed="5">
+                    <frame duration="1" hotspotX="0.500803" hotspotY="0.5" original-source="C:\Users\Amanda\Desktop\productsEN_Popup_Cloud.png">
+                        <collision-poly>
+                            <point x="0.139647" y="0.215347" />
+                            <point x="0.499197" y="0.0866337" />
+                            <point x="0.853933" y="0.225248" />
+                            <point x="0.972713" y="0.5" />
+                            <point x="0.857143" y="0.779703" />
+                            <point x="0.499197" y="0.858911" />
+                            <point x="0.146067" y="0.774752" />
+                            <point x="0.0304976" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite5" sid="7445705045145697">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Bullet" sid="1889640413993761">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="891419860371852">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="8593338837763864">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="2602591299631347">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6202250400408795" speed="5">
+                    <frame duration="1" hotspotX="0.549839" hotspotY="0.461832" original-source="E:\Users\Amanda\Documents\Google Drive\BCIT CST\Term2\Comp2910\sheep.png">
+                        <collision-poly>
+                            <point x="0.131833" y="0.183206" />
+                            <point x="0.398714" y="0.0152672" />
+                            <point x="0.781351" y="0.0992363" />
+                            <point x="0.977492" y="0.431298" />
+                            <point x="0.864952" y="0.698473" />
+                            <point x="0.44373" y="0.820611" />
+                            <point x="0.199357" y="0.660305" />
+                            <point x="0.106109" y="0.385496" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Menu Screen.xml</layout>
+        <layout>In Game Screen.xml</layout>
+        <layout>Layout 1.xml</layout>
+        <layout>Help.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Event sheet 1.xml</event-sheet>
+        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Event sheet 4.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Mouse" uid="11" />
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+    </files-folder>
+</c2project>
