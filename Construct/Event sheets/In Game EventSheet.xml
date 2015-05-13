@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>In Game EventSheet</name>
+    <events>
+        <variable comment="Counts the numbers" constant="0" name="CounterVariable" sid="5533309389115752" static="0" type="number">0</variable>
+        <event-block sid="9692680843726961">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="3152250745031036" type="System" />
+            </conditions>
+            <actions />
+        </event-block>
+        <event-block sid="1150733156806998">
+            <conditions />
+            <actions>
+                <action id="-10" name="Add to" sid="6563637041577701" type="System">
+                    <param id="0" name="Variable">CounterVariable</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8509586817304485">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="4237248298900819" type="System" />
+            </conditions>
+            <actions>
+                <action id="-16" name="Wait" sid="4384508758392893" type="System">
+                    <param id="0" name="Seconds">3</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9127477866316205" type="Sprite4" />
+            </actions>
+        </event-block>
+        <event-block sid="5929936325700093">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="1691344995584003" type="Sprite4" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="2825825168478903" type="Sprite2">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-8" name="Set angle" sid="5274054781491622" type="Sprite2">
+                    <param id="0" name="Angle">random(0, 361)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1251709019423169">
+            <conditions>
+                <condition id="-19" name="On destroyed" sid="6202651193203792" type="Sprite4" />
+            </conditions>
+            <actions>
+                <action behavior="Bullet" id="5" name="Set enabled" sid="2330719261210782" type="Sprite5">
+                    <param id="0" name="State">1</param>
+                </action>
+                <action id="-8" name="Set angle" sid="1359123246998085" type="Sprite5">
+                    <param id="0" name="Angle">random(0, 361)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5001042525556677">
+            <conditions />
+            <actions>
+                <action id="-10" name="Add to" sid="7514959382560877" type="System">
+                    <param id="0" name="Variable">CounterVariable</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

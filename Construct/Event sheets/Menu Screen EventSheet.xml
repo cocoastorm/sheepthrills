@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Menu Screen EventSheet</name>
+    <events>
+        <event-block sid="1548060053241426">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="4040193893727761" type="Mouse">
+                    <param id="0" name="Object">Sprite7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="4839705009419434" type="Sprite7">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4755114029647675">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="4141667346069664" type="Mouse">
+                    <param id="0" name="Object">Sprite7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="9629833288563918" type="Sprite7">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="8711336075220978">
+            <conditions>
+                <condition id="7" name="Cursor is over object" sid="9527842508579437" type="Mouse">
+                    <param id="0" name="Object">Sprite8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="1156314582740756" type="Sprite8">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3093349526765564">
+            <conditions>
+                <condition id="7" inverted="1" name="Cursor is over object" sid="4076155687272118" type="Mouse">
+                    <param id="0" name="Object">Sprite8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="4185427111114549" type="Sprite8">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4684002569549832">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="4372397696395447" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite7</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="1851662888675961" type="System">
+                    <param id="0" name="Layout">In Game Screen</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3048924058271312">
+            <conditions>
+                <condition id="6" name="On object clicked" sid="4217107732800656" type="Mouse">
+                    <param id="0" name="Mouse button">0</param>
+                    <param id="1" name="Click type">0</param>
+                    <param id="2" name="Object clicked">Sprite8</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="3938256540778031" type="System">
+                    <param id="0" name="Layout">Help</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
