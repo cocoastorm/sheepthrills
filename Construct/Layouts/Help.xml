@@ -2,7 +2,7 @@
 <c2layout>
     <name>Help</name>
     <sid>7126804689757191</sid>
-    <event-sheet>Event sheet 3</event-sheet>
+    <event-sheet>Scores</event-sheet>
     <size>
         <width>480</width>
         <height>640</height>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite6" uid="13">
+                <instance type="Background" uid="13">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

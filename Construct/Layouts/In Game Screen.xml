@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite6" uid="12">
+                <instance type="Background" uid="12">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -78,7 +78,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Lives>5</Lives>
+                        <Bounces>0</Bounces>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
@@ -255,7 +255,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Lives>3</Lives>
+                        <Bounces>0</Bounces>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
@@ -376,9 +376,9 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text" uid="26">
+                <instance type="Instruction" uid="26">
                     <properties>
-                        <text>Count the white sheep bounces</text>
+                        <text>Count the total number of bounces for the white sheep!</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial,-16</font>
                         <color>0,0,0</color>
@@ -391,11 +391,38 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>190</x>
-                        <y>246</y>
+                        <x>150</x>
+                        <y>242</y>
                         <z>0</z>
-                        <width>125</width>
-                        <height>81</height>
+                        <width>217</width>
+                        <height>72</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Timer" uid="27">
+                    <properties>
+                        <text>Timer</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>145</x>
+                        <y>9</y>
+                        <z>0</z>
+                        <width>200</width>
+                        <height>30</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

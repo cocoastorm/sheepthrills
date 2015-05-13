@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite6" uid="17">
+                <instance type="Background" uid="17">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -78,7 +78,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Lives>5</Lives>
+                        <Bounces>0</Bounces>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
@@ -103,7 +103,7 @@
                         </behavior-instance>
                         <behavior-instance type="Physics">
                             <properties>
-                                <immovable>No</immovable>
+                                <immovable>Yes</immovable>
                                 <collision-mask>Circle</collision-mask>
                                 <prevent-rotation>Yes</prevent-rotation>
                                 <density>1</density>
@@ -255,7 +255,7 @@
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
-                        <Lives>3</Lives>
+                        <Bounces>0</Bounces>
                     </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
@@ -280,7 +280,7 @@
                         </behavior-instance>
                         <behavior-instance type="Physics">
                             <properties>
-                                <immovable>No</immovable>
+                                <immovable>Yes</immovable>
                                 <collision-mask>Circle</collision-mask>
                                 <prevent-rotation>Yes</prevent-rotation>
                                 <density>1</density>

@@ -10,9 +10,13 @@
     <unique-id>2m2oqhlgof90t</unique-id>
     <saved-with-version>20000</saved-with-version>
     <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -48,7 +52,7 @@
         <object-type name="Sprite2" sid="1395248052503903">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="Lives" sid="3509124368589203" type="number" />
+                <instance-variable name="Bounces" sid="2777298953575287" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Bullet" sid="550766180172252">
@@ -130,7 +134,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite6" sid="6027726163101794">
+        <object-type name="Background" sid="6027726163101794">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1987678935605242" speed="5">
@@ -247,7 +251,7 @@
         <object-type name="Sprite5" sid="7445705045145697">
             <plugin id="Sprite" />
             <instance-variables>
-                <instance-variable name="Lives" sid="8249146431896248" type="number" />
+                <instance-variable name="Bounces" sid="3968302844178991" type="number" />
             </instance-variables>
             <behaviors>
                 <behavior-type name="Bullet" sid="1889640413993761">
@@ -280,7 +284,85 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Text" sid="7086722890712603">
+        <object-type name="Instruction" sid="7086722890712603">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Timer" sid="564738885127971">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="AJAX" sid="9133747759727305">
+            <plugin id="AJAX" />
+        </object-type>
+        <object-type global="1" name="Array" sid="3683263722148129">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="Submit" sid="1532623050978904">
+            <plugin id="Button" />
+        </object-type>
+        <object-type name="PlayerName" sid="5660936232218169">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Name1" sid="5434124641300136">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Name2" sid="2855018973215772">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Name3" sid="8225128605376933">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Name4" sid="6650643442025312">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Name5" sid="8921255892458828">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Name6" sid="1114120556196349">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Name7" sid="2412430679084227">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Name8" sid="9230508452311677">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Name9" sid="7312419937107536">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Name10" sid="2900215112661227">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Score1" sid="469089575131482">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Score2" sid="6233887285872122">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Score3" sid="5105158170386013">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Score4" sid="8736129743720993">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Score5" sid="3290011365912794">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Score6" sid="6238481839259241">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Score7" sid="8595712471412892">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Score8" sid="4430316368639092">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Score9" sid="9560664391244793">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Score10" sid="8758091460495605">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="PlayerScore" sid="7424942012302559">
             <plugin id="Text" />
         </object-type>
     </object-folder>
@@ -290,15 +372,17 @@
         <layout>In Game Screen.xml</layout>
         <layout>Layout 1.xml</layout>
         <layout>Help.xml</layout>
+        <layout>Score Leaderboard.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
-        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Scores.xml</event-sheet>
         <event-sheet>Event sheet 4.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="11" />
+        <global-instance type="AJAX" uid="28" />
     </global-instances>
     <sounds-folder />
     <music-folder />
