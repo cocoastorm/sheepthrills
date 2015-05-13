@@ -14,19 +14,6 @@
                 </action>
             </actions>
         </event-block>
-        <event-block sid="1150733156806998">
-            <conditions>
-                <condition id="0" name="On collision with another object" sid="7949240165682384" type="Sprite2">
-                    <param id="0" name="Object">SideBars</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-10" name="Add to" sid="6563637041577701" type="System">
-                    <param id="0" name="Variable">CounterVariable</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="8509586817304485">
             <conditions>
                 <condition id="-2" name="On start of layout" sid="4237248298900819" type="System" />
@@ -49,6 +36,10 @@
                 <action id="-8" name="Set angle" sid="5274054781491622" type="Sprite2">
                     <param id="0" name="Angle">random(0, 361)</param>
                 </action>
+                <action behavior="Physics" id="21" name="Set immovable" sid="2109220506336855" type="Sprite2">
+                    <param id="0" name="Setting">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="9864149455032603" type="Text" />
             </actions>
         </event-block>
         <event-block sid="1251709019423169">
@@ -61,6 +52,27 @@
                 </action>
                 <action id="-8" name="Set angle" sid="1359123246998085" type="Sprite5">
                     <param id="0" name="Angle">random(0, 361)</param>
+                </action>
+                <action behavior="Physics" id="21" name="Set immovable" sid="4323808558977662" type="Sprite5">
+                    <param id="0" name="Setting">0</param>
+                </action>
+                <action id="-9" name="Destroy" sid="6065717286000794" type="Text" />
+            </actions>
+        </event-block>
+        <event-block sid="1150733156806998">
+            <conditions>
+                <condition id="0" name="On collision with another object" sid="7949240165682384" type="Sprite2">
+                    <param id="0" name="Object">SideBars</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="6563637041577701" type="System">
+                    <param id="0" name="Variable">CounterVariable</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-12" name="Subtract from" sid="6737413182689926" type="Sprite2">
+                    <param id="0" name="Instance variable">Lives</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
@@ -75,6 +87,34 @@
                     <param id="0" name="Variable">CounterVariable</param>
                     <param id="1" name="Value">1</param>
                 </action>
+                <action id="-12" name="Subtract from" sid="792904250697688" type="Sprite5">
+                    <param id="0" name="Instance variable">Lives</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9484488397739908">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="9515658111591483" type="Sprite2">
+                    <param id="0" name="Instance variable">Lives</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="4792413260705748" type="Sprite2" />
+            </actions>
+        </event-block>
+        <event-block sid="5727316617030943">
+            <conditions>
+                <condition id="-7" name="Compare instance variable" sid="5240855359844875" type="Sprite5">
+                    <param id="0" name="Instance variable">Lives</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Destroy" sid="4918419901877697" type="Sprite5" />
             </actions>
         </event-block>
     </events>

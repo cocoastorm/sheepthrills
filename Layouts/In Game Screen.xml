@@ -77,6 +77,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Lives>5</Lives>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
@@ -100,7 +103,7 @@
                         </behavior-instance>
                         <behavior-instance type="Physics">
                             <properties>
-                                <immovable>No</immovable>
+                                <immovable>Yes</immovable>
                                 <collision-mask>Circle</collision-mask>
                                 <prevent-rotation>Yes</prevent-rotation>
                                 <density>1</density>
@@ -251,6 +254,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Lives>3</Lives>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
@@ -274,7 +280,7 @@
                         </behavior-instance>
                         <behavior-instance type="Physics">
                             <properties>
-                                <immovable>No</immovable>
+                                <immovable>Yes</immovable>
                                 <collision-mask>Circle</collision-mask>
                                 <prevent-rotation>Yes</prevent-rotation>
                                 <density>1</density>
@@ -366,6 +372,33 @@
                         <depth>0</depth>
                         <hotspotX>0.500802577</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Text" uid="26">
+                    <properties>
+                        <text>Count the white sheep bounces</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial,-16</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>190</x>
+                        <y>246</y>
+                        <z>0</z>
+                        <width>125</width>
+                        <height>81</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>

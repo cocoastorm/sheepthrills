@@ -47,6 +47,9 @@
     <object-folder>
         <object-type name="Sprite2" sid="1395248052503903">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Lives" sid="3509124368589203" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Bullet" sid="550766180172252">
                     <behavior id="Bullet" />
@@ -243,6 +246,9 @@
         </object-type>
         <object-type name="Sprite5" sid="7445705045145697">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Lives" sid="8249146431896248" type="number" />
+            </instance-variables>
             <behaviors>
                 <behavior-type name="Bullet" sid="1889640413993761">
                     <behavior id="Bullet" />
@@ -273,6 +279,9 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Text" sid="7086722890712603">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />

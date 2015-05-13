@@ -77,6 +77,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Lives>5</Lives>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
@@ -251,6 +254,9 @@
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <Lives>3</Lives>
+                    </instance-variables>
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
