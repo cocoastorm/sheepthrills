@@ -389,10 +389,6 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" sid="6970896104538996" type="System">
-                            <param id="0" name="Layout">Level 1</param>
-                        </action>
-                        <action id="-21" name="Reset global variables" sid="9525195253877614" type="System" />
                         <action id="-10" name="Add to" sid="5223591226811788" type="System">
                             <param id="0" name="Variable">Level</param>
                             <param id="1" name="Value">1</param>

@@ -28,12 +28,12 @@
                         <condition id="-2" name="On start of layout" sid="4237248298900819" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-21" name="Reset global variables" sid="6920456078026849" type="System" />
                         <action id="-16" name="Wait" sid="4384508758392893" type="System">
                             <param id="0" name="Seconds">3</param>
                         </action>
                         <action id="-9" name="Destroy" sid="9127477866316205" type="Cloud" />
                         <action id="-9" name="Destroy" sid="8141721097743529" type="Level" />
-
                     </actions>
                 </event-block>
                 <event-block sid="5929936325700093">

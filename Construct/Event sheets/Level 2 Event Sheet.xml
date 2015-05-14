@@ -23,6 +23,7 @@
                         <condition id="-2" name="On start of layout" sid="4237248298900819" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-21" name="Reset global variables" sid="1672529898065813" type="System" />
                         <action id="-16" name="Wait" sid="4384508758392893" type="System">
                             <param id="0" name="Seconds">3</param>
                         </action>
