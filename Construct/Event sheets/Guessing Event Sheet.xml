@@ -192,11 +192,14 @@
                             <param id="1" name="Value">Ceil((result / Bounces ) * 100)</param>
                         </action>
                         <action id="0" name="Set text" sid="7768681047556893" type="ShowUp">
-                            <param id="0" name="Text">&quot;textbox&amp;%&quot;</param>
+                            <param id="0" name="Text">textbox</param>
                         </action>
                         <action id="-9" name="Set value" sid="6461782705063893" type="System">
                             <param id="0" name="Variable">accuracy</param>
                             <param id="1" name="Value">ceil((result / Bounces) * 100)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="5805995615947009" type="Stats">
+                            <param id="0" name="Text">&quot;Bounces: &quot; &amp; Bounces &amp; &quot;, Your Guess: &quot; &amp; result &amp; &quot; Accuracy: &quot; &amp; accuracy &amp; &quot;%&quot;</param>
                         </action>
                     </actions>
                     <sub-events>
