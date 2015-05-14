@@ -225,6 +225,24 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="8039616511466956">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="7860396354077769" type="System">
+                                    <param id="0" name="Variable">accuracy</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">80</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="2654590113822722" type="System">
+                                    <param id="0" name="Variable">textbox</param>
+                                    <param id="1" name="Value">&quot;Great!&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="5037547162453429" type="ShowUp">
+                                    <param id="0" name="Text">textbox</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="4756642949144694">
