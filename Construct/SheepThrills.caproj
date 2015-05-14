@@ -570,6 +570,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Stats" sid="1490022607788542">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
