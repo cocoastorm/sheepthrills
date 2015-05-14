@@ -234,7 +234,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3580749323199944" speed="5">
-                    <frame duration="1" hotspotX="0.500803" hotspotY="0.5" original-source="C:\Users\Amanda\Desktop\productsEN_Popup_Cloud.png">
+                    <frame duration="1" hotspotX="0.501085" hotspotY="0.5" original-source="C:\Users\Judy W\Documents\Google Drive\BCIT CST\Term2\Comp2910\cloud.png">
                         <collision-poly>
                             <point x="0.139647" y="0.215347" />
                             <point x="0.499197" y="0.0866337" />
@@ -441,7 +441,14 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8717094922923778" speed="5">
-                    <frame duration="1" hotspotX="0.52439" hotspotY="0.497409" />
+                    <frame duration="1" hotspotX="0.524823" hotspotY="0.49711" original-source="C:\Users\Judy W\Documents\Google Drive\BCIT CST\Term2\Comp2910\play.png">
+                        <collision-poly>
+                            <point x="0" y="0" />
+                            <point x="0.652482" y="0.283237" />
+                            <point x="0.886525" y="0.49711" />
+                            <point x="0" y="1" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
@@ -588,6 +595,7 @@
     <layout-folder>
         <layout>Menu Screen.xml</layout>
         <layout>In Game Screen.xml</layout>
+        <layout>Level 1.xml</layout>
         <layout>Help.xml</layout>
         <layout>Score Leaderboard.xml</layout>
         <layout>Guessing Page.xml</layout>
@@ -598,6 +606,7 @@
         <event-sheet>Scores.xml</event-sheet>
         <event-sheet>Help Event Sheet.xml</event-sheet>
         <event-sheet>Guessing Event Sheet.xml</event-sheet>
+        <event-sheet>Level 1 Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="11" />

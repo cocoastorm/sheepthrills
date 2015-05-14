@@ -6,7 +6,7 @@
 *.exe
 *.o
 *.so
- 
+
 # Packages #
 ############
 # it's better to unpack these files and commit the raw source
@@ -40,3 +40,7 @@ Thumbs.db
 #####################
 /nbproject/private/
 *.uistate.xml
+*.capx
+*.capx.autosave
+*.capx.backup1
+*.capx.backup1~HEAD

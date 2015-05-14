@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>In Game Event Sheet</name>
+    <name>Level 1 Event Sheet</name>
     <events>
-        <variable constant="0" name="Score" sid="2867248599448852" static="0" type="number">0</variable>
-        <variable constant="0" name="TimerStart" sid="35682347130618" static="0" type="number">0</variable>
-        <variable constant="0" name="Timer" sid="4702398482384383" static="0" type="number">0</variable>
-        <variable comment="Counts the numbers" constant="0" name="Bounces" sid="5533309389115752" static="0" type="number">0</variable>
-        <event-group description="" sid="1975602129152127" title="Level 2">
+        <variable constant="0" name="Level" sid="3088159783359553" static="0" type="number">1</variable>
+        <variable constant="0" name="Score2" sid="5725245981192252" static="0" type="number">0</variable>
+        <variable constant="0" name="TimerStart2" sid="403536239860981" static="0" type="number">0</variable>
+        <variable constant="0" name="Timer2" sid="9640166676224397" static="0" type="number">0</variable>
+        <event-group description="" sid="1314970958589912" title="Level 1">
             <sub-events>
                 <event-block sid="9692680843726961">
                     <conditions>
@@ -49,28 +49,7 @@
                         </action>
                         <action id="-9" name="Destroy" sid="9864149455032603" type="Instruction" />
                         <action id="-9" name="Set value" sid="708963529888344" type="System">
-                            <param id="0" name="Variable">TimerStart</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="1251709019423169">
-                    <conditions>
-                        <condition id="-19" name="On destroyed" sid="6202651193203792" type="Cloud" />
-                    </conditions>
-                    <actions>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="2330719261210782" type="blueSheep">
-                            <param id="0" name="State">1</param>
-                        </action>
-                        <action id="-8" name="Set angle" sid="1359123246998085" type="blueSheep">
-                            <param id="0" name="Angle">random(0, 361)</param>
-                        </action>
-                        <action behavior="Physics" id="21" name="Set immovable" sid="4323808558977662" type="blueSheep">
-                            <param id="0" name="Setting">0</param>
-                        </action>
-                        <action id="-9" name="Destroy" sid="6065717286000794" type="Instruction" />
-                        <action id="-9" name="Set value" sid="8304355419466074" type="System">
-                            <param id="0" name="Variable">TimerStart</param>
+                            <param id="0" name="Variable">TimerStart2</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -88,42 +67,25 @@
                         </action>
                         <action id="-9" name="Set value" sid="3049069036310289" type="System">
                             <param id="0" name="Variable">Bounces</param>
-                            <param id="1" name="Value">Sprite2.Bounces + blueSheep.Bounces</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="5001042525556677">
-                    <conditions>
-                        <condition id="0" name="On collision with another object" sid="4879021218656989" type="blueSheep">
-                            <param id="0" name="Object">SideBars</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Add to" sid="9616738070004227" type="blueSheep">
-                            <param id="0" name="Instance variable">Bounces</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="5554135639927692" type="System">
-                            <param id="0" name="Variable">Bounces</param>
-                            <param id="1" name="Value">Sprite2.Bounces + blueSheep.Bounces</param>
+                            <param id="1" name="Value">Sprite2.Bounces</param>
                         </action>
                     </actions>
                 </event-block>
                 <event-block sid="7647196209192064">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="4238479176642536" type="System">
-                            <param id="0" name="Variable">TimerStart</param>
+                            <param id="0" name="Variable">TimerStart2</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="4958083147695204" type="System">
-                            <param id="0" name="Variable">Timer</param>
+                            <param id="0" name="Variable">Timer2</param>
                             <param id="1" name="Value">10</param>
                         </action>
                         <action id="-9" name="Set value" sid="505264195978375" type="System">
-                            <param id="0" name="Variable">TimerStart</param>
+                            <param id="0" name="Variable">TimerStart2</param>
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
@@ -131,7 +93,7 @@
                 <event-block sid="6773243467964073">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="7767331535267498" type="System">
-                            <param id="0" name="Variable">Timer</param>
+                            <param id="0" name="Variable">Timer2</param>
                             <param id="1" name="Comparison">4</param>
                             <param id="2" name="Value">0</param>
                         </condition>
@@ -154,14 +116,17 @@
                         <event-block sid="900682824140833">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="5876456456623527" type="System">
-                                    <param id="0" name="Variable">Timer</param>
+                                    <param id="0" name="Variable">Timer2</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
+                                <action id="-10" name="Add to" sid="7906389948402635" type="System">
+                                    <param id="0" name="Variable">Level</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
                                 <action id="-9" name="Destroy" sid="6238349524727024" type="Sprite2" />
-                                <action id="-9" name="Destroy" sid="5340141727787975" type="blueSheep" />
                                 <action id="-2" name="Go to layout" sid="7097043353998557" type="System">
                                     <param id="0" name="Layout">Guessing Page</param>
                                 </action>

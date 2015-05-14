@@ -61,7 +61,7 @@
             </conditions>
             <actions>
                 <action id="-2" name="Go to layout" sid="1851662888675961" type="System">
-                    <param id="0" name="Layout">In Game Screen</param>
+                    <param id="0" name="Layout">Level 1</param>
                 </action>
             </actions>
         </event-block>
@@ -76,10 +76,6 @@
             <actions>
                 <action id="-2" name="Go to layout" sid="3938256540778031" type="System">
                     <param id="0" name="Layout">Help</param>
-                </action>
-                <action id="-9" name="Set value" sid="8674224906207888" type="System">
-                    <param id="0" name="Variable">forward</param>
-                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
