@@ -2,7 +2,7 @@
 <c2layout>
     <name>Help</name>
     <sid>7126804689757191</sid>
-    <event-sheet>Scores</event-sheet>
+    <event-sheet>Help Event Sheet</event-sheet>
     <size>
         <width>480</width>
         <height>640</height>

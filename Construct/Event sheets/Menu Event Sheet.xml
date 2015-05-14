@@ -79,5 +79,18 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="3574522815347308">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="9670533887217802" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="4663201333093192" type="Audio">
+                    <param id="0" name="Audio file">amok</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
