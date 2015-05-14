@@ -25,7 +25,9 @@
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Scirra" id="lumblend">Luminosity</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -469,6 +471,11 @@
         </object-type>
         <object-type name="Level" sid="6292857280710113">
             <plugin id="Text" />
+            <effects>
+                <effect-type name="Luminosity">
+                    <effect id="lumblend" />
+                </effect-type>
+            </effects>
         </object-type>
         <object-type name="background_noSun" sid="4929618754306529">
             <plugin id="Sprite" />
@@ -597,24 +604,24 @@
     <families />
     <layout-folder>
         <layout>Menu Screen.xml</layout>
-        <layout>In Game Screen.xml</layout>
         <layout>Level 1.xml</layout>
+        <layout>Level 2.xml</layout>
         <layout>Help.xml</layout>
         <layout>Score Leaderboard.xml</layout>
         <layout>Guessing Page.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Menu Event Sheet.xml</event-sheet>
-        <event-sheet>In Game Event Sheet.xml</event-sheet>
         <event-sheet>Scores.xml</event-sheet>
         <event-sheet>Help Event Sheet.xml</event-sheet>
         <event-sheet>Guessing Event Sheet.xml</event-sheet>
         <event-sheet>Level 1 Event Sheet.xml</event-sheet>
+        <event-sheet>Level 2 Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="28" />
-        <global-instance type="AJAX" uid="82" />
-        <global-instance type="Touch" uid="87">
+        <global-instance type="Mouse" uid="97" />
+        <global-instance type="AJAX" uid="98" />
+        <global-instance type="Touch" uid="99">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
