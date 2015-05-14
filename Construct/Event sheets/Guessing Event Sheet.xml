@@ -40,6 +40,35 @@
                     <param id="0" name="Layer">3</param>
                     <param id="1" name="Visibility">0</param>
                 </action>
+                <action id="-4" name="Set layer visible" sid="4627190983495098" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="3902693010658054" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="891143757056825" type="Numbers">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1290655949351342">
+            <conditions>
+                <condition id="3" name="On touched object" sid="4114901605729229" type="Touch">
+                    <param id="0" name="Object">Numbers</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="3187545592046528" type="Numbers">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="8227935345369029" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="5" name="Set frame" sid="3685563033696519" type="Numbers">
+                    <param id="0" name="Frame number">1</param>
+                </action>
             </actions>
         </event-block>
         <event-group description="" sid="4191802834149442" title="Number Input">
@@ -149,6 +178,15 @@
                         <action id="-16" name="Wait" sid="8373142018595976" type="System">
                             <param id="0" name="Seconds">0.01</param>
                         </action>
+                        <action id="5" name="Set frame" sid="3476398280350721" type="Backspace">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="8927277969193011" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="376957965174769" type="Backspace">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -165,6 +203,15 @@
                         <action id="-9" name="Set value" sid="6162530821653043" type="System">
                             <param id="0" name="Variable">result</param>
                             <param id="1" name="Value">float(textbox)</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="5642866789591778" type="Ok">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="5226433386545372" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="7517809922014363" type="Ok">
+                            <param id="0" name="Frame number">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -209,6 +256,9 @@
                                     <param id="0" name="Variable">textbox</param>
                                     <param id="1" name="Value">&quot;Over&quot;</param>
                                 </action>
+                                <action id="5" name="Set frame" sid="4494899689804663" type="Sprite12">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
                                 <action id="0" name="Set text" sid="8994764186589992" type="ShowUp">
                                     <param id="0" name="Text">textbox</param>
                                 </action>
@@ -218,6 +268,14 @@
                                 <action id="-4" name="Set layer visible" sid="5006544696730352" type="System">
                                     <param id="0" name="Layer">3</param>
                                     <param id="1" name="Visibility">1</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="2582687377912195" type="System">
+                                    <param id="0" name="Layer">1</param>
+                                    <param id="1" name="Visibility">0</param>
+                                </action>
+                                <action id="-4" name="Set layer visible" sid="6344113363637795" type="System">
+                                    <param id="0" name="Layer">2</param>
+                                    <param id="1" name="Visibility">0</param>
                                 </action>
                             </actions>
                         </event-block>
