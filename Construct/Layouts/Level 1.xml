@@ -309,7 +309,7 @@
                         <width>463.31137085</width>
                         <height>300.445892334</height>
                         <depth>0</depth>
-                        <hotspotX>0.500802577</hotspotX>
+                        <hotspotX>0.501084626</hotspotX>
                         <hotspotY>0.5</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -319,7 +319,7 @@
                     <properties>
                         <text>Count the total number of bounces for the white sheep!</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>AR JULIAN,-30,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -330,11 +330,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>139</x>
-                        <y>238</y>
+                        <x>112</x>
+                        <y>188</y>
                         <z>0</z>
-                        <width>217</width>
-                        <height>72</height>
+                        <width>296</width>
+                        <height>121</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

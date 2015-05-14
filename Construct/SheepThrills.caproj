@@ -589,9 +589,9 @@
         <event-sheet>Level 2 Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="96" />
-        <global-instance type="AJAX" uid="97" />
-        <global-instance type="Touch" uid="98">
+        <global-instance type="Mouse" uid="97" />
+        <global-instance type="AJAX" uid="98" />
+        <global-instance type="Touch" uid="99">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
