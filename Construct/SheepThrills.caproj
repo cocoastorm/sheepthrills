@@ -473,7 +473,7 @@
         <event-sheet>Menu Event Sheet.xml</event-sheet>
         <event-sheet>In Game Event Sheet.xml</event-sheet>
         <event-sheet>Scores.xml</event-sheet>
-        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Help Event Sheet.xml</event-sheet>
         <event-sheet>Guessing Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>

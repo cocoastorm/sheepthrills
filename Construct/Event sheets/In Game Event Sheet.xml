@@ -6,7 +6,7 @@
         <variable constant="0" name="Score" sid="2867248599448852" static="0" type="number">0</variable>
         <variable constant="0" name="TimerStart" sid="35682347130618" static="0" type="number">0</variable>
         <variable constant="0" name="Timer" sid="4702398482384383" static="0" type="number">0</variable>
-        <variable comment="Counts the numbers" constant="0" name="CounterVariable" sid="5533309389115752" static="0" type="number">0</variable>
+        <variable comment="Counts the numbers" constant="0" name="Bounces" sid="5533309389115752" static="0" type="number">0</variable>
         <event-group description="" sid="1975602129152127" title="Level 2">
             <sub-events>
                 <event-block sid="9692680843726961">
@@ -15,7 +15,7 @@
                     </conditions>
                     <actions>
                         <action id="0" name="Set text" sid="9666171859639922" type="Counter">
-                            <param id="0" name="Text">CounterVariable</param>
+                            <param id="0" name="Text">Bounces</param>
                         </action>
                         <action id="0" name="Set text" sid="4565449900659402" type="Timer">
                             <param id="0" name="Text">Timer</param>
@@ -87,7 +87,7 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="3049069036310289" type="System">
-                            <param id="0" name="Variable">CounterVariable</param>
+                            <param id="0" name="Variable">Bounces</param>
                             <param id="1" name="Value">Sprite2.Bounces + blueSheep.Bounces</param>
                         </action>
                     </actions>
@@ -104,7 +104,7 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="5554135639927692" type="System">
-                            <param id="0" name="Variable">CounterVariable</param>
+                            <param id="0" name="Variable">Bounces</param>
                             <param id="1" name="Value">Sprite2.Bounces + blueSheep.Bounces</param>
                         </action>
                     </actions>
