@@ -476,7 +476,7 @@
         </object-type>
         <object-type name="Audio" sid="8669883718955191">
             <plugin id="Audio" />
-		</object-type>
+        </object-type>
         <object-type name="Level" sid="6292857280710113">
             <plugin id="Text" />
             <effects>
@@ -603,7 +603,7 @@
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="24">
+        <global-instance type="Audio" uid="102">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>

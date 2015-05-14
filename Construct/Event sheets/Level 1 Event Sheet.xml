@@ -5,7 +5,6 @@
     <events>
         <variable constant="0" name="Bounces" sid="8596109259720013" static="0" type="number">0</variable>
         <variable constant="0" name="Level" sid="3088159783359553" static="0" type="number">1</variable>
-        <variable constant="0" name="Score" sid="5725245981192252" static="0" type="number">0</variable>
         <variable constant="0" name="TimerStart" sid="403536239860981" static="0" type="number">0</variable>
         <variable constant="0" name="Timer" sid="9640166676224397" static="0" type="number">0</variable>
         <event-group description="" sid="1314970958589912" title="Level 1">

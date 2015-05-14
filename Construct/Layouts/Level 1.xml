@@ -317,7 +317,7 @@
                 </instance>
                 <instance type="Instruction" uid="90">
                     <properties>
-                        <text>Count the total number of bounces for the white sheep!</text>
+                        <text>White Sheep!</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>AR JULIAN,-30,400,0</font>
                         <color>0,0,0</color>
@@ -330,8 +330,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>112</x>
-                        <y>188</y>
+                        <x>141</x>
+                        <y>209</y>
                         <z>0</z>
                         <width>296</width>
                         <height>121</height>
