@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Layout 1</name>
+    <name>Game Over</name>
     <sid>7226431121617906</sid>
-    <event-sheet>Event sheet 4</event-sheet>
+    <event-sheet>Game Over Event Sheet</event-sheet>
     <size>
         <width>480</width>
         <height>640</height>

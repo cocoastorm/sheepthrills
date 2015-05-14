@@ -2,7 +2,7 @@
 <c2layout>
     <name>Menu Screen</name>
     <sid>8873350371196689</sid>
-    <event-sheet>Event sheet 1</event-sheet>
+    <event-sheet>Menu Event Sheet</event-sheet>
     <size>
         <width>480</width>
         <height>640</height>
@@ -70,7 +70,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite3" uid="1">
+                <instance type="Fence" uid="1">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -114,7 +114,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite7" uid="9">
+                <instance type="PlayButton" uid="9">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -136,7 +136,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite8" uid="10">
+                <instance type="HowToButton" uid="10">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

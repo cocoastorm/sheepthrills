@@ -103,7 +103,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite3" sid="4073674177365755">
+        <object-type name="Fence" sid="4073674177365755">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8084038148371193" speed="5">
@@ -143,7 +143,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite7" sid="4963627964611596">
+        <object-type name="PlayButton" sid="4963627964611596">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7991018567382504" speed="5">
@@ -174,7 +174,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite8" sid="1155849753590599">
+        <object-type name="HowToButton" sid="1155849753590599">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2293549278596661" speed="5">
@@ -230,7 +230,7 @@
         <object-type name="Counter" sid="5806829045237172">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite4" sid="202398167613152">
+        <object-type name="Cloud" sid="202398167613152">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3580749323199944" speed="5">
@@ -249,7 +249,7 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite5" sid="7445705045145697">
+        <object-type name="blueSheep" sid="7445705045145697">
             <plugin id="Sprite" />
             <instance-variables>
                 <instance-variable name="Bounces" sid="3968302844178991" type="number" />
@@ -380,7 +380,7 @@
         <object-type name="ShowUp" sid="6423270130565597">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Sprite11" sid="2746685882671286">
+        <object-type name="WhiteBackground" sid="2746685882671286">
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3898160955137252" speed="5">
@@ -415,32 +415,61 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Sprite6" sid="4572982146311043">
+        <object-type name="Touch" sid="5933666686331145">
+            <plugin id="Touch" />
+        </object-type>
+        <object-type name="HomeButton" sid="2732876267406503">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9608960252796925" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Users\Amanda\Documents\Google Drive\BCIT CST\Term2\Comp2910\bg.png" />
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3856355291779822" speed="5">
+                    <frame duration="1" hotspotX="0.502283" hotspotY="0.502415" original-source="C:\Users\Amanda\Desktop\home.png">
+                        <collision-poly>
+                            <point x="0.150685" y="0.15942" />
+                            <point x="0.497717" y="0.00483092" />
+                            <point x="0.762557" y="0.251208" />
+                            <point x="0.968037" y="0.497585" />
+                            <point x="0.849315" y="0.84058" />
+                            <point x="0.497717" y="0.768116" />
+                            <point x="0.150685" y="0.84058" />
+                            <point x="0.0319635" y="0.497585" />
+                        </collision-poly>
+                    </frame>
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="Touch" sid="5933666686331145">
-            <plugin id="Touch" />
+        <object-type name="ReplayButton" sid="9616328280993852">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8717094922923778" speed="5">
+                    <frame duration="1" hotspotX="0.52439" hotspotY="0.497409" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ScoreDisplay" sid="7588068060767669">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TryAgain" sid="8665988575239261">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Text" sid="229830915711431">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="BestScore" sid="7436408127551197">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Menu Screen.xml</layout>
         <layout>In Game Screen.xml</layout>
-        <layout>Layout 1.xml</layout>
         <layout>Help.xml</layout>
         <layout>Score Leaderboard.xml</layout>
         <layout>Guessing Page.xml</layout>
     </layout-folder>
     <event-folder>
-        <event-sheet>Event sheet 1.xml</event-sheet>
-        <event-sheet>Event sheet 2.xml</event-sheet>
+        <event-sheet>Menu Event Sheet.xml</event-sheet>
+        <event-sheet>In Game Event Sheet.xml</event-sheet>
         <event-sheet>Scores.xml</event-sheet>
-        <event-sheet>Event sheet 4.xml</event-sheet>
         <event-sheet>Event sheet 3.xml</event-sheet>
         <event-sheet>Guessing Event Sheet.xml</event-sheet>
     </event-folder>

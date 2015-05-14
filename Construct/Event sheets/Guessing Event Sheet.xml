@@ -3,24 +3,14 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Guessing Event Sheet</name>
     <events>
-        <variable constant="0" name="equalButton" sid="1370242267638458" static="0" type="number">0</variable>
         <variable constant="0" name="lastInput" sid="2000824157220592" static="0" type="text">&quot;number&quot;</variable>
-        <variable constant="0" name="operated" sid="9757132517010245" static="0" type="number">0</variable>
         <variable constant="0" name="textbox" sid="1462621938494794" static="0" type="text"></variable>
-        <variable constant="0" name="reult" sid="1539262298656274" static="0" type="number">0</variable>
-        <variable constant="0" name="1st" sid="674728515768955" static="0" type="number">0</variable>
-        <variable constant="0" name="2nd" sid="2757249064515804" static="0" type="number">0</variable>
         <event-group description="" sid="4191802834149442" title="Number Input">
             <sub-events>
                 <event-block disabled="1" sid="7844984639124783">
                     <conditions>
                         <condition id="3" name="On touched object" sid="3074466459015374" type="Touch">
                             <param id="0" name="Object">Numbers</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="3629305259677583" type="System">
-                            <param id="0" name="Variable">equalButton</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
                         </condition>
                         <condition id="-7" name="Compare instance variable" sid="3359637105453678" type="Numbers">
                             <param id="0" name="Instance variable">value</param>
@@ -43,10 +33,6 @@
                         <action id="-16" name="Wait" sid="7954742131988012" type="System">
                             <param id="0" name="Seconds">0.01</param>
                         </action>
-                        <action id="-9" name="Set value" sid="6627750243092125" type="System">
-                            <param id="0" name="Variable">equalButton</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="4739086755874398">
@@ -54,15 +40,13 @@
                         <condition id="3" name="On touched object" sid="7841446116749642" type="Touch">
                             <param id="0" name="Object">Numbers</param>
                         </condition>
-                        <condition id="-14" name="Compare variable" sid="9039966539862833" type="System">
-                            <param id="0" name="Variable">equalButton</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
-                        </condition>
                         <condition id="-7" name="Compare instance variable" sid="9451908699873618" type="Numbers">
                             <param id="0" name="Instance variable">value</param>
                             <param id="1" name="Comparison">1</param>
                             <param id="2" name="Value">-1</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="5196261329510929" type="System">
+                            <param id="0" name="Layer">1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -83,11 +67,6 @@
                     <conditions>
                         <condition id="3" name="On touched object" sid="413725986141233" type="Touch">
                             <param id="0" name="Object">Numbers</param>
-                        </condition>
-                        <condition id="-14" name="Compare variable" sid="4849476220586696" type="System">
-                            <param id="0" name="Variable">equalButton</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">0</param>
                         </condition>
                         <condition id="-7" name="Compare instance variable" sid="4382191252796221" type="Numbers">
                             <param id="0" name="Instance variable">value</param>
@@ -118,6 +97,9 @@
                         <condition id="3" name="On touched object" sid="4897156270277966" type="Touch">
                             <param id="0" name="Object">Backspace</param>
                         </condition>
+                        <condition id="-9" name="Layer is visible" sid="6768691509799445" type="System">
+                            <param id="0" name="Layer">1</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="2236251734195039" type="System">
@@ -129,10 +111,6 @@
                         </action>
                         <action id="-16" name="Wait" sid="8373142018595976" type="System">
                             <param id="0" name="Seconds">0.01</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="6892669903326053" type="System">
-                            <param id="0" name="Variable">equalButton</param>
-                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
@@ -148,7 +126,10 @@
                         <condition id="-14" name="Compare variable" sid="9576003097025659" type="System">
                             <param id="0" name="Variable">textbox</param>
                             <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">CounterVariable</param>
+                            <param id="2" name="Value">float(CounterVariable)</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="7551672890230765" type="System">
+                            <param id="0" name="Layer">1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -169,7 +150,10 @@
                         <condition id="-14" name="Compare variable" sid="926635763145175" type="System">
                             <param id="0" name="Variable">textbox</param>
                             <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Value">CounterVariable</param>
+                            <param id="2" name="Value">float(CounterVariable)</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="3733889557162706" type="System">
+                            <param id="0" name="Layer">1</param>
                         </condition>
                     </conditions>
                     <actions>
@@ -179,6 +163,40 @@
                         </action>
                         <action id="0" name="Set text" sid="8994764186589992" type="ShowUp">
                             <param id="0" name="Text">textbox</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="2816394783337417" title="Game Over">
+            <sub-events>
+                <event-block sid="6043768166071042">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="8313756282992819" type="Touch">
+                            <param id="0" name="Object">HomeButton</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="428187571541735" type="System">
+                            <param id="0" name="Layer">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="3306550146622209" type="System">
+                            <param id="0" name="Layout">Menu Screen</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="405350192792614">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="8764832974796142" type="Touch">
+                            <param id="0" name="Object">ReplayButton</param>
+                        </condition>
+                        <condition id="-9" name="Layer is visible" sid="1540954679975595" type="System">
+                            <param id="0" name="Layer">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="6970896104538996" type="System">
+                            <param id="0" name="Layout">In Game Screen</param>
                         </action>
                     </actions>
                 </event-block>

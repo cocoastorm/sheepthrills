@@ -10,8 +10,10 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <display name="HTML5" />
     </configurations>
     <open-tabs>
-        <layout active="1" order="2">Score Leaderboard</layout>
-        <event-sheet order="1">Guessing Event Sheet</event-sheet>
+        <layout order="1">In Game Screen</layout>
+        <layout order="3">Guessing Page</layout>
+        <event-sheet order="2">In Game Event Sheet</event-sheet>
+        <event-sheet active="1" order="4">Guessing Event Sheet</event-sheet>
     </open-tabs>
     <properties>
         <property expanded="1" name="About" />
@@ -30,19 +32,20 @@ you probably do not want to add any .uistate.xml files to the repository.-->
         <folder expanded="0" path="file-folder/Icons/" />
         <folder expanded="1" path="animation-folder/Sprite2/" />
         <folder expanded="1" path="animation-folder/Sprite/" />
-        <folder expanded="1" path="animation-folder/Sprite3/" />
+        <folder expanded="1" path="animation-folder/Fence/" />
         <folder expanded="1" path="animation-folder/SideBars/" />
         <folder expanded="1" path="animation-folder/Background/" />
-        <folder expanded="1" path="animation-folder/Sprite7/" />
-        <folder expanded="1" path="animation-folder/Sprite8/" />
+        <folder expanded="1" path="animation-folder/PlayButton/" />
+        <folder expanded="1" path="animation-folder/HowToButton/" />
         <folder expanded="1" path="animation-folder/Sprite9/" />
-        <folder expanded="1" path="animation-folder/Sprite4/" />
-        <folder expanded="1" path="animation-folder/Sprite5/" />
+        <folder expanded="1" path="animation-folder/Cloud/" />
+        <folder expanded="1" path="animation-folder/blueSheep/" />
         <folder expanded="1" path="animation-folder/Numbers/" />
-        <folder expanded="1" path="animation-folder/Sprite11/" />
+        <folder expanded="1" path="animation-folder/WhiteBackground/" />
         <folder expanded="1" path="animation-folder/Backspace/" />
         <folder expanded="1" path="animation-folder/Ok/" />
         <folder expanded="1" path="animation-folder/Sprite12/" />
-        <folder expanded="1" path="animation-folder/Sprite6/" />
+        <folder expanded="1" path="animation-folder/HomeButton/" />
+        <folder expanded="1" path="animation-folder/ReplayButton/" />
     </folders-expanded>
 </c2uistate>
