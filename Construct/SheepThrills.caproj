@@ -465,6 +465,7 @@
     <layout-folder>
         <layout>Menu Screen.xml</layout>
         <layout>In Game Screen.xml</layout>
+        <layout>Level 1.xml</layout>
         <layout>Help.xml</layout>
         <layout>Score Leaderboard.xml</layout>
         <layout>Guessing Page.xml</layout>
@@ -473,8 +474,9 @@
         <event-sheet>Menu Event Sheet.xml</event-sheet>
         <event-sheet>In Game Event Sheet.xml</event-sheet>
         <event-sheet>Scores.xml</event-sheet>
-        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Help Event Sheet.xml</event-sheet>
         <event-sheet>Guessing Event Sheet.xml</event-sheet>
+        <event-sheet>Level 1 Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="11" />

@@ -2,7 +2,7 @@
 <c2layout>
     <name>Score Leaderboard</name>
     <sid>8034590366630996</sid>
-    <event-sheet></event-sheet>
+    <event-sheet>Scores</event-sheet>
     <size>
         <width>480</width>
         <height>640</height>
