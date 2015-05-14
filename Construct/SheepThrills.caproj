@@ -17,6 +17,7 @@
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
+        <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -365,6 +366,66 @@
         <object-type name="PlayerScore" sid="7424942012302559">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Numbers" sid="7516722050809693">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="value" sid="9596105434736394" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9747810065861906" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505747" original-source="C:\Users\Judy W\Desktop\grey.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="ShowUp" sid="6423270130565597">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite11" sid="2746685882671286">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3898160955137252" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Backspace" sid="9143820651291421">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4996257765699667" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505747" original-source="C:\Users\Judy W\Desktop\grey.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Ok" sid="9225111216095418">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8529910890562983" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505747" original-source="C:\Users\Judy W\Desktop\grey.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="number" sid="9149719879437736">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite12" sid="7527120045246182">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1049958079827832" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Sprite6" sid="4572982146311043">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9608960252796925" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Users\Amanda\Documents\Google Drive\BCIT CST\Term2\Comp2910\bg.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Touch" sid="5933666686331145">
+            <plugin id="Touch" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -373,16 +434,24 @@
         <layout>Layout 1.xml</layout>
         <layout>Help.xml</layout>
         <layout>Score Leaderboard.xml</layout>
+        <layout>Guessing Page.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Event sheet 1.xml</event-sheet>
         <event-sheet>Event sheet 2.xml</event-sheet>
         <event-sheet>Scores.xml</event-sheet>
         <event-sheet>Event sheet 4.xml</event-sheet>
+        <event-sheet>Event sheet 3.xml</event-sheet>
+        <event-sheet>Guessing Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="11" />
         <global-instance type="AJAX" uid="28" />
+        <global-instance type="Touch" uid="82">
+            <properties>
+                <use-mouse-input>Yes</use-mouse-input>
+            </properties>
+        </global-instance>
     </global-instances>
     <sounds-folder />
     <music-folder />

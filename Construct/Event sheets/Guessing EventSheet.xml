@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Guessing EventSheet</name>
+    <events>
+        <variable constant="0" name="equalButton" sid="3908797602137859" static="0" type="number">0</variable>
+        <variable constant="0" name="lastInput" sid="8504954084868134" static="0" type="text">&quot;number&quot;</variable>
+        <variable constant="0" name="operated" sid="6346515288500556" static="0" type="number">0</variable>
+        <variable constant="0" name="textbox" sid="1015023412855302" static="0" type="text"></variable>
+        <variable constant="0" name="reult" sid="9827744389597259" static="0" type="number">0</variable>
+        <variable constant="0" name="1st" sid="9401640252675432" static="0" type="number">0</variable>
+        <variable constant="0" name="2nd" sid="7602108924047428" static="0" type="number">0</variable>
+        <event-group description="" sid="2311730903709053" title="Number Input">
+            <sub-events>
+                <event-block disabled="1" sid="7844984639124783">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="3074466459015374" type="Touch">
+                            <param id="0" name="Object">Numbers</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="3629305259677583" type="System">
+                            <param id="0" name="Variable">equalButton</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="3359637105453678" type="Numbers">
+                            <param id="0" name="Instance variable">value</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8504861546289463" type="System">
+                            <param id="0" name="Variable">textbox</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7038625950014955" type="System">
+                            <param id="0" name="Variable">textbox</param>
+                            <param id="1" name="Value">float(textbox&amp;str(Numbers.value))</param>
+                        </action>
+                        <action id="0" name="Set text" sid="5715374560417989" type="ShowUp">
+                            <param id="0" name="Text">textbox</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7954742131988012" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6627750243092125" type="System">
+                            <param id="0" name="Variable">equalButton</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4739086755874398">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="7841446116749642" type="Touch">
+                            <param id="0" name="Object">Numbers</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="9039966539862833" type="System">
+                            <param id="0" name="Variable">equalButton</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="9451908699873618" type="Numbers">
+                            <param id="0" name="Instance variable">value</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7996252640021526" type="System">
+                            <param id="0" name="Variable">textbox</param>
+                            <param id="1" name="Value">float(textbox&amp;str(Numbers.value))</param>
+                        </action>
+                        <action id="0" name="Set text" sid="7508360748818198" type="ShowUp">
+                            <param id="0" name="Text">textbox</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5712201007282345" type="System">
+                            <param id="0" name="Variable">lastInput</param>
+                            <param id="1" name="Value">&quot;number&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block disabled="1" sid="8052580630836804">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="413725986141233" type="Touch">
+                            <param id="0" name="Object">Numbers</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="4849476220586696" type="System">
+                            <param id="0" name="Variable">equalButton</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="4382191252796221" type="Numbers">
+                            <param id="0" name="Instance variable">value</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="2991506212252602" type="System">
+                            <param id="0" name="Variable">textbox</param>
+                            <param id="1" name="Value">float(textbox&amp;str(Numbers.value))</param>
+                        </action>
+                        <action id="0" name="Set text" sid="2823785640561969" type="ShowUp">
+                            <param id="0" name="Text">textbox</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4940822009051974" type="System">
+                            <param id="0" name="Variable">lastInput</param>
+                            <param id="1" name="Value">&quot;number&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="5322031253564918" title="Backspace">
+            <sub-events>
+                <event-block sid="9662535159719872">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="4897156270277966" type="Touch">
+                            <param id="0" name="Object">Backspace</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="2236251734195039" type="System">
+                            <param id="0" name="Variable">textbox</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="3072178786049652" type="ShowUp">
+                            <param id="0" name="Text">textbox</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="8373142018595976" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6892669903326053" type="System">
+                            <param id="0" name="Variable">equalButton</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="8618347919093821" title="Equal Button">
+            <sub-events>
+                <event-block sid="8243540694889084">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="9964352913499283" type="Touch">
+                            <param id="0" name="Object">Ok</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="9576003097025659" type="System">
+                            <param id="0" name="Variable">textbox</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">CounterVariable</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="2801909145644288" type="System">
+                            <param id="0" name="Variable">textbox</param>
+                            <param id="1" name="Value">&quot;correct&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="7768681047556893" type="ShowUp">
+                            <param id="0" name="Text">textbox</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4756642949144694">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="5108537310208295" type="Touch">
+                            <param id="0" name="Object">Ok</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="926635763145175" type="System">
+                            <param id="0" name="Variable">textbox</param>
+                            <param id="1" name="Comparison">1</param>
+                            <param id="2" name="Value">CounterVariable</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="9939702309763299" type="System">
+                            <param id="0" name="Variable">textbox</param>
+                            <param id="1" name="Value">&quot;Incorrect&quot;</param>
+                        </action>
+                        <action id="0" name="Set text" sid="8994764186589992" type="ShowUp">
+                            <param id="0" name="Text">textbox</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
