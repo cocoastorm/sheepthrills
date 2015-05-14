@@ -511,40 +511,6 @@
                 </animation>
             </animation-folder>
         </object-type>
-        <object-type name="arrow_left_button_0011_Layer5copy" sid="6870424117262647">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8205654990930215" speed="5">
-                    <frame duration="1" hotspotX="0.502008" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\arrow_left_button_0011_Layer-5-copy.png">
-                        <collision-poly>
-                            <point x="0.208835" y="0.273684" />
-                            <point x="0.497992" y="0.00526316" />
-                            <point x="0.803213" y="0.257895" />
-                            <point x="1" y="0.5" />
-                            <point x="0.497992" y="0.978947" />
-                            <point x="0.0160643" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
-        <object-type name="arrow_right_button_0012_Layer" sid="6745926006294185">
-            <plugin id="Sprite" />
-            <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7363252926007779" speed="5">
-                    <frame duration="1" hotspotX="0.502008" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\arrow_right_button_0012_Layer-5.png">
-                        <collision-poly>
-                            <point x="0.497992" y="0.0210526" />
-                            <point x="0.987952" y="0.5" />
-                            <point x="0.791165" y="0.726316" />
-                            <point x="0.497992" y="0.994737" />
-                            <point x="0.196787" y="0.742105" />
-                            <point x="0" y="0.5" />
-                        </collision-poly>
-                    </frame>
-                </animation>
-            </animation-folder>
-        </object-type>
         <object-type name="backward" sid="1380369716822014">
             <plugin id="Sprite" />
             <animation-folder>
