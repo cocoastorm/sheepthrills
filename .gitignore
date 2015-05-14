@@ -40,3 +40,6 @@ Thumbs.db
 #####################
 /nbproject/private/
 *.uistate.xml
+*.capx
+*.capx.autosave
+*.capx.backup1
