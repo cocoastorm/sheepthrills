@@ -851,6 +851,28 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
+                <instance type="Cloud" uid="25">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>240</x>
+                        <y>275</y>
+                        <z>0</z>
+                        <width>461</width>
+                        <height>400</height>
+                        <depth>0</depth>
+                        <hotspotX>0.501084626</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="HomeButton" uid="17">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -886,38 +908,11 @@
                         <x>310</x>
                         <y>255</y>
                         <z>0</z>
-                        <width>95</width>
-                        <height>90</height>
+                        <width>81.676826477</width>
+                        <height>80.673576355</height>
                         <depth>0</depth>
-                        <hotspotX>0.524390221</hotspotX>
-                        <hotspotY>0.497409314</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="TryAgain" uid="20">
-                    <properties>
-                        <text>Try Again! </text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Arial Rounded MT Bold,-48,400,0</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Left</horizontal-alignment>
-                        <vertical-alignment>Top</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>111</x>
-                        <y>143</y>
-                        <z>0</z>
-                        <width>253</width>
-                        <height>61</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
+                        <hotspotX>0.524822712</hotspotX>
+                        <hotspotY>0.49710983</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -951,7 +946,7 @@
                 </instance>
                 <instance type="BestScore" uid="22">
                     <properties>
-                        <text>Best:</text>
+                        <text>Best: 0</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Arial Rounded MT Bold,-27,400,0</font>
                         <color>0,0,0</color>
@@ -965,10 +960,37 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>130</x>
-                        <y>380</y>
+                        <y>367</y>
                         <z>0</z>
                         <width>150</width>
                         <height>60</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="TryAgain" uid="20">
+                    <properties>
+                        <text>Try Again! </text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Arial Rounded MT Bold,-48,400,0</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Left</horizontal-alignment>
+                        <vertical-alignment>Top</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>111.183074951</x>
+                        <y>136.428192139</y>
+                        <z>0</z>
+                        <width>271</width>
+                        <height>71</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
