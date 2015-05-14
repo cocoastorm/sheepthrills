@@ -96,7 +96,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
@@ -121,7 +121,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
@@ -146,7 +146,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
@@ -171,7 +171,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
@@ -196,7 +196,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
@@ -221,7 +221,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
@@ -246,7 +246,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
@@ -271,7 +271,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
@@ -296,7 +296,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
@@ -321,7 +321,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
@@ -343,7 +343,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
@@ -365,7 +365,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <instance-variables>
@@ -390,7 +390,7 @@
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
+                        <initial-frame>1</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
                     <blend-mode>0</blend-mode>
@@ -895,7 +895,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ReplayButton" uid="93">
+                <instance type="ReplayButton" uid="92">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -917,7 +917,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ScoreDisplay" uid="94">
+                <instance type="ScoreDisplay" uid="93">
                     <properties>
                         <text>Score : 0</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -944,7 +944,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BestScore" uid="95">
+                <instance type="BestScore" uid="94">
                     <properties>
                         <text>Best: 0</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -971,7 +971,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TryAgain" uid="96">
+                <instance type="TryAgain" uid="95">
                     <properties>
                         <text>Try Again! </text>
                         <initial-visibility>Visible</initial-visibility>
