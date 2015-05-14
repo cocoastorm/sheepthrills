@@ -188,7 +188,7 @@
                             <param id="1" name="Value">Ceil((result / Bounces ) * 100)</param>
                         </action>
                         <action id="0" name="Set text" sid="7768681047556893" type="ShowUp">
-                            <param id="0" name="Text">textbox</param>
+                            <param id="0" name="Text">&quot;textbox&amp;%&quot;</param>
                         </action>
                         <action id="-9" name="Set value" sid="6461782705063893" type="System">
                             <param id="0" name="Variable">accuracy</param>
@@ -227,6 +227,11 @@
                                     <param id="0" name="Variable">accuracy</param>
                                     <param id="1" name="Comparison">5</param>
                                     <param id="2" name="Value">80</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="6475996080295586" type="System">
+                                    <param id="0" name="Variable">accuracy</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">100</param>
                                 </condition>
                             </conditions>
                             <actions>
