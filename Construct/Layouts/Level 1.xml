@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>In Game Screen</name>
-    <sid>6995192109546218</sid>
-    <event-sheet>In Game Event Sheet</event-sheet>
+    <name>Level 1</name>
+    <sid>1001757284509626</sid>
+    <event-sheet>Level 1 Event Sheet</event-sheet>
     <size>
         <width>480</width>
         <height>640</height>
@@ -13,7 +13,7 @@
     </margins>
     <unbounded-scrolling>0</unbounded-scrolling>
     <layers>
-        <layer name="Layer 0" sid="557636938664306">
+        <layer name="Layer 0" sid="4710693806300626">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>0</transparent>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Background" uid="12">
+                <instance type="Background" uid="24">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -54,7 +54,7 @@
             </instances>
             <effects />
         </layer>
-        <layer name="Layer 1" sid="9821314466488303">
+        <layer name="Layer 1" sid="7117067137306555">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -70,7 +70,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite2" uid="3">
+                <instance type="Sprite2" uid="25">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -83,7 +83,7 @@
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>400</speed>
+                                <speed>600</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>Yes</bounce-off-solids>
@@ -131,7 +131,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SideBars" uid="6">
+                <instance type="SideBars" uid="83">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -160,7 +160,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SideBars" uid="4">
+                <instance type="SideBars" uid="84">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -189,7 +189,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SideBars" uid="5">
+                <instance type="SideBars" uid="85">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -218,7 +218,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SideBars" uid="7">
+                <instance type="SideBars" uid="86">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -247,71 +247,10 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="blueSheep" uid="16">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <instance-variables>
-                        <Bounces>0</Bounces>
-                    </instance-variables>
-                    <behavior-instances>
-                        <behavior-instance type="Bullet">
-                            <properties>
-                                <speed>400</speed>
-                                <acceleration>0</acceleration>
-                                <gravity>0</gravity>
-                                <bounce-off-solids>Yes</bounce-off-solids>
-                                <set-angle>Yes</set-angle>
-                                <initial-state>Disabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="BoundToLayout">
-                            <properties>
-                                <bound-by>Origin</bound-by>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Solid">
-                            <properties>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                        <behavior-instance type="Physics">
-                            <properties>
-                                <immovable>Yes</immovable>
-                                <collision-mask>Circle</collision-mask>
-                                <prevent-rotation>Yes</prevent-rotation>
-                                <density>1</density>
-                                <friction>0</friction>
-                                <elasticity>0</elasticity>
-                                <linear-damping>0</linear-damping>
-                                <angular-damping>0</angular-damping>
-                                <bullet>Yes</bullet>
-                                <initial-state>Enabled</initial-state>
-                            </properties>
-                        </behavior-instance>
-                    </behavior-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>291</x>
-                        <y>301</y>
-                        <z>0</z>
-                        <width>90</width>
-                        <height>77</height>
-                        <depth>0</depth>
-                        <hotspotX>0.549839199</hotspotX>
-                        <hotspotY>0.461832047</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
             </instances>
             <effects />
         </layer>
-        <layer name="Layer 2" sid="5607874833779123">
+        <layer name="Layer 2" sid="8377603232280162">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
@@ -327,7 +266,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Counter" uid="14">
+                <instance type="Counter" uid="88">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
@@ -354,7 +293,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Cloud" uid="15">
+                <instance type="Cloud" uid="89">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -367,8 +306,8 @@
                         <x>241</x>
                         <y>264</y>
                         <z>0</z>
-                        <width>342.835540771</width>
-                        <height>297.471191406</height>
+                        <width>463.31137085</width>
+                        <height>300.445892334</height>
                         <depth>0</depth>
                         <hotspotX>0.501084626</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -376,11 +315,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Instruction" uid="26">
+                <instance type="Instruction" uid="90">
                     <properties>
                         <text>Count the total number of bounces for the white sheep!</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>AR JULIAN,-30,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -391,11 +330,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>139</x>
-                        <y>238</y>
+                        <x>112</x>
+                        <y>188</y>
                         <z>0</z>
-                        <width>217</width>
-                        <height>72</height>
+                        <width>296</width>
+                        <height>121</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
@@ -403,7 +342,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Timer" uid="27">
+                <instance type="Timer" uid="91">
                     <properties>
                         <text>Timer</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -430,10 +369,40 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Level" uid="92">
+                    <properties>
+                        <text>Level 1</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Vivaldi,-27,700,1</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <effect-instances>
+                        <effect-instance type="Luminosity" />
+                    </effect-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>82</x>
+                        <y>248</y>
+                        <z>0</z>
+                        <width>299</width>
+                        <height>151</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
-        <layer name="Game Over" sid="6831245093052863">
+        <layer name="Game Over" sid="5939307883323373">
             <initially-visible>1</initially-visible>
             <background-color>255,255,255</background-color>
             <transparent>1</transparent>
