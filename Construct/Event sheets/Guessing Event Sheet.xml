@@ -7,6 +7,19 @@
         <variable constant="0" name="result" sid="2467471920029668" static="0" type="number">0</variable>
         <variable constant="0" name="lastInput" sid="2000824157220592" static="0" type="text">&quot;number&quot;</variable>
         <variable constant="0" name="textbox" sid="1462621938494794" static="0" type="text"></variable>
+        <event-block sid="833476668427215">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="7028455583480479" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Set text" sid="3732231983123411" type="Counter">
+                    <param id="0" name="Text">CounterVariable</param>
+                </action>
+                <action id="0" name="Set text" sid="3922534156391751" type="Temp">
+                    <param id="0" name="Text">Result</param>
+                </action>
+            </actions>
+        </event-block>
         <event-group description="" sid="4191802834149442" title="Number Input">
             <sub-events>
                 <event-block disabled="1" sid="7844984639124783">
@@ -118,15 +131,17 @@
                 </event-block>
             </sub-events>
         </event-group>
-        <event-group description="" sid="8013346904771454" title="Equal Button">
+        <event-group description="" sid="8013346904771454" title="OK Button">
             <sub-events>
-                <event-block sid="831522723618944">
+                <event-block sid="2106572297753625">
                     <conditions>
-                        <condition id="-1" name="Every tick" sid="344038583582652" type="System" />
+                        <condition id="3" name="On touched object" sid="9603699138733451" type="Touch">
+                            <param id="0" name="Object">Ok</param>
+                        </condition>
                     </conditions>
                     <actions>
-                        <action id="-9" name="Set value" sid="509595752234823" type="System">
-                            <param id="0" name="Variable">result</param>
+                        <action id="-9" name="Set value" sid="6162530821653043" type="System">
+                            <param id="0" name="Variable">Result</param>
                             <param id="1" name="Value">float(textbox)</param>
                         </action>
                     </actions>

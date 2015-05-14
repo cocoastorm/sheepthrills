@@ -92,7 +92,7 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="5001042525556677">
+                <event-block disabled="1" sid="5001042525556677">
                     <conditions>
                         <condition id="0" name="On collision with another object" sid="4879021218656989" type="blueSheep">
                             <param id="0" name="Object">SideBars</param>
