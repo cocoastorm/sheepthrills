@@ -1,13 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>In Game Event Sheet</name>
+    <name>Level 2 Event Sheet</name>
     <events>
-        <variable constant="0" name="Score" sid="2867248599448852" static="0" type="number">0</variable>
-        <variable constant="0" name="TimerStart" sid="35682347130618" static="0" type="number">0</variable>
-        <variable constant="0" name="Timer" sid="4702398482384383" static="0" type="number">0</variable>
-        <variable comment="Counts the numbers" constant="0" name="Bounces" sid="5533309389115752" static="0" type="number">0</variable>
-        <event-group description="" sid="1975602129152127" title="Level 2">
+        <event-group description="" sid="4792612955899405" title="Level 2">
             <sub-events>
                 <event-block sid="9692680843726961">
                     <conditions>
@@ -31,6 +27,7 @@
                             <param id="0" name="Seconds">3</param>
                         </action>
                         <action id="-9" name="Destroy" sid="9127477866316205" type="Cloud" />
+                        <action id="-9" name="Destroy" sid="8141721097743529" type="Level" />
                     </actions>
                 </event-block>
                 <event-block sid="5929936325700093">
@@ -54,56 +51,56 @@
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="1251709019423169">
+                <event-block sid="4062187894112005">
                     <conditions>
-                        <condition id="-19" name="On destroyed" sid="6202651193203792" type="Cloud" />
+                        <condition id="-19" name="On destroyed" sid="3185125601235423" type="Cloud" />
                     </conditions>
                     <actions>
-                        <action behavior="Bullet" id="5" name="Set enabled" sid="2330719261210782" type="blueSheep">
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="413580711082565" type="blueSheep">
                             <param id="0" name="State">1</param>
                         </action>
-                        <action id="-8" name="Set angle" sid="1359123246998085" type="blueSheep">
+                        <action id="-8" name="Set angle" sid="2500586617070051" type="blueSheep">
                             <param id="0" name="Angle">random(0, 361)</param>
                         </action>
-                        <action behavior="Physics" id="21" name="Set immovable" sid="4323808558977662" type="blueSheep">
+                        <action behavior="Physics" id="21" name="Set immovable" sid="3405485650520188" type="blueSheep">
                             <param id="0" name="Setting">0</param>
                         </action>
-                        <action id="-9" name="Destroy" sid="6065717286000794" type="Instruction" />
-                        <action id="-9" name="Set value" sid="8304355419466074" type="System">
+                        <action id="-9" name="Destroy" sid="1240502438352333" type="Instruction" />
+                        <action id="-9" name="Set value" sid="9551946348666944" type="System">
                             <param id="0" name="Variable">TimerStart</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block sid="1150733156806998">
+                <event-block sid="5391746582622498">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="7949240165682384" type="Sprite2">
+                        <condition id="0" name="On collision with another object" sid="4934297273736105" type="Sprite2">
                             <param id="0" name="Object">SideBars</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-11" name="Add to" sid="4618887641932457" type="Sprite2">
+                        <action id="-11" name="Add to" sid="7426902611449751" type="Sprite2">
                             <param id="0" name="Instance variable">Bounces</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-9" name="Set value" sid="3049069036310289" type="System">
+                        <action id="-9" name="Set value" sid="9559797545309266" type="System">
                             <param id="0" name="Variable">Bounces</param>
                             <param id="1" name="Value">Sprite2.Bounces + blueSheep.Bounces</param>
                         </action>
                     </actions>
                 </event-block>
-                <event-block disabled="1" sid="5001042525556677">
+                <event-block sid="4452246569878838">
                     <conditions>
-                        <condition id="0" name="On collision with another object" sid="4879021218656989" type="blueSheep">
+                        <condition id="0" name="On collision with another object" sid="2439324635246157" type="blueSheep">
                             <param id="0" name="Object">SideBars</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-11" name="Add to" sid="9616738070004227" type="blueSheep">
+                        <action id="-11" name="Add to" sid="6589727106858839" type="blueSheep">
                             <param id="0" name="Instance variable">Bounces</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-9" name="Set value" sid="5554135639927692" type="System">
+                        <action id="-9" name="Set value" sid="2870471147568383" type="System">
                             <param id="0" name="Variable">Bounces</param>
                             <param id="1" name="Value">Sprite2.Bounces + blueSheep.Bounces</param>
                         </action>
@@ -161,7 +158,6 @@
                             </conditions>
                             <actions>
                                 <action id="-9" name="Destroy" sid="6238349524727024" type="Sprite2" />
-                                <action id="-9" name="Destroy" sid="5340141727787975" type="blueSheep" />
                                 <action id="-2" name="Go to layout" sid="7097043353998557" type="System">
                                     <param id="0" name="Layout">Guessing Page</param>
                                 </action>
