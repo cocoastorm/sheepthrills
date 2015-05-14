@@ -18,6 +18,10 @@
                 <action id="0" name="Set text" sid="3922534156391751" type="Temp">
                     <param id="0" name="Text">Result</param>
                 </action>
+                <action id="-9" name="Set value" sid="7611939131687873" type="System">
+                    <param id="0" name="Variable">result</param>
+                    <param id="1" name="Value">float(textbox)</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="4175563994328001">
