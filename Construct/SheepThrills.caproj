@@ -467,6 +467,9 @@
         <object-type name="Temp" sid="5742463248424323">
             <plugin id="Text" />
         </object-type>
+        <object-type name="Level" sid="6292857280710113">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -486,9 +489,9 @@
         <event-sheet>Level 1 Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="11" />
-        <global-instance type="AJAX" uid="28" />
-        <global-instance type="Touch" uid="82">
+        <global-instance type="Mouse" uid="28" />
+        <global-instance type="AJAX" uid="82" />
+        <global-instance type="Touch" uid="87">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>

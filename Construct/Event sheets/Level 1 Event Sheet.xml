@@ -31,6 +31,9 @@
                             <param id="0" name="Seconds">3</param>
                         </action>
                         <action id="-9" name="Destroy" sid="9127477866316205" type="Cloud" />
+                        <action id="-15" name="Set visible" sid="4139628817667871" type="Level">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="5929936325700093">

@@ -299,7 +299,7 @@
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="6970896104538996" type="System">
-                            <param id="0" name="Layout">In Game Screen</param>
+                            <param id="0" name="Layout">Level 1</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="9525195253877614" type="System" />
                     </actions>
