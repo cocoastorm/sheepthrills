@@ -269,7 +269,7 @@
                 <instance type="Counter" uid="88">
                     <properties>
                         <text></text>
-                        <initial-visibility>Visible</initial-visibility>
+                        <initial-visibility>Invisible</initial-visibility>
                         <font>Gill Sans Ultra Bold,-16,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>

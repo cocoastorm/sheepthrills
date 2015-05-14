@@ -16,6 +16,9 @@
                         <action id="0" name="Set text" sid="4565449900659402" type="Timer">
                             <param id="0" name="Text">Timer</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="2209672830811122" type="Counter">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="8509586817304485">
