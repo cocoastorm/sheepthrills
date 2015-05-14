@@ -471,11 +471,101 @@
         <object-type name="Temp" sid="5742463248424323">
             <plugin id="Text" />
         </object-type>
+        <object-type name="background_noSun" sid="4929618754306529">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1738239667234744" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\background_noSun.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="home" sid="3647359710757532">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9161591582551828" speed="5">
+                    <frame duration="1" hotspotX="0.502304" hotspotY="0.502439" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\menu_button_0030_Layer-4.png">
+                        <collision-poly>
+                            <point x="0.147465" y="0.156098" />
+                            <point x="0.497696" y="0" />
+                            <point x="0.764977" y="0.24878" />
+                            <point x="0.97235" y="0.497561" />
+                            <point x="0.852535" y="0.843902" />
+                            <point x="0.497696" y="0.770732" />
+                            <point x="0.147465" y="0.843902" />
+                            <point x="0.0276498" y="0.497561" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="forward" sid="2083479296981463">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9712483910289968" speed="5">
+                    <frame duration="1" hotspotX="0.502008" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\arrow_right_button_0012_Layer-5.png">
+                        <collision-poly>
+                            <point x="0.497992" y="0.0210526" />
+                            <point x="0.987952" y="0.5" />
+                            <point x="0.791165" y="0.726316" />
+                            <point x="0.497992" y="0.994737" />
+                            <point x="0.196787" y="0.742105" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="backward" sid="1380369716822014">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2819406630650874" speed="5">
+                    <frame duration="1" hotspotX="0.502008" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\arrow_left_button_0011_Layer-5-copy.png">
+                        <collision-poly>
+                            <point x="0.208835" y="0.273684" />
+                            <point x="0.497992" y="0.00526316" />
+                            <point x="0.803213" y="0.257895" />
+                            <point x="1" y="0.5" />
+                            <point x="0.497992" y="0.978947" />
+                            <point x="0.0160643" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TitleHow" sid="7734531370030561">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="TextBox" sid="826017332643342">
+            <plugin id="TextBox" />
+        </object-type>
+        <object-type name="Text2" sid="3166084006221533">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Sprite3" sid="5904687801029886">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7992612223512519" speed="5">
+                    <frame duration="1" hotspotX="0.500639" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\instruction-how_0038_Shape-8.png">
+                        <collision-poly>
+                            <point x="0.0587484" y="0.0678466" />
+                            <point x="0.499361" y="0.00737463" />
+                            <point x="0.934866" y="0.0752212" />
+                            <point x="0.969349" y="0.5" />
+                            <point x="0.913155" y="0.899705" />
+                            <point x="0.499361" y="0.948378" />
+                            <point x="0.0766283" y="0.911504" />
+                            <point x="0.0498084" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Menu Screen.xml</layout>
         <layout>In Game Screen.xml</layout>
+        <layout>Level 1.xml</layout>
         <layout>Help.xml</layout>
         <layout>Score Leaderboard.xml</layout>
         <layout>Guessing Page.xml</layout>
@@ -486,11 +576,12 @@
         <event-sheet>Scores.xml</event-sheet>
         <event-sheet>Help Event Sheet.xml</event-sheet>
         <event-sheet>Guessing Event Sheet.xml</event-sheet>
+        <event-sheet>Level 1 Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="11" />
-        <global-instance type="AJAX" uid="28" />
-        <global-instance type="Touch" uid="82">
+        <global-instance type="Mouse" uid="96" />
+        <global-instance type="AJAX" uid="97" />
+        <global-instance type="Touch" uid="98">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
