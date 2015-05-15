@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Scores</name>
     <events>
+        <variable constant="0" name="Submitted" sid="1675065110042235" static="0" type="number">0</variable>
         <variable constant="0" name="EachX" sid="8281383816030304" static="0" type="number">0</variable>
         <event-block sid="2407511325911731">
             <conditions>
@@ -24,6 +25,10 @@
                     <param id="1" name="URL">&quot;http://cocoastorm.adessic.com/savescores.php?name=&quot;&amp;PlayerName.Text&amp;&quot;&amp;score=&quot;&amp;Score</param>
                     <param id="2" name="Data">&quot;&quot;</param>
                     <param id="3" name="Method">&quot;POST&quot;</param>
+                </action>
+                <action id="-10" name="Add to" sid="8996336200493016" type="System">
+                    <param id="0" name="Variable">Submitted</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
@@ -163,6 +168,20 @@
                 </action>
                 <action id="0" name="Set text" sid="6207511159318203" type="Score10">
                     <param id="0" name="Text">Array.At(19)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5405968791409915">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7620744140072435" type="System">
+                    <param id="0" name="Variable">Submitted</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-2" name="Go to layout" sid="8935321305151711" type="System">
+                    <param id="0" name="Layout">Menu Screen</param>
                 </action>
             </actions>
         </event-block>

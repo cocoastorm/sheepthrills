@@ -574,6 +574,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Text3" sid="556358421235245">
+            <plugin id="Text" />
+        </object-type>
         <object-type name="Stats" sid="1490022607788542">
             <plugin id="Text" />
         </object-type>
@@ -596,14 +599,14 @@
         <event-sheet>Level 2 Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="97" />
-        <global-instance type="AJAX" uid="98" />
-        <global-instance type="Touch" uid="101">
+        <global-instance type="Mouse" uid="101" />
+        <global-instance type="AJAX" uid="102" />
+        <global-instance type="Touch" uid="103">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="102">
+        <global-instance type="Audio" uid="104">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>

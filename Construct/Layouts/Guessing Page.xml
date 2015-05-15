@@ -778,7 +778,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Counter" uid="22">
+                <instance type="Counter" uid="23">
                     <properties>
                         <text></text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -805,7 +805,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Temp" uid="23">
+                <instance type="Temp" uid="28">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
@@ -832,7 +832,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Stats" uid="99">
+                <instance type="Stats" uid="82">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
@@ -878,7 +878,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Cloud" uid="28">
+                <instance type="Cloud" uid="93">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -900,7 +900,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="HomeButton" uid="82">
+                <instance type="HomeButton" uid="94">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -922,7 +922,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ReplayButton" uid="93">
+                <instance type="ReplayButton" uid="95">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -944,7 +944,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ScoreDisplay" uid="94">
+                <instance type="ScoreDisplay" uid="96">
                     <properties>
                         <text>Score : 0</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -971,7 +971,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BestScore" uid="95">
+                <instance type="BestScore" uid="97">
                     <properties>
                         <text>Best: 0</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -998,7 +998,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TryAgain" uid="96">
+                <instance type="TryAgain" uid="98">
                     <properties>
                         <text>Try Again! </text>
                         <initial-visibility>Visible</initial-visibility>
