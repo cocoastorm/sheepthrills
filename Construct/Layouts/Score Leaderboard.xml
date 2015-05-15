@@ -152,7 +152,7 @@
                 </instance>
                 <instance type="Name1" uid="31">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -179,7 +179,7 @@
                 </instance>
                 <instance type="Name2" uid="36">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -206,7 +206,7 @@
                 </instance>
                 <instance type="Name3" uid="38">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -233,7 +233,7 @@
                 </instance>
                 <instance type="Name4" uid="40">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -260,7 +260,7 @@
                 </instance>
                 <instance type="Name5" uid="41">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -287,7 +287,7 @@
                 </instance>
                 <instance type="Name6" uid="42">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -314,7 +314,7 @@
                 </instance>
                 <instance type="Name7" uid="43">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -341,7 +341,7 @@
                 </instance>
                 <instance type="Name8" uid="44">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -368,7 +368,7 @@
                 </instance>
                 <instance type="Name9" uid="45">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -395,7 +395,7 @@
                 </instance>
                 <instance type="Name10" uid="46">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -422,7 +422,7 @@
                 </instance>
                 <instance type="Score1" uid="47">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -449,7 +449,7 @@
                 </instance>
                 <instance type="Score2" uid="48">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -476,7 +476,7 @@
                 </instance>
                 <instance type="Score3" uid="49">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -503,7 +503,7 @@
                 </instance>
                 <instance type="Score4" uid="50">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -530,7 +530,7 @@
                 </instance>
                 <instance type="Score5" uid="51">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -557,7 +557,7 @@
                 </instance>
                 <instance type="Score6" uid="52">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -584,7 +584,7 @@
                 </instance>
                 <instance type="Score7" uid="53">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -611,7 +611,7 @@
                 </instance>
                 <instance type="Score8" uid="54">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -638,7 +638,7 @@
                 </instance>
                 <instance type="Score9" uid="55">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>
@@ -665,7 +665,7 @@
                 </instance>
                 <instance type="Score10" uid="56">
                     <properties>
-                        <text>Text</text>
+                        <text></text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Century Schoolbook,-21,700,0</font>
                         <color>0,0,0</color>

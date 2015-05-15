@@ -258,7 +258,7 @@
                                     <param id="0" name="Text">textbox</param>
                                 </action>
                                 <action id="-16" name="Wait" sid="9065573489106327" type="System">
-                                    <param id="0" name="Seconds">1</param>
+                                    <param id="0" name="Seconds">2</param>
                                 </action>
                                 <action id="-4" name="Set layer visible" sid="5006544696730352" type="System">
                                     <param id="0" name="Layer">3</param>
@@ -279,6 +279,9 @@
                                 <action id="-9" name="Set value" sid="991396418173218" type="System">
                                     <param id="0" name="Variable">Score</param>
                                     <param id="1" name="Value">accuracy * 10</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="8701438305295606" type="SubmitScore">
+                                    <param id="0" name="Visibility">1</param>
                                 </action>
                             </actions>
                         </event-block>
@@ -360,7 +363,7 @@
                                             <param id="0" name="Text">textbox</param>
                                         </action>
                                         <action id="-16" name="Wait" sid="8782181003583462" type="System">
-                                            <param id="0" name="Seconds">1</param>
+                                            <param id="0" name="Seconds">2</param>
                                         </action>
                                         <action id="-4" name="Set layer visible" sid="8330330999373901" type="System">
                                             <param id="0" name="Layer">3</param>
@@ -374,13 +377,12 @@
                                             <param id="0" name="Layer">2</param>
                                             <param id="1" name="Visibility">0</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="2091685788423627" type="System">
-                                            <param id="0" name="Variable">inputFlag</param>
-                                            <param id="1" name="Value">1</param>
-                                        </action>
                                         <action id="-9" name="Set value" sid="8549043862921209" type="System">
                                             <param id="0" name="Variable">Score</param>
                                             <param id="1" name="Value">accuracy * 10</param>
+                                        </action>
+                                        <action id="-15" name="Set visible" sid="5716530476315915" type="SubmitScore">
+                                            <param id="0" name="Visibility">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -444,16 +446,11 @@
                 </event-block>
                 <event-block sid="9164893576944826">
                     <conditions>
-                        <condition id="-14" name="Compare variable" sid="8238779158465033" type="System">
-                            <param id="0" name="Variable">inputFlag</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Value">1</param>
+                        <condition id="3" name="On touched object" sid="8238779158465033" type="Touch">
+                            <param id="0" name="Object">SubmitScore</param>
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-16" name="Wait" sid="83844001470791" type="System">
-                            <param id="0" name="Seconds">5</param>
-                        </action>
                         <action id="-2" name="Go to layout" sid="4672962545054503" type="System">
                             <param id="0" name="Layout">Score Leaderboard</param>
                         </action>

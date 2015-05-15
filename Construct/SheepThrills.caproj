@@ -149,7 +149,19 @@
         <object-type name="PlayButton" sid="4963627964611596">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7991018567382504" speed="5">
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7991018567382504" speed="5">
+                    <frame duration="1" hotspotX="0.501401" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.120448" y="0.195455" />
+                            <point x="0.498599" y="0.0136364" />
+                            <point x="0.859944" y="0.227273" />
+                            <point x="0.938375" y="0.5" />
+                            <point x="0.854342" y="0.763636" />
+                            <point x="0.498599" y="0.972727" />
+                            <point x="0.123249" y="0.8" />
+                            <point x="0.0168067" y="0.5" />
+                        </collision-poly>
+                    </frame>
                     <frame duration="1" hotspotX="0.5025" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.120448" y="0.195455" />
@@ -180,7 +192,19 @@
         <object-type name="HowToButton" sid="1155849753590599">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2293549278596661" speed="5">
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2293549278596661" speed="5">
+                    <frame duration="1" hotspotX="0.501475" hotspotY="0.5">
+                        <collision-poly>
+                            <point x="0.132743" y="0.204545" />
+                            <point x="0.498525" y="0.0136364" />
+                            <point x="0.884956" y="0.177273" />
+                            <point x="1" y="0.5" />
+                            <point x="0.876106" y="0.809091" />
+                            <point x="0.498525" y="0.972727" />
+                            <point x="0.132743" y="0.795455" />
+                            <point x="0.0294985" y="0.5" />
+                        </collision-poly>
+                    </frame>
                     <frame duration="1" hotspotX="0.5025" hotspotY="0.5" original-source="E:\Users\Amanda\Documents\Google Drive\BCIT CST\Term2\Comp2910\how.png">
                         <collision-poly>
                             <point x="0.132743" y="0.204545" />
@@ -579,6 +603,14 @@
         </object-type>
         <object-type name="Stats" sid="1490022607788542">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="SubmitScore" sid="2637708611933731">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4287598488906605" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
         </object-type>
     </object-folder>
     <families />

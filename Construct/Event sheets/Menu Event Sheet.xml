@@ -11,7 +11,7 @@
             </conditions>
             <actions>
                 <action id="5" name="Set frame" sid="4839705009419434" type="PlayButton">
-                    <param id="0" name="Frame number">0</param>
+                    <param id="0" name="Frame number">1</param>
                 </action>
             </actions>
         </event-block>
@@ -23,7 +23,7 @@
             </conditions>
             <actions>
                 <action id="5" name="Set frame" sid="9629833288563918" type="PlayButton">
-                    <param id="0" name="Frame number">1</param>
+                    <param id="0" name="Frame number">2</param>
                 </action>
             </actions>
         </event-block>
@@ -35,7 +35,7 @@
             </conditions>
             <actions>
                 <action id="5" name="Set frame" sid="1156314582740756" type="HowToButton">
-                    <param id="0" name="Frame number">0</param>
+                    <param id="0" name="Frame number">1</param>
                 </action>
             </actions>
         </event-block>
@@ -47,7 +47,7 @@
             </conditions>
             <actions>
                 <action id="5" name="Set frame" sid="4185427111114549" type="HowToButton">
-                    <param id="0" name="Frame number">1</param>
+                    <param id="0" name="Frame number">2</param>
                 </action>
                 <action id="-9" name="Set value" sid="6708881244427247" type="System">
                     <param id="0" name="Variable">forward</param>
@@ -93,6 +93,36 @@
                     <param id="2" name="Loop">1</param>
                     <param id="3" name="Volume">0</param>
                     <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+                <action id="5" name="Set frame" sid="8254481750604145" type="HowToButton">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+                <action id="5" name="Set frame" sid="5043333606480184" type="PlayButton">
+                    <param id="0" name="Frame number">2</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="621735673897557">
+            <conditions>
+                <condition id="3" name="On touched object" sid="8987773952780825" type="Touch">
+                    <param id="0" name="Object">HowToButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="5620161634154541" type="HowToButton">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1401261957086163">
+            <conditions>
+                <condition id="3" name="On touched object" sid="7170445060173334" type="Touch">
+                    <param id="0" name="Object">PlayButton</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="5062082231147623" type="PlayButton">
+                    <param id="0" name="Frame number">0</param>
                 </action>
             </actions>
         </event-block>
