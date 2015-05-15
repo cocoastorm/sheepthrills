@@ -3,10 +3,10 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Level 1 Event Sheet</name>
     <events>
+        <variable constant="0" name="Bounces" sid="8596109259720013" static="0" type="number">0</variable>
         <variable constant="0" name="Level" sid="3088159783359553" static="0" type="number">1</variable>
-        <variable constant="0" name="Score2" sid="5725245981192252" static="0" type="number">0</variable>
-        <variable constant="0" name="TimerStart2" sid="403536239860981" static="0" type="number">0</variable>
-        <variable constant="0" name="Timer2" sid="9640166676224397" static="0" type="number">0</variable>
+        <variable constant="0" name="TimerStart" sid="403536239860981" static="0" type="number">0</variable>
+        <variable constant="0" name="Timer" sid="9640166676224397" static="0" type="number">0</variable>
         <event-group description="" sid="1314970958589912" title="Level 1">
             <sub-events>
                 <event-block sid="9692680843726961">
@@ -20,6 +20,9 @@
                         <action id="0" name="Set text" sid="4565449900659402" type="Timer">
                             <param id="0" name="Text">Timer</param>
                         </action>
+                        <action id="-15" name="Set visible" sid="9828814407992769" type="Counter">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="8509586817304485">
@@ -27,10 +30,12 @@
                         <condition id="-2" name="On start of layout" sid="4237248298900819" type="System" />
                     </conditions>
                     <actions>
+                        <action id="-21" name="Reset global variables" sid="6920456078026849" type="System" />
                         <action id="-16" name="Wait" sid="4384508758392893" type="System">
                             <param id="0" name="Seconds">3</param>
                         </action>
                         <action id="-9" name="Destroy" sid="9127477866316205" type="Cloud" />
+                        <action id="-9" name="Destroy" sid="8141721097743529" type="Level" />
                     </actions>
                 </event-block>
                 <event-block sid="5929936325700093">
@@ -49,7 +54,7 @@
                         </action>
                         <action id="-9" name="Destroy" sid="9864149455032603" type="Instruction" />
                         <action id="-9" name="Set value" sid="708963529888344" type="System">
-                            <param id="0" name="Variable">TimerStart2</param>
+                            <param id="0" name="Variable">TimerStart</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -74,18 +79,18 @@
                 <event-block sid="7647196209192064">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="4238479176642536" type="System">
-                            <param id="0" name="Variable">TimerStart2</param>
+                            <param id="0" name="Variable">TimerStart</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
                     <actions>
                         <action id="-9" name="Set value" sid="4958083147695204" type="System">
-                            <param id="0" name="Variable">Timer2</param>
+                            <param id="0" name="Variable">Timer</param>
                             <param id="1" name="Value">10</param>
                         </action>
                         <action id="-9" name="Set value" sid="505264195978375" type="System">
-                            <param id="0" name="Variable">TimerStart2</param>
+                            <param id="0" name="Variable">TimerStart</param>
                             <param id="1" name="Value">0</param>
                         </action>
                     </actions>
@@ -93,7 +98,7 @@
                 <event-block sid="6773243467964073">
                     <conditions>
                         <condition id="-14" name="Compare variable" sid="7767331535267498" type="System">
-                            <param id="0" name="Variable">Timer2</param>
+                            <param id="0" name="Variable">Timer</param>
                             <param id="1" name="Comparison">4</param>
                             <param id="2" name="Value">0</param>
                         </condition>
@@ -116,16 +121,12 @@
                         <event-block sid="900682824140833">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="5876456456623527" type="System">
-                                    <param id="0" name="Variable">Timer2</param>
+                                    <param id="0" name="Variable">Timer</param>
                                     <param id="1" name="Comparison">0</param>
                                     <param id="2" name="Value">0</param>
                                 </condition>
                             </conditions>
                             <actions>
-                                <action id="-10" name="Add to" sid="7906389948402635" type="System">
-                                    <param id="0" name="Variable">Level</param>
-                                    <param id="1" name="Value">1</param>
-                                </action>
                                 <action id="-9" name="Destroy" sid="6238349524727024" type="Sprite2" />
                                 <action id="-2" name="Go to layout" sid="7097043353998557" type="System">
                                     <param id="0" name="Layout">Guessing Page</param>

@@ -12,6 +12,7 @@
     <used-plugins>
         <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
         <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
         <plugin author="Scirra" id="Button" version="1">Button</plugin>
         <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
         <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
@@ -25,7 +26,9 @@
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
-    <used-effects />
+    <used-effects>
+        <effect author="Viktor Korsun" id="water">Water</effect>
+    </used-effects>
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -372,7 +375,8 @@
                 <instance-variable name="value" sid="9596105434736394" type="number" />
             </instance-variables>
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9747810065861906" speed="5">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9747810065861906" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505747" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.505747" original-source="C:\Users\Judy W\Desktop\grey.png" />
                 </animation>
             </animation-folder>
@@ -391,7 +395,8 @@
         <object-type name="Backspace" sid="9143820651291421">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4996257765699667" speed="5">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4996257765699667" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505747" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.505747" original-source="C:\Users\Judy W\Desktop\grey.png" />
                 </animation>
             </animation-folder>
@@ -399,7 +404,8 @@
         <object-type name="Ok" sid="9225111216095418">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8529910890562983" speed="5">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8529910890562983" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.505747" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.505747" original-source="C:\Users\Judy W\Desktop\grey.png" />
                 </animation>
             </animation-folder>
@@ -410,7 +416,8 @@
         <object-type name="Sprite12" sid="7527120045246182">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1049958079827832" speed="5">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1049958079827832" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
                 </animation>
             </animation-folder>
@@ -466,6 +473,17 @@
         </object-type>
         <object-type name="Temp" sid="5742463248424323">
             <plugin id="Text" />
+        </object-type>
+        <object-type name="Audio" sid="8669883718955191">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="Level" sid="6292857280710113">
+            <plugin id="Text" />
+            <effects>
+                <effect-type name="Water">
+                    <effect id="water" />
+                </effect-type>
+            </effects>
         </object-type>
         <object-type name="background_noSun" sid="4929618754306529">
             <plugin id="Sprite" />
@@ -557,36 +575,58 @@
             </animation-folder>
         </object-type>
         <object-type name="Text3" sid="556358421235245">
+		            <plugin id="Text" />
+        </object-type>
+        <object-type name="Stats" sid="1490022607788542">
             <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Menu Screen.xml</layout>
-        <layout>In Game Screen.xml</layout>
         <layout>Level 1.xml</layout>
+        <layout>Level 2.xml</layout>
         <layout>Help.xml</layout>
         <layout>Score Leaderboard.xml</layout>
         <layout>Guessing Page.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Menu Event Sheet.xml</event-sheet>
-        <event-sheet>In Game Event Sheet.xml</event-sheet>
         <event-sheet>Scores.xml</event-sheet>
         <event-sheet>Help Event Sheet.xml</event-sheet>
         <event-sheet>Guessing Event Sheet.xml</event-sheet>
         <event-sheet>Level 1 Event Sheet.xml</event-sheet>
+        <event-sheet>Level 2 Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="96" />
-        <global-instance type="AJAX" uid="97" />
-        <global-instance type="Touch" uid="98">
+        <global-instance type="Mouse" uid="97" />
+        <global-instance type="AJAX" uid="98" />
+        <global-instance type="Touch" uid="101">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
+        <global-instance type="Audio" uid="102">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
     </global-instances>
-    <sounds-folder />
+    <sounds-folder>
+        <file name="amok.m4a" />
+        <file name="amok.ogg" />
+        <file name="sheep.m4a" />
+        <file name="sheep.ogg" />
+    </sounds-folder>
     <music-folder />
     <files-folder>
         <file-folder name="Icons">
