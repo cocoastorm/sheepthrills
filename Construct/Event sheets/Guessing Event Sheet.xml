@@ -238,9 +238,9 @@
                         <event-block sid="6299327624446121">
                             <conditions>
                                 <condition id="-14" name="Compare variable" sid="3929330379188083" type="System">
-                                    <param id="0" name="Variable">Bounces</param>
-                                    <param id="1" name="Comparison">2</param>
-                                    <param id="2" name="Value">result</param>
+                                    <param id="0" name="Variable">result</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">Bounces</param>
                                 </condition>
                             </conditions>
                             <actions>
