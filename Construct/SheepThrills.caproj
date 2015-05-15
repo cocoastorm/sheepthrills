@@ -556,6 +556,9 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Text3" sid="556358421235245">
+            <plugin id="Text" />
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
