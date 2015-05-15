@@ -339,6 +339,41 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="2288196138503084">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="7931394862297998" type="System">
+                                    <param id="0" name="Variable">accuracy</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">80</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="8884617556308062" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Value">500</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9182545331906232">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="762662113209104" type="System">
+                                    <param id="0" name="Variable">accuracy</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">80</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="9896598572930276" type="System">
+                                    <param id="0" name="Variable">accuracy</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">100</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-10" name="Add to" sid="1416507345217968" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Value">1000</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="4756642949144694">
@@ -393,6 +428,19 @@
                             <param id="0" name="Layout">&quot;Level &quot;&amp;Level</param>
                         </action>
                         <action id="-21" name="Reset global variables" sid="4613351050605533" type="System" />
+                    </actions>
+                </event-block>
+                <event-block sid="9164893576944826">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="8238779158465033" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="83844001470791" type="System">
+                            <param id="0" name="Seconds">5</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="4672962545054503" type="System">
+                            <param id="0" name="Layout">Score Leaderboard</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>

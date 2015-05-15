@@ -3,15 +3,14 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Scores</name>
     <events>
-        <variable constant="0" name="Scores" sid="4210183802793384" static="0" type="number">1000</variable>
         <variable constant="0" name="EachX" sid="8281383816030304" static="0" type="number">0</variable>
         <event-block sid="2407511325911731">
             <conditions>
                 <condition id="-1" name="Every tick" sid="7549401404620612" type="System" />
             </conditions>
             <actions>
-                <action id="0" name="Set text" sid="8155681427991499" type="PlayerScore">
-                    <param id="0" name="Text">&quot;Your Score &quot; &amp; Scores </param>
+                <action id="0" name="Set text" sid="4413130147989354" type="PlayerScore">
+                    <param id="0" name="Text">Score</param>
                 </action>
             </actions>
         </event-block>
@@ -26,7 +25,7 @@
             <actions>
                 <action id="2" name="Post to URL" sid="9174725704137672" type="AJAX">
                     <param id="0" name="Tag">&quot;PostScore&quot;</param>
-                    <param id="1" name="URL">&quot;http://sheepthrills.co.nf/savescores.php?name=&quot; &amp; PlayerName.Text &amp; &quot;&amp;score=&quot; &amp; Scores</param>
+                    <param id="1" name="URL">&quot;http://http://cocoastorm.adessic.com/savescores.php?name=&quot; &amp; PlayerName.Text &amp; &quot;&amp;score=&quot; &amp; Score</param>
                     <param id="2" name="Data">&quot;&quot;</param>
                     <param id="3" name="Method">&quot;POST&quot;</param>
                 </action>
@@ -39,7 +38,7 @@
             <actions>
                 <action id="0" name="Request URL" sid="1158062774797721" type="AJAX">
                     <param id="0" name="Tag">&quot;GetScores&quot;</param>
-                    <param id="1" name="URL">&quot;http://sheepthrills.co.nf/getscores.php&quot;</param>
+                    <param id="1" name="URL">&quot;http://cocoastorm.adessic.com/getscores.php&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -77,83 +76,83 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="3900055898000615">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6220522282904864" type="System">
+                            <param id="0" name="Variable">EachX</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">20</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-12" name="Set group active" sid="461972985589217" type="System">
+                            <param id="0" name="Group name">&quot;Do Array&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="8805868282539245" type="Name1">
+                            <param id="0" name="Text">Array.At(0)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="8797029111678048" type="Name2">
+                            <param id="0" name="Text">Array.At(2)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="9508248521764162" type="Name3">
+                            <param id="0" name="Text">Array.At(4)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="4720666310070395" type="Name4">
+                            <param id="0" name="Text">Array.At(6)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="5788581676720785" type="Name5">
+                            <param id="0" name="Text">Array.At(8)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="4422659394514541" type="Name6">
+                            <param id="0" name="Text">Array.At(10)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="7427906372908094" type="Name7">
+                            <param id="0" name="Text">Array.At(12)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="9841792356830878" type="Name8">
+                            <param id="0" name="Text">Array.At(14)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="9064559397201187" type="Name9">
+                            <param id="0" name="Text">Array.At(16)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="8802058713883057" type="Name10">
+                            <param id="0" name="Text">Array.At(18)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="5582328652335122" type="Score1">
+                            <param id="0" name="Text">Array.At(1)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="337491567425456" type="Score2">
+                            <param id="0" name="Text">Array.At(3)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="9187112487282064" type="Score3">
+                            <param id="0" name="Text">Array.At(5)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="4619929585806514" type="Score4">
+                            <param id="0" name="Text">Array.At(7)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="921907715222383" type="Score5">
+                            <param id="0" name="Text">Array.At(9)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="4796854468938432" type="Score6">
+                            <param id="0" name="Text">Array.At(11)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="2094989885222505" type="Score7">
+                            <param id="0" name="Text">Array.At(13)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="8779552598034575" type="Score8">
+                            <param id="0" name="Text">Array.At(15)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="6298713603565775" type="Score9">
+                            <param id="0" name="Text">Array.At(17)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="6207511159318203" type="Score10">
+                            <param id="0" name="Text">Array.At(19)</param>
+                        </action>
+                    </actions>
+                </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="3900055898000615">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="6220522282904864" type="System">
-                    <param id="0" name="Variable">EachX</param>
-                    <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">20</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-12" name="Set group active" sid="461972985589217" type="System">
-                    <param id="0" name="Group name">&quot;Do Array&quot;</param>
-                    <param id="1" name="State">0</param>
-                </action>
-                <action id="0" name="Set text" sid="8805868282539245" type="Name1">
-                    <param id="0" name="Text">Array.At(0)</param>
-                </action>
-                <action id="0" name="Set text" sid="8797029111678048" type="Name2">
-                    <param id="0" name="Text">Array.At(2)</param>
-                </action>
-                <action id="0" name="Set text" sid="9508248521764162" type="Name3">
-                    <param id="0" name="Text">Array.At(4)</param>
-                </action>
-                <action id="0" name="Set text" sid="4720666310070395" type="Name4">
-                    <param id="0" name="Text">Array.At(6)</param>
-                </action>
-                <action id="0" name="Set text" sid="5788581676720785" type="Name5">
-                    <param id="0" name="Text">Array.At(8)</param>
-                </action>
-                <action id="0" name="Set text" sid="4422659394514541" type="Name6">
-                    <param id="0" name="Text">Array.At(10)</param>
-                </action>
-                <action id="0" name="Set text" sid="7427906372908094" type="Name7">
-                    <param id="0" name="Text">Array.At(12)</param>
-                </action>
-                <action id="0" name="Set text" sid="9841792356830878" type="Name8">
-                    <param id="0" name="Text">Array.At(14)</param>
-                </action>
-                <action id="0" name="Set text" sid="9064559397201187" type="Name9">
-                    <param id="0" name="Text">Array.At(16)</param>
-                </action>
-                <action id="0" name="Set text" sid="8802058713883057" type="Name10">
-                    <param id="0" name="Text">Array.At(18)</param>
-                </action>
-                <action id="0" name="Set text" sid="5582328652335122" type="Score1">
-                    <param id="0" name="Text">Array.At(1)</param>
-                </action>
-                <action id="0" name="Set text" sid="337491567425456" type="Score2">
-                    <param id="0" name="Text">Array.At(3)</param>
-                </action>
-                <action id="0" name="Set text" sid="9187112487282064" type="Score3">
-                    <param id="0" name="Text">Array.At(5)</param>
-                </action>
-                <action id="0" name="Set text" sid="4619929585806514" type="Score4">
-                    <param id="0" name="Text">Array.At(7)</param>
-                </action>
-                <action id="0" name="Set text" sid="921907715222383" type="Score5">
-                    <param id="0" name="Text">Array.At(9)</param>
-                </action>
-                <action id="0" name="Set text" sid="4796854468938432" type="Score6">
-                    <param id="0" name="Text">Array.At(11)</param>
-                </action>
-                <action id="0" name="Set text" sid="2094989885222505" type="Score7">
-                    <param id="0" name="Text">Array.At(13)</param>
-                </action>
-                <action id="0" name="Set text" sid="8779552598034575" type="Score8">
-                    <param id="0" name="Text">Array.At(15)</param>
-                </action>
-                <action id="0" name="Set text" sid="6298713603565775" type="Score9">
-                    <param id="0" name="Text">Array.At(17)</param>
-                </action>
-                <action id="0" name="Set text" sid="6207511159318203" type="Score10">
-                    <param id="0" name="Text">Array.At(19)</param>
-                </action>
-            </actions>
-        </event-block>
         <event-block sid="3432015118881203">
             <conditions>
                 <condition id="0" name="On completed" sid="22910923804573" type="AJAX">
@@ -167,7 +166,7 @@
                 </action>
                 <action id="0" name="Request URL" sid="4325877041983507" type="AJAX">
                     <param id="0" name="Tag">&quot;GetScores&quot;</param>
-                    <param id="1" name="URL">&quot;http://sheepthrills.co.nf/getscores.php&quot;</param>
+                    <param id="1" name="URL">&quot;http://cocoastorm.adessic.com/getscores.php&quot;</param>
                 </action>
             </actions>
         </event-block>
