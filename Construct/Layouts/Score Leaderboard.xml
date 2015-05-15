@@ -690,7 +690,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Text3" uid="100">
+                <instance type="Text3" uid="22">
                     <properties>
                         <text>Leaderboard</text>
                         <initial-visibility>Visible</initial-visibility>
