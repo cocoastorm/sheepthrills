@@ -17,11 +17,7 @@
         </event-block>
         <event-block sid="3247542471223824">
             <conditions>
-                <condition id="6" name="On object clicked" sid="6868009259295479" type="Mouse">
-                    <param id="0" name="Mouse button">0</param>
-                    <param id="1" name="Click type">0</param>
-                    <param id="2" name="Object clicked">Submit</param>
-                </condition>
+                <condition id="0" name="On clicked" sid="6868009259295479" type="Submit" />
             </conditions>
             <actions>
                 <action id="2" name="Post to URL" sid="9174725704137672" type="AJAX">
@@ -29,10 +25,6 @@
                     <param id="1" name="URL">&quot;http://http://cocoastorm.adessic.com/savescores.php?name=&quot; &amp; PlayerName.Text &amp; &quot;&amp;score=&quot; &amp; Score</param>
                     <param id="2" name="Data">&quot;&quot;</param>
                     <param id="3" name="Method">&quot;POST&quot;</param>
-                </action>
-                <action id="-10" name="Add to" sid="8996336200493016" type="System">
-                    <param id="0" name="Variable">Submitted</param>
-                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
@@ -172,20 +164,6 @@
                 <action id="0" name="Request URL" sid="4325877041983507" type="AJAX">
                     <param id="0" name="Tag">&quot;GetScores&quot;</param>
                     <param id="1" name="URL">&quot;http://cocoastorm.adessic.com/getscores.php&quot;</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="5405968791409915">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="7620744140072435" type="System">
-                    <param id="0" name="Variable">Submitted</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="8935321305151711" type="System">
-                    <param id="0" name="Layout">Menu Screen</param>
                 </action>
             </actions>
         </event-block>
