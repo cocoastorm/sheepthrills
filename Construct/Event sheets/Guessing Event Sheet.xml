@@ -247,6 +247,10 @@
                                 <action id="0" name="Set text" sid="8967761174004176" type="Stats">
                                     <param id="0" name="Text">&quot;Bounces: &quot; &amp; Bounces &amp; &quot;, Your Guess: &quot; &amp; result &amp; &quot; Accuracy: &quot; &amp; accuracy &amp; &quot;%&quot;</param>
                                 </action>
+                                <action id="-9" name="Set value" sid="2101359843277444" type="System">
+                                    <param id="0" name="Variable">inputFlag</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
                             </actions>
                             <sub-events>
                                 <event-block sid="4216134472102576">
@@ -349,6 +353,10 @@
                                 </action>
                                 <action id="0" name="Set text" sid="5805995615947009" type="Stats">
                                     <param id="0" name="Text">&quot;Bounces: &quot; &amp; Bounces &amp; &quot;, Your Guess: &quot; &amp; result &amp; &quot; Accuracy: &quot; &amp; accuracy &amp; &quot;%&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="2980435511884714" type="System">
+                                    <param id="0" name="Variable">inputFlag</param>
+                                    <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
                             <sub-events>
@@ -483,7 +491,26 @@
                         <action id="-25" name="Go to layout (by name)" sid="218071339612541" type="System">
                             <param id="0" name="Layout">&quot;Level &quot;&amp;Level</param>
                         </action>
-                        <action id="-21" name="Reset global variables" sid="4613351050605533" type="System" />
+                        <action id="-9" name="Set value" sid="1006694142869965" type="System">
+                            <param id="0" name="Variable">Bounces</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5982282905417472" type="System">
+                            <param id="0" name="Variable">result</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4129301643704835" type="System">
+                            <param id="0" name="Variable">inputFlag</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1171863110451837" type="System">
+                            <param id="0" name="Variable">accuracy</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3805123233643428" type="System">
+                            <param id="0" name="Variable">lastInput</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="9164893576944826">
@@ -491,10 +518,19 @@
                         <condition id="3" name="On touched object" sid="8238779158465033" type="Touch">
                             <param id="0" name="Object">SubmitScore</param>
                         </condition>
+                        <condition id="-14" name="Compare variable" sid="6154466168996898" type="System">
+                            <param id="0" name="Variable">inputFlag</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
                     </conditions>
                     <actions>
                         <action id="-2" name="Go to layout" sid="4672962545054503" type="System">
                             <param id="0" name="Layout">Score Leaderboard</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1354177119733446" type="System">
+                            <param id="0" name="Variable">inputFlag</param>
+                            <param id="1" name="Value">0</param>
                         </action>
                     </actions>
                 </event-block>
