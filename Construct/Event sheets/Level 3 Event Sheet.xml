@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2eventsheet>
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
-    <name>Level 3 Es</name>
+    <name>Level 3 Event Sheet</name>
     <events>
         <variable constant="0" name="starty" sid="6229139512912421" static="0" type="number">0</variable>
         <variable constant="0" name="startx" sid="4092887536894462" static="0" type="number">0</variable>
@@ -28,12 +28,27 @@
                         <condition id="-2" name="On start of layout" sid="4237248298900819" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-21" name="Reset global variables" sid="1672529898065813" type="System" />
                         <action id="-16" name="Wait" sid="4384508758392893" type="System">
                             <param id="0" name="Seconds">3</param>
                         </action>
                         <action id="-9" name="Destroy" sid="9127477866316205" type="Cloud" />
                         <action id="-9" name="Destroy" sid="8141721097743529" type="Level" />
+                        <action id="-9" name="Set value" sid="5928178959199875" type="System">
+                            <param id="0" name="Variable">inputFlag</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8774554698550549" type="System">
+                            <param id="0" name="Variable">lastInput</param>
+                            <param id="1" name="Value">&quot;number&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2922479867732713" type="System">
+                            <param id="0" name="Variable">textbox</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="5419093040786372" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="5929936325700093">

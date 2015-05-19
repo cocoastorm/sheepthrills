@@ -226,7 +226,7 @@
                                             <param id="0" name="Seconds">2</param>
                                         </action>
                                         <action id="-25" name="Go to layout (by name)" sid="8537567944092284" type="System">
-                                            <param id="0" name="Layout">&quot;Level &quot;&amp;Level + 1</param>
+                                            <param id="0" name="Layout">&quot;Level &quot;&amp;Level</param>
                                         </action>
                                         <action id="-10" name="Add to" sid="215273055587675" type="System">
                                             <param id="0" name="Variable">Score</param>
@@ -333,7 +333,7 @@
                                             <param id="0" name="Seconds">2</param>
                                         </action>
                                         <action id="-25" name="Go to layout (by name)" sid="4376483363463267" type="System">
-                                            <param id="0" name="Layout">&quot;Level &quot;&amp;Level + 1</param>
+                                            <param id="0" name="Layout">&quot;Level &quot;&amp;Level</param>
                                         </action>
                                         <action id="-10" name="Add to" sid="1159429873106885" type="System">
                                             <param id="0" name="Variable">Score</param>
@@ -424,7 +424,7 @@
                                     <param id="0" name="Seconds">2</param>
                                 </action>
                                 <action id="-25" name="Go to layout (by name)" sid="2974613822626888" type="System">
-                                    <param id="0" name="Layout">&quot;Level &quot;&amp;Level + 1</param>
+                                    <param id="0" name="Layout">&quot;Level &quot;&amp;Level</param>
                                 </action>
                                 <action id="-10" name="Add to" sid="6524325569749017" type="System">
                                     <param id="0" name="Variable">Score</param>
@@ -463,8 +463,9 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-25" name="Go to layout (by name)" sid="218071339612541" type="System">
-                            <param id="0" name="Layout">&quot;Level &quot;&amp;Level</param>
+                        <action id="-9" name="Set value" sid="8737042847736169" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                         <action id="-9" name="Set value" sid="1006694142869965" type="System">
                             <param id="0" name="Variable">Bounces</param>
@@ -493,6 +494,9 @@
                         <action id="-9" name="Set value" sid="3799893662161607" type="System">
                             <param id="0" name="Variable">textbox</param>
                             <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-25" name="Go to layout (by name)" sid="218071339612541" type="System">
+                            <param id="0" name="Layout">&quot;Level &quot;&amp;Level</param>
                         </action>
                     </actions>
                 </event-block>

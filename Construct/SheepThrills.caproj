@@ -653,7 +653,7 @@
         <event-sheet>Guessing Event Sheet.xml</event-sheet>
         <event-sheet>Level 1 Event Sheet.xml</event-sheet>
         <event-sheet>Level 2 Event Sheet.xml</event-sheet>
-        <event-sheet>Level 3 Es.xml</event-sheet>
+        <event-sheet>Level 3 Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="101" />
