@@ -335,6 +335,10 @@
                             </conditions>
                             <actions>
                                 <action id="-9" name="Destroy" sid="9712421744877126" type="distraction" />
+                                <action id="-10" name="Add to" sid="3761334961178353" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Value">100</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
