@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Guessing Event Sheet</name>
     <events>
+        <variable constant="0" name="tempScore" sid="8422984302225711" static="0" type="number">0</variable>
         <variable constant="0" name="inputFlag" sid="5857314934778038" static="0" type="number">0</variable>
         <variable constant="0" name="Score" sid="5725245981192252" static="0" type="number">0</variable>
         <variable constant="0" name="accuracy" sid="2234302123732004" static="0" type="number">0</variable>
@@ -71,34 +72,6 @@
         </event-block>
         <event-group description="" sid="4191802834149442" title="Number Input">
             <sub-events>
-                <event-block disabled="1" sid="7844984639124783">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="3074466459015374" type="Touch">
-                            <param id="0" name="Object">Numbers</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="3359637105453678" type="Numbers">
-                            <param id="0" name="Instance variable">value</param>
-                            <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Value">-1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="8504861546289463" type="System">
-                            <param id="0" name="Variable">textbox</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="7038625950014955" type="System">
-                            <param id="0" name="Variable">textbox</param>
-                            <param id="1" name="Value">float(textbox&amp;str(Numbers.value))</param>
-                        </action>
-                        <action id="0" name="Set text" sid="5715374560417989" type="ShowUp">
-                            <param id="0" name="Text">textbox</param>
-                        </action>
-                        <action id="-16" name="Wait" sid="7954742131988012" type="System">
-                            <param id="0" name="Seconds">0.01</param>
-                        </action>
-                    </actions>
-                </event-block>
                 <event-block sid="4739086755874398">
                     <conditions>
                         <condition id="3" name="On touched object" sid="7841446116749642" type="Touch">
@@ -122,31 +95,6 @@
                             <param id="0" name="Text">textbox</param>
                         </action>
                         <action id="-9" name="Set value" sid="5712201007282345" type="System">
-                            <param id="0" name="Variable">lastInput</param>
-                            <param id="1" name="Value">&quot;number&quot;</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block disabled="1" sid="8052580630836804">
-                    <conditions>
-                        <condition id="3" name="On touched object" sid="413725986141233" type="Touch">
-                            <param id="0" name="Object">Numbers</param>
-                        </condition>
-                        <condition id="-7" name="Compare instance variable" sid="4382191252796221" type="Numbers">
-                            <param id="0" name="Instance variable">value</param>
-                            <param id="1" name="Comparison">1</param>
-                            <param id="2" name="Value">-1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="2991506212252602" type="System">
-                            <param id="0" name="Variable">textbox</param>
-                            <param id="1" name="Value">float(textbox&amp;str(Numbers.value))</param>
-                        </action>
-                        <action id="0" name="Set text" sid="2823785640561969" type="ShowUp">
-                            <param id="0" name="Text">textbox</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="4940822009051974" type="System">
                             <param id="0" name="Variable">lastInput</param>
                             <param id="1" name="Value">&quot;number&quot;</param>
                         </action>
@@ -280,7 +228,7 @@
                                         <action id="-25" name="Go to layout (by name)" sid="8537567944092284" type="System">
                                             <param id="0" name="Layout">&quot;Level &quot;&amp;Level + 1</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="215273055587675" type="System">
+                                        <action id="-10" name="Add to" sid="215273055587675" type="System">
                                             <param id="0" name="Variable">Score</param>
                                             <param id="1" name="Value">accuracy * 10</param>
                                         </action>
@@ -320,7 +268,7 @@
                                             <param id="0" name="Layer">2</param>
                                             <param id="1" name="Visibility">0</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="6417070056838228" type="System">
+                                        <action id="-10" name="Add to" sid="6417070056838228" type="System">
                                             <param id="0" name="Variable">Score</param>
                                             <param id="1" name="Value">accuracy * 10</param>
                                         </action>
@@ -387,7 +335,7 @@
                                         <action id="-25" name="Go to layout (by name)" sid="4376483363463267" type="System">
                                             <param id="0" name="Layout">&quot;Level &quot;&amp;Level + 1</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="1159429873106885" type="System">
+                                        <action id="-10" name="Add to" sid="1159429873106885" type="System">
                                             <param id="0" name="Variable">Score</param>
                                             <param id="1" name="Value">accuracy * 10</param>
                                         </action>
@@ -427,7 +375,7 @@
                                             <param id="0" name="Layer">2</param>
                                             <param id="1" name="Visibility">0</param>
                                         </action>
-                                        <action id="-9" name="Set value" sid="8549043862921209" type="System">
+                                        <action id="-10" name="Add to" sid="8549043862921209" type="System">
                                             <param id="0" name="Variable">Score</param>
                                             <param id="1" name="Value">accuracy * 10</param>
                                         </action>
@@ -438,26 +386,53 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <event-block sid="6984884214329365">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="543539852844929" type="System">
+                                    <param id="0" name="Variable">result</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Bounces</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="2875113728827746" type="System">
+                                    <param id="0" name="Variable">textbox</param>
+                                    <param id="1" name="Value">Ceil((Bounces / result) * 100)</param>
+                                </action>
+                                <action id="0" name="Set text" sid="7311715250396566" type="ShowUp">
+                                    <param id="0" name="Text">textbox</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="9966646176162533" type="System">
+                                    <param id="0" name="Variable">accuracy</param>
+                                    <param id="1" name="Value">ceil((Bounces / result) * 100)</param>
+                                </action>
+                                <action id="0" name="Set text" sid="5914036329220541" type="Stats">
+                                    <param id="0" name="Text">&quot;Bounces: &quot; &amp; Bounces &amp; &quot;, Your Guess: &quot; &amp; result &amp; &quot; Accuracy: &quot; &amp; accuracy &amp; &quot;%&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="6855664527764946" type="System">
+                                    <param id="0" name="Variable">inputFlag</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="9631422930175257" type="System">
+                                    <param id="0" name="Variable">textbox</param>
+                                    <param id="1" name="Value">&quot;You passed!&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="1700360310800349" type="ShowUp">
+                                    <param id="0" name="Text">textbox</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="2405772140993257" type="System">
+                                    <param id="0" name="Seconds">2</param>
+                                </action>
+                                <action id="-25" name="Go to layout (by name)" sid="2974613822626888" type="System">
+                                    <param id="0" name="Layout">&quot;Level &quot;&amp;Level + 1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="6524325569749017" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Value">accuracy * 10</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
-                </event-block>
-                <event-block sid="4756642949144694">
-                    <conditions>
-                        <condition disabled="1" id="3" name="On touched object" sid="5108537310208295" type="Touch">
-                            <param id="0" name="Object">Ok</param>
-                        </condition>
-                        <condition disabled="1" id="-9" name="Layer is visible" sid="3733889557162706" type="System">
-                            <param id="0" name="Layer">1</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action disabled="1" id="-9" name="Set value" sid="9939702309763299" type="System">
-                            <param id="0" name="Variable">textbox</param>
-                            <param id="1" name="Value">&quot;Incorrect&quot;</param>
-                        </action>
-                        <action disabled="1" id="0" name="Set text" sid="7329631073782161" type="ShowUp">
-                            <param id="0" name="Text">textbox</param>
-                        </action>
-                    </actions>
                 </event-block>
             </sub-events>
         </event-group>
@@ -509,7 +484,15 @@
                         </action>
                         <action id="-9" name="Set value" sid="3805123233643428" type="System">
                             <param id="0" name="Variable">lastInput</param>
+                            <param id="1" name="Value">&quot;number&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6552447728283192" type="System">
+                            <param id="0" name="Variable">Score</param>
                             <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3799893662161607" type="System">
+                            <param id="0" name="Variable">textbox</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
                         </action>
                     </actions>
                 </event-block>

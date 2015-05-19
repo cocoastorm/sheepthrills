@@ -30,12 +30,23 @@
                         <condition id="-2" name="On start of layout" sid="4237248298900819" type="System" />
                     </conditions>
                     <actions>
-                        <action id="-21" name="Reset global variables" sid="6920456078026849" type="System" />
                         <action id="-16" name="Wait" sid="4384508758392893" type="System">
                             <param id="0" name="Seconds">3</param>
                         </action>
                         <action id="-9" name="Destroy" sid="9127477866316205" type="Cloud" />
                         <action id="-9" name="Destroy" sid="8141721097743529" type="Level" />
+                        <action id="-9" name="Set value" sid="5097006647736595" type="System">
+                            <param id="0" name="Variable">inputFlag</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5267979068947056" type="System">
+                            <param id="0" name="Variable">lastInput</param>
+                            <param id="1" name="Value">&quot;number&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5308138636657404" type="System">
+                            <param id="0" name="Variable">textbox</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="5929936325700093">
