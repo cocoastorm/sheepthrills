@@ -612,12 +612,36 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="distraction" sid="4599240773341781">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="grabbed" sid="309388721408447" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="5346356577224386">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="3396926783064985">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="8048091386085303">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9090724971458071" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
         <layout>Menu Screen.xml</layout>
         <layout>Level 1.xml</layout>
         <layout>Level 2.xml</layout>
+        <layout>Level 3.xml</layout>
         <layout>Help.xml</layout>
         <layout>Score Leaderboard.xml</layout>
         <layout>Guessing Page.xml</layout>
@@ -629,6 +653,7 @@
         <event-sheet>Guessing Event Sheet.xml</event-sheet>
         <event-sheet>Level 1 Event Sheet.xml</event-sheet>
         <event-sheet>Level 2 Event Sheet.xml</event-sheet>
+        <event-sheet>Level 3 Es.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="101" />
