@@ -438,6 +438,52 @@
                                 </event-block>
                             </sub-events>
                         </event-block>
+                        <event-block sid="6984884214329365">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="543539852844929" type="System">
+                                    <param id="0" name="Variable">result</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">Bounces</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="2875113728827746" type="System">
+                                    <param id="0" name="Variable">textbox</param>
+                                    <param id="1" name="Value">Ceil((Bounces / result) * 100)</param>
+                                </action>
+                                <action id="0" name="Set text" sid="7311715250396566" type="ShowUp">
+                                    <param id="0" name="Text">textbox</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="9966646176162533" type="System">
+                                    <param id="0" name="Variable">accuracy</param>
+                                    <param id="1" name="Value">ceil((Bounces / result) * 100)</param>
+                                </action>
+                                <action id="0" name="Set text" sid="5914036329220541" type="Stats">
+                                    <param id="0" name="Text">&quot;Bounces: &quot; &amp; Bounces &amp; &quot;, Your Guess: &quot; &amp; result &amp; &quot; Accuracy: &quot; &amp; accuracy &amp; &quot;%&quot;</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="6855664527764946" type="System">
+                                    <param id="0" name="Variable">inputFlag</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="9631422930175257" type="System">
+                                    <param id="0" name="Variable">textbox</param>
+                                    <param id="1" name="Value">&quot;You passed!&quot;</param>
+                                </action>
+                                <action id="0" name="Set text" sid="1700360310800349" type="ShowUp">
+                                    <param id="0" name="Text">textbox</param>
+                                </action>
+                                <action id="-16" name="Wait" sid="2405772140993257" type="System">
+                                    <param id="0" name="Seconds">2</param>
+                                </action>
+                                <action id="-25" name="Go to layout (by name)" sid="2974613822626888" type="System">
+                                    <param id="0" name="Layout">&quot;Level &quot;&amp;Level + 1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="6524325569749017" type="System">
+                                    <param id="0" name="Variable">Score</param>
+                                    <param id="1" name="Value">accuracy * 10</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
                 <event-block sid="4756642949144694">
