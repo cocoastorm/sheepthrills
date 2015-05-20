@@ -495,9 +495,6 @@
         <object-type name="BestScore" sid="7436408127551197">
             <plugin id="Text" />
         </object-type>
-        <object-type name="Temp" sid="5742463248424323">
-            <plugin id="Text" />
-        </object-type>
         <object-type name="Audio" sid="8669883718955191">
             <plugin id="Audio" />
         </object-type>
