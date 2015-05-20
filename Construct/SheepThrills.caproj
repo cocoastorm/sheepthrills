@@ -671,6 +671,29 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="distraction2" sid="3997990609165099">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="grabbed" sid="6271187691167261" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="4978234354095543">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="155527205661095">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="1975670083548521">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1955765046706797" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>

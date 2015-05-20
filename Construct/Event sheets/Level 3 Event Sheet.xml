@@ -368,6 +368,7 @@
         <event-block sid="3508631172348678">
             <conditions>
                 <condition id="-3" name="Is on-screen" sid="8258023597365908" type="distraction" />
+                <condition id="-3" name="Is on-screen" sid="923213557265276" type="distraction2" />
                 <condition id="-14" name="Compare variable" sid="8654809786692626" type="System">
                     <param id="0" name="Variable">distractiontimer</param>
                     <param id="1" name="Comparison">4</param>
@@ -408,6 +409,20 @@
                     </actions>
                 </event-block>
             </sub-events>
+        </event-block>
+        <event-block sid="3628322264314562">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="4137939185067063" type="System" />
+                <condition id="-8" name="Is boolean instance variable set" sid="9357035584171269" type="distraction2">
+                    <param id="0" name="Instance variable">grabbed</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="4885760590269574" type="distraction2">
+                    <param id="0" name="X">touch.X</param>
+                    <param id="1" name="Y">Touch.Y</param>
+                </action>
+            </actions>
         </event-block>
     </events>
 </c2eventsheet>
