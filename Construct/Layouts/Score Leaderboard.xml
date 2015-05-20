@@ -724,7 +724,7 @@
     <nonworld-instances>
         <instance type="Array" uid="29">
             <properties>
-                <width>20</width>
+                <width>50</width>
                 <height>1</height>
                 <depth>1</depth>
             </properties>

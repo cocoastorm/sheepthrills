@@ -442,21 +442,6 @@
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Water">
-                            <parameters>
-                                <angle>7</angle>
-                                <delta>20</delta>
-                                <emboss>0.3</emboss>
-                                <frequency>4</frequency>
-                                <intensity>3</intensity>
-                                <reflectivity>400</reflectivity>
-                                <speed>0.1</speed>
-                                <x-speed>0.3</x-speed>
-                                <y-speed>0.3</y-speed>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>

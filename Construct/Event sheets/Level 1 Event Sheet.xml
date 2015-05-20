@@ -73,7 +73,7 @@
                             <param id="1" name="Value">1</param>
                         </action>
                         <action behavior="Bullet" id="0" name="Set speed" sid="2865558304113732" type="Sprite2">
-                            <param id="0" name="Speed">random(500, 600)</param>
+                            <param id="0" name="Speed">random(400, 500)</param>
                         </action>
                     </actions>
                 </event-block>

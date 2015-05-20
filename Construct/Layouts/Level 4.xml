@@ -356,7 +356,7 @@
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>500</speed>
+                                <speed>400</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>Yes</bounce-off-solids>
@@ -387,8 +387,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>289.846130371</x>
-                        <y>234.230758667</y>
+                        <x>346</x>
+                        <y>275</y>
                         <z>0</z>
                         <width>104.880882263</width>
                         <height>104.880882263</height>
@@ -460,6 +460,62 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="distraction2" uid="133">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <grabbed>false</grabbed>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>400</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>Yes</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Physics">
+                            <properties>
+                                <immovable>Yes</immovable>
+                                <collision-mask>Circle</collision-mask>
+                                <prevent-rotation>Yes</prevent-rotation>
+                                <density>1</density>
+                                <friction>0</friction>
+                                <elasticity>0</elasticity>
+                                <linear-damping>0</linear-damping>
+                                <angular-damping>0</angular-damping>
+                                <bullet>Yes</bullet>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>346</x>
+                        <y>275</y>
+                        <z>0</z>
+                        <width>104.880996704</width>
+                        <height>104.880996704</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
                 <instance type="Cloud" uid="129">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
@@ -478,48 +534,6 @@
                         <depth>0</depth>
                         <hotspotX>0.501084626</hotspotX>
                         <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Level" uid="130">
-                    <properties>
-                        <text>Level 4</text>
-                        <initial-visibility>Visible</initial-visibility>
-                        <font>Vivaldi,-27,700,1</font>
-                        <color>0,0,0</color>
-                        <horizontal-alignment>Center</horizontal-alignment>
-                        <vertical-alignment>Center</vertical-alignment>
-                        <hotspot>Top-left</hotspot>
-                        <wrapping>Word</wrapping>
-                        <line-height>0</line-height>
-                    </properties>
-                    <effect-instances>
-                        <effect-instance type="Water">
-                            <parameters>
-                                <angle>7</angle>
-                                <delta>20</delta>
-                                <emboss>0.3</emboss>
-                                <frequency>4</frequency>
-                                <intensity>3</intensity>
-                                <reflectivity>400</reflectivity>
-                                <speed>0.1</speed>
-                                <x-speed>0.3</x-speed>
-                                <y-speed>0.3</y-speed>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>81.84614563</x>
-                        <y>247.230758667</y>
-                        <z>0</z>
-                        <width>299</width>
-                        <height>151</height>
-                        <depth>0</depth>
-                        <hotspotX>0</hotspotX>
-                        <hotspotY>0</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -544,6 +558,33 @@
                         <z>0</z>
                         <width>326</width>
                         <height>143</height>
+                        <depth>0</depth>
+                        <hotspotX>0</hotspotX>
+                        <hotspotY>0</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Level" uid="130">
+                    <properties>
+                        <text>Level 4</text>
+                        <initial-visibility>Visible</initial-visibility>
+                        <font>Vivaldi,-27,700,1</font>
+                        <color>0,0,0</color>
+                        <horizontal-alignment>Center</horizontal-alignment>
+                        <vertical-alignment>Center</vertical-alignment>
+                        <hotspot>Top-left</hotspot>
+                        <wrapping>Word</wrapping>
+                        <line-height>0</line-height>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>81.84614563</x>
+                        <y>247.230758667</y>
+                        <z>0</z>
+                        <width>299</width>
+                        <height>151</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>

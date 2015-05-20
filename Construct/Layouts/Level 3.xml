@@ -356,7 +356,7 @@
                     <behavior-instances>
                         <behavior-instance type="Bullet">
                             <properties>
-                                <speed>500</speed>
+                                <speed>400</speed>
                                 <acceleration>0</acceleration>
                                 <gravity>0</gravity>
                                 <bounce-off-solids>Yes</bounce-off-solids>
@@ -387,8 +387,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>290</x>
-                        <y>235</y>
+                        <x>346</x>
+                        <y>275</y>
                         <z>0</z>
                         <width>104.880882263</width>
                         <height>104.880882263</height>
@@ -433,21 +433,6 @@
                         <wrapping>Word</wrapping>
                         <line-height>0</line-height>
                     </properties>
-                    <effect-instances>
-                        <effect-instance type="Water">
-                            <parameters>
-                                <angle>7</angle>
-                                <delta>20</delta>
-                                <emboss>0.3</emboss>
-                                <frequency>4</frequency>
-                                <intensity>3</intensity>
-                                <reflectivity>400</reflectivity>
-                                <speed>0.1</speed>
-                                <x-speed>0.3</x-speed>
-                                <y-speed>0.3</y-speed>
-                            </parameters>
-                        </effect-instance>
-                    </effect-instances>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
