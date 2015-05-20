@@ -26,9 +26,7 @@
         <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
         <behavior author="Scirra" id="solid" version="1">Solid</behavior>
     </used-behaviors>
-    <used-effects>
-        <effect author="Viktor Korsun" id="water">Water</effect>
-    </used-effects>
+    <used-effects />
     <configurations>
         <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
     </configurations>
@@ -500,11 +498,6 @@
         </object-type>
         <object-type name="Level" sid="6292857280710113">
             <plugin id="Text" />
-            <effects>
-                <effect-type name="Water">
-                    <effect id="water" />
-                </effect-type>
-            </effects>
         </object-type>
         <object-type name="background_noSun" sid="4929618754306529">
             <plugin id="Sprite" />
