@@ -264,10 +264,6 @@
                                             <param id="0" name="Layer">2</param>
                                             <param id="1" name="Visibility">0</param>
                                         </action>
-                                        <action id="-10" name="Add to" sid="6417070056838228" type="System">
-                                            <param id="0" name="Variable">Score</param>
-                                            <param id="1" name="Value">accuracy * 10</param>
-                                        </action>
                                         <action id="-15" name="Set visible" sid="7529778914578441" type="SubmitScore">
                                             <param id="0" name="Visibility">1</param>
                                         </action>
@@ -370,10 +366,6 @@
                                         <action id="-4" name="Set layer visible" sid="1276560764558346" type="System">
                                             <param id="0" name="Layer">2</param>
                                             <param id="1" name="Visibility">0</param>
-                                        </action>
-                                        <action id="-10" name="Add to" sid="8549043862921209" type="System">
-                                            <param id="0" name="Variable">Score</param>
-                                            <param id="1" name="Value">accuracy * 10</param>
                                         </action>
                                         <action id="-15" name="Set visible" sid="5716530476315915" type="SubmitScore">
                                             <param id="0" name="Visibility">1</param>
@@ -547,5 +539,32 @@
                 </event-block>
             </sub-events>
         </event-group>
+        <event-block sid="6213794493266567">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="7194645188946854" type="System">
+                    <param id="0" name="Variable">gameover</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-4" name="Set layer visible" sid="5555198209462086" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="6614561867082895" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="1124467975791884" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="4891351472893746" type="System">
+                    <param id="0" name="Variable">gameover</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
