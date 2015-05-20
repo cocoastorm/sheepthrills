@@ -4,7 +4,8 @@
     <name>Level 4 Event Sheet</name>
     <events>
         <variable constant="0" name="starty2" sid="7720711916630867" static="0" type="number">0</variable>
-        <variable constant="0" name="distractiontimer2" sid="4837523300897373" static="0" type="number">0</variable>
+        <variable constant="0" name="distractionFlag2" sid="9125128496003615" static="0" type="number">0</variable>
+        <variable constant="0" name="distractiontimer2" sid="4837523300897373" static="0" type="number">5</variable>
         <variable constant="0" name="startx2" sid="2752399850508038" static="0" type="number">0</variable>
         <event-group description="" sid="8315073479829271" title="Level 4">
             <sub-events>
@@ -74,6 +75,10 @@
                         <action behavior="Bullet" id="0" name="Set speed" sid="398837770092636" type="Sprite2">
                             <param id="0" name="Speed">random(600, 750)</param>
                         </action>
+                        <action id="-9" name="Set value" sid="2840909328631354" type="System">
+                            <param id="0" name="Variable">distractionFlag2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="4062187894112005">
@@ -97,6 +102,10 @@
                         </action>
                         <action behavior="Bullet" id="0" name="Set speed" sid="3995300922166139" type="blueSheep">
                             <param id="0" name="Speed">random(600, 750)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3941170496453305" type="System">
+                            <param id="0" name="Variable">distractionFlag2</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -125,6 +134,10 @@
                         <action disabled="1" id="5" name="Set frame" sid="8509088469830263" type="distraction">
                             <param id="0" name="Frame number">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="9791822886880634" type="System">
+                            <param id="0" name="Variable">distractionFlag2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="5586092674814092">
@@ -148,6 +161,10 @@
                         </action>
                         <action behavior="Bullet" id="0" name="Set speed" sid="4662070110347291" type="redSheep">
                             <param id="0" name="Speed">random(600, 750)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8462589161936428" type="System">
+                            <param id="0" name="Variable">distractionFlag2</param>
+                            <param id="1" name="Value">1</param>
                         </action>
                     </actions>
                 </event-block>
@@ -392,9 +409,14 @@
             <conditions>
                 <condition id="-3" name="Is on-screen" sid="6061085232653744" type="distraction" />
                 <condition id="-14" name="Compare variable" sid="6100671428947923" type="System">
-                    <param id="0" name="Variable">distractiontimer</param>
+                    <param id="0" name="Variable">distractiontimer2</param>
                     <param id="1" name="Comparison">4</param>
                     <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="7718199454280416" type="System">
+                    <param id="0" name="Variable">distractionFlag2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
             <actions />
@@ -407,7 +429,7 @@
                     </conditions>
                     <actions>
                         <action id="-11" name="Subtract from" sid="3731414393168108" type="System">
-                            <param id="0" name="Variable">distractiontimer</param>
+                            <param id="0" name="Variable">distractiontimer2</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -421,12 +443,16 @@
                         </condition>
                     </conditions>
                     <actions>
-                        <action id="-2" name="Go to layout" sid="3887859445505967" type="System">
-                            <param id="0" name="Layout">Guessing Page</param>
-                        </action>
                         <action id="-9" name="Set value" sid="5042391414777025" type="System">
                             <param id="0" name="Variable">gameover</param>
                             <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="7515272180659635" type="System">
+                            <param id="0" name="Variable">distractiontimer2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="3887859445505967" type="System">
+                            <param id="0" name="Layout">Guessing Page</param>
                         </action>
                     </actions>
                 </event-block>
