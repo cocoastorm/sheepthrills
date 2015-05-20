@@ -142,7 +142,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1987678935605242" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="E:\Users\Amanda\Documents\Google Drive\BCIT CST\Term2\Comp2910\bg.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Judy W\Desktop\background.png" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -510,7 +510,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1738239667234744" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\background_noSun.png" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Judy W\Desktop\background1.png" />
                 </animation>
             </animation-folder>
         </object-type>
