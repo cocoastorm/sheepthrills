@@ -792,7 +792,7 @@
                     </frame>
                 </animation>
             </animation-folder>
-			</object-type>
+        </object-type>
         <object-type name="SaveState" sid="4398715646906095">
             <plugin id="WebStorage" />
         </object-type>
@@ -844,7 +844,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="SaveState" uid="19" />
+        <global-instance type="SaveState" uid="167" />
     </global-instances>
     <sounds-folder>
         <file name="amok.m4a" />
