@@ -378,7 +378,7 @@
                 </instance>
                 <instance type="Instruction" uid="16">
                     <properties>
-                        <text>All Sheeps!</text>
+                        <text>Both Sheeps!</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>AR JULIAN,-30,400,0</font>
                         <color>0,0,0</color>
