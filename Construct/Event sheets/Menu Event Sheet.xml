@@ -123,7 +123,12 @@
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="5" name="Set frame" sid="6734527672791089" type="MuteButton">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="1964372124590229" type="MuteButton" />
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>
