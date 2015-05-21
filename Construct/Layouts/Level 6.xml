@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <c2layout>
-    <name>Level Bonus</name>
+    <name>Level 6</name>
     <sid>4363925406858268</sid>
-    <event-sheet>Level Bonus Event Sheet</event-sheet>
+    <event-sheet>Level 6 Event Sheet</event-sheet>
     <size>
         <width>480</width>
         <height>640</height>
@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Sprite4" uid="168">
+                <instance type="Sprite4" uid="186">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Background" uid="150">
+                <instance type="Background" uid="187">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -304,7 +304,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BonusSheep" uid="169">
+                <instance type="BonusSheep" uid="195">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -366,7 +366,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BonusSheep" uid="151">
+                <instance type="BonusSheep" uid="196">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -428,7 +428,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BonusSheep" uid="160">
+                <instance type="BonusSheep" uid="197">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -490,7 +490,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BonusSheep" uid="170">
+                <instance type="BonusSheep" uid="198">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -552,7 +552,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BonusSheep" uid="174">
+                <instance type="BonusSheep" uid="199">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -614,7 +614,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BonusSheep" uid="176">
+                <instance type="BonusSheep" uid="200">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -676,7 +676,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Cloud" uid="200">
+                <instance type="Cloud" uid="201">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -698,7 +698,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Instruction" uid="201">
+                <instance type="Instruction" uid="202">
                     <properties>
                         <text>Count! </text>
                         <initial-visibility>Visible</initial-visibility>
@@ -725,9 +725,9 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Level" uid="202">
+                <instance type="Level" uid="203">
                     <properties>
-                        <text>Level Bonus</text>
+                        <text>Bonus Level</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>Vivaldi,-27,700,1</font>
                         <color>0,0,0</color>
@@ -752,7 +752,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="explosion" uid="159">
+                <instance type="explosion" uid="204">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>

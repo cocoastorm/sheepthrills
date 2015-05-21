@@ -292,6 +292,18 @@
                             <param id="0" name="Variable">distractiontimer</param>
                             <param id="1" name="Value">5</param>
                         </action>
+                        <action id="-9" name="Set value" sid="1571707481035872" type="System">
+                            <param id="0" name="Variable">distractiontimer4</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1149111892457308" type="System">
+                            <param id="0" name="Variable">distractiontimer5</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="979441394751491" type="System">
+                            <param id="0" name="Variable">distractiontimer6</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="6773243467964073">
@@ -509,7 +521,7 @@
                             </conditions>
                             <actions>
                                 <action id="-11" name="Subtract from" sid="6776719582352802" type="System">
-                                    <param id="0" name="Variable">distractiontimer2</param>
+                                    <param id="0" name="Variable">distractiontimer4</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
@@ -693,7 +705,7 @@
                             </conditions>
                             <actions>
                                 <action id="-11" name="Subtract from" sid="8485537897199063" type="System">
-                                    <param id="0" name="Variable">distractiontimer2</param>
+                                    <param id="0" name="Variable">distractiontimer5</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>
@@ -877,7 +889,7 @@
                             </conditions>
                             <actions>
                                 <action id="-11" name="Subtract from" sid="8655217837352212" type="System">
-                                    <param id="0" name="Variable">distractiontimer2</param>
+                                    <param id="0" name="Variable">distractiontimer6</param>
                                     <param id="1" name="Value">1</param>
                                 </action>
                             </actions>

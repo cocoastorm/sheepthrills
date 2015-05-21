@@ -1654,7 +1654,7 @@
         <layout>Score Leaderboard.xml</layout>
         <layout>Guessing Page.xml</layout>
         <layout>Level 5.xml</layout>
-        <layout>Level Bonus.xml</layout>
+        <layout>Level 6.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Menu Event Sheet.xml</event-sheet>
@@ -1666,17 +1666,17 @@
         <event-sheet>Level 3 Event Sheet.xml</event-sheet>
         <event-sheet>Level 4 Event Sheet.xml</event-sheet>
         <event-sheet>Level 5 Event Sheet.xml</event-sheet>
-        <event-sheet>Level Bonus Event Sheet.xml</event-sheet>
+        <event-sheet>Level 6 Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="203" />
-        <global-instance type="AJAX" uid="204" />
-        <global-instance type="Touch" uid="205">
+        <global-instance type="Mouse" uid="205" />
+        <global-instance type="AJAX" uid="206" />
+        <global-instance type="Touch" uid="207">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="206">
+        <global-instance type="Audio" uid="208">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -1690,7 +1690,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="SaveState" uid="207" />
+        <global-instance type="SaveState" uid="209" />
     </global-instances>
     <sounds-folder>
         <file name="amok.m4a" />
