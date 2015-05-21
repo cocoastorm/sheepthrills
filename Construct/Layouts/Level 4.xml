@@ -510,7 +510,7 @@
                         <width>104.880996704</width>
                         <height>104.880996704</height>
                         <depth>0</depth>
-                        <hotspotX>0.504297972</hotspotX>
+                        <hotspotX>0.501432657</hotspotX>
                         <hotspotY>0.501002014</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
@@ -540,7 +540,7 @@
                 </instance>
                 <instance type="Instruction" uid="131">
                     <properties>
-                        <text>All Sheeps!</text>
+                        <text>All Sheeps! Get rid of everything that is not sheep!</text>
                         <initial-visibility>Visible</initial-visibility>
                         <font>AR JULIAN,-30,400,0</font>
                         <color>0,0,0</color>

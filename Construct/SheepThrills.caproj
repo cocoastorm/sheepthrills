@@ -19,6 +19,7 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -621,7 +622,7 @@
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9090724971458071" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.500421" hotspotY="0.500414" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -679,8 +680,8 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1955765046706797" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.501433" hotspotY="0.501002" />
+                    <frame duration="1" hotspotX="0.501433" hotspotY="0.501002" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -712,6 +713,9 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="SaveState" sid="4398715646906095">
+            <plugin id="WebStorage" />
         </object-type>
     </object-folder>
     <families />
@@ -757,6 +761,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="SaveState" uid="19" />
     </global-instances>
     <sounds-folder>
         <file name="amok.m4a" />
