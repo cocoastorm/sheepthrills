@@ -714,6 +714,584 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="Sprite4" sid="5343651916928902">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9091154014448672" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player1_1" sid="8680960041412312">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1864836215589199" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment1.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player2_1" sid="6107101565818249">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6143648051631999" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment1.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player3_1" sid="7759462482481469">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5498873618764006" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment1.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player4_1" sid="8759220425943347">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9571456151332011" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment1.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player5_1" sid="497099689747866">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3241436786750497" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment1.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player6_1" sid="4257007999810086">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="950566858712115" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment1.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player7_1" sid="1799105950798856">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8427093734456066" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment1.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player8_1" sid="4236892498499815">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9999232257728269" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment1.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player9_1" sid="1294748255492289">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2678929083284842" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment1.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player10_1" sid="4242165364752036">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6285743500774431" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment1.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player1_2" sid="1612804427599145">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1635195520698414" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment2.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player2_2" sid="8885099104473293">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6154270815091142" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment2.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player3_2" sid="8628629531794969">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3894481929914015" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment2.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player4_2" sid="2848577920138597">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6161895646238277" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment2.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player5_2" sid="2621822064599981">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5951023878492709" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment2.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player6_2" sid="5679731640682847">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9694401090394093" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment2.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player7_2" sid="6529079074389883">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9629088724503893" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment2.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player8_2" sid="1259808778150193">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6030427166454501" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment2.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player9_2" sid="7752058004411352">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5220221075028848" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment2.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player10_2" sid="7874361511087056">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8989799172432137" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment2.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player1_3" sid="9961789561531937">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3233227033854538" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievement3.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player2_3" sid="6692490077586844">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3784188941241458" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievement3.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player3_3" sid="107074697408939">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1280256428089391" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievement3.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player4_3" sid="9238801819690054">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="398601482821996" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievement3.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player5_3" sid="5535554865073277">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6775495065689524" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievement3.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player6_3" sid="3963144108288845">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="851576403097719" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievement3.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player7_3" sid="7491113595946404">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="402040650766606" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievement3.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player8_3" sid="2446774242289303">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8709433051737287" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievement3.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player9_3" sid="4079570119428199">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2575969253870371" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievement3.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Player10_3" sid="1900790466405312">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="8280236420290766" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievement3.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+		</object-type>
         <object-type name="goldSheep" sid="4751444296524702">
             <plugin id="Sprite" />
             <instance-variables>
