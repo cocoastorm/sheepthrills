@@ -331,35 +331,6 @@
                                     <param id="0" name="Layout">Guessing Page</param>
                                 </action>
                             </actions>
-                            <sub-events>
-                                <event-block sid="3338719060658262">
-                                    <conditions>
-                                        <condition id="-8" name="Compare two values" sid="650691543438887" type="System">
-                                            <param id="0" name="First value">accuracy</param>
-                                            <param id="1" name="Comparison">4</param>
-                                            <param id="2" name="Second value">90</param>
-                                        </condition>
-                                    </conditions>
-                                    <actions />
-                                    <sub-events>
-                                        <event-block sid="4634424146002758">
-                                            <conditions>
-                                                <condition id="-8" name="Compare two values" sid="6550589164932345" type="System">
-                                                    <param id="0" name="First value">A1</param>
-                                                    <param id="1" name="Comparison">0</param>
-                                                    <param id="2" name="Second value">&quot;N&quot;</param>
-                                                </condition>
-                                            </conditions>
-                                            <actions>
-                                                <action id="-9" name="Set value" sid="3184215929522273" type="System">
-                                                    <param id="0" name="Variable">A1</param>
-                                                    <param id="1" name="Value">&quot;Y&quot;</param>
-                                                </action>
-                                            </actions>
-                                        </event-block>
-                                    </sub-events>
-                                </event-block>
-                            </sub-events>
                         </event-block>
                     </sub-events>
                 </event-block>
