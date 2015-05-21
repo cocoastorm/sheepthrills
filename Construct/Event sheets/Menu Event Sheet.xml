@@ -3,6 +3,7 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Menu Event Sheet</name>
     <events>
+        <variable constant="0" name="SoundOn" sid="5855098951519962" static="0" type="number">0</variable>
         <event-block sid="1548060053241426">
             <conditions>
                 <condition id="7" name="Cursor is over object" sid="4040193893727761" type="Mouse">
@@ -88,13 +89,6 @@
                 <condition id="-2" name="On start of layout" sid="9670533887217802" type="System" />
             </conditions>
             <actions>
-                <action id="33" name="Stop all" sid="6466214713757872" type="Audio" />
-                <action id="0" name="Play" sid="4663201333093192" type="Audio">
-                    <param id="0" name="Audio file">amok</param>
-                    <param id="2" name="Loop">1</param>
-                    <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
-                </action>
                 <action id="5" name="Set frame" sid="8254481750604145" type="HowToButton">
                     <param id="0" name="Frame number">2</param>
                 </action>
@@ -102,6 +96,36 @@
                     <param id="0" name="Frame number">2</param>
                 </action>
             </actions>
+            <sub-events>
+                <event-block sid="7833153276965431">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="8146199507448174" type="System">
+                            <param id="0" name="Variable">SoundOn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="33" name="Stop all" sid="6466214713757872" type="Audio" />
+                        <action id="0" name="Play" sid="4663201333093192" type="Audio">
+                            <param id="0" name="Audio file">amok</param>
+                            <param id="2" name="Loop">1</param>
+                            <param id="3" name="Volume">0</param>
+                            <param id="1" name="Tag (optional)">&quot;bgm&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5116285417437267">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4202681240338659" type="System">
+                            <param id="0" name="Variable">SoundOn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
         </event-block>
         <event-block sid="621735673897557">
             <conditions>
@@ -130,6 +154,62 @@
                 </action>
                 <action id="-2" name="Go to layout" sid="7649743203800379" type="System">
                     <param id="0" name="Layout">Level 1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2505914591358898">
+            <conditions>
+                <condition id="17" name="On tap object" sid="7510453891927312" type="Touch">
+                    <param id="0" name="Object">MuteButton</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5543313230630563" type="System">
+                    <param id="0" name="Variable">SoundOn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Set muted" sid="7153311523469318" type="Audio">
+                    <param id="0" name="Tag">&quot;bgm&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
+                <action id="5" name="Set frame" sid="2640575822771897" type="MuteButton">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="5215826555448655" type="System">
+                    <param id="0" name="Seconds">0.01</param>
+                </action>
+                <action id="-9" name="Set value" sid="2466166425025747" type="System">
+                    <param id="0" name="Variable">SoundOn</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="4030783826477023">
+            <conditions>
+                <condition id="17" name="On tap object" sid="3533025021315634" type="Touch">
+                    <param id="0" name="Object">MuteButton</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5835354573217274" type="System">
+                    <param id="0" name="Variable">SoundOn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="2" name="Set muted" sid="6214719643044503" type="Audio">
+                    <param id="0" name="Tag">&quot;bgm&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="2076503693448385" type="MuteButton">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="-16" name="Wait" sid="4089858175852765" type="System">
+                    <param id="0" name="Seconds">0.01</param>
+                </action>
+                <action id="-9" name="Set value" sid="3211460390318435" type="System">
+                    <param id="0" name="Variable">SoundOn</param>
+                    <param id="1" name="Value">0</param>
                 </action>
             </actions>
         </event-block>
