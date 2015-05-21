@@ -221,5 +221,47 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="2289257446969338">
+            <conditions>
+                <condition id="3" inverted="1" name="Local key exists" sid="9248443163483281" type="SaveState">
+                    <param id="0" name="Key">&quot;Achievements&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="3871501623854735" type="SaveState">
+                    <param id="0" name="Key">&quot;A1&quot;</param>
+                    <param id="1" name="Value">A1</param>
+                </action>
+                <action id="0" name="Set local value" sid="8177553957487658" type="SaveState">
+                    <param id="0" name="Key">&quot;A2&quot;</param>
+                    <param id="1" name="Value">A2</param>
+                </action>
+                <action id="0" name="Set local value" sid="6731755224768227" type="SaveState">
+                    <param id="0" name="Key">&quot;A3&quot;</param>
+                    <param id="1" name="Value">A3</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2931703598787956">
+            <conditions>
+                <condition id="3" name="Local key exists" sid="6778729158204968" type="SaveState">
+                    <param id="0" name="Key">&quot;Achievements&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="7360431168201329" type="System">
+                    <param id="0" name="Variable">A1</param>
+                    <param id="1" name="Value">SaveState.LocalValue(&quot;A1&quot;)</param>
+                </action>
+                <action id="-9" name="Set value" sid="2703784303505033" type="System">
+                    <param id="0" name="Variable">A2</param>
+                    <param id="1" name="Value">SaveState.LocalValue(&quot;A2&quot;)</param>
+                </action>
+                <action id="-9" name="Set value" sid="552472144866159" type="System">
+                    <param id="0" name="Variable">A3</param>
+                    <param id="1" name="Value">SaveState.LocalValue(&quot;A3&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
