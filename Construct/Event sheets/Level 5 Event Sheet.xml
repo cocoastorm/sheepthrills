@@ -162,10 +162,6 @@
                             <param id="0" name="Variable">distractionFlag2</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-10" name="Add to" sid="7574502319858809" type="System">
-                            <param id="0" name="Variable">distractions_f</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="7606943522955625">
@@ -197,10 +193,6 @@
                             <param id="0" name="Variable">distractionFlag2</param>
                             <param id="1" name="Value">1</param>
                         </action>
-                        <action id="-10" name="Add to" sid="4579549243708074" type="System">
-                            <param id="0" name="Variable">distractions_f</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="3983030462179074">
@@ -230,10 +222,6 @@
                         </action>
                         <action id="-9" name="Set value" sid="4252946455445955" type="System">
                             <param id="0" name="Variable">distractionFlag2</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-10" name="Add to" sid="3914385449164133" type="System">
-                            <param id="0" name="Variable">distractions_f</param>
                             <param id="1" name="Value">1</param>
                         </action>
                     </actions>
@@ -516,6 +504,10 @@
                                             <param id="0" name="Variable">Score</param>
                                             <param id="1" name="Value">100</param>
                                         </action>
+                                        <action id="-10" name="Add to" sid="8737608820241828" type="System">
+                                            <param id="0" name="Variable">distractions_f</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
                                     </actions>
                                 </event-block>
                             </sub-events>
@@ -681,6 +673,10 @@
                                         <action id="-10" name="Add to" sid="4653969619292379" type="System">
                                             <param id="0" name="Variable">Score</param>
                                             <param id="1" name="Value">100</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="7676034979526374" type="System">
+                                            <param id="0" name="Variable">distractions_f</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
@@ -861,6 +857,10 @@
                                         <action id="-10" name="Add to" sid="4337201092931516" type="System">
                                             <param id="0" name="Variable">Score</param>
                                             <param id="1" name="Value">100</param>
+                                        </action>
+                                        <action id="-10" name="Add to" sid="9984398420065682" type="System">
+                                            <param id="0" name="Variable">distractions_f</param>
+                                            <param id="1" name="Value">1</param>
                                         </action>
                                     </actions>
                                 </event-block>
