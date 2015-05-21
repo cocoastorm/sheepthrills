@@ -6,6 +6,7 @@
         <variable constant="0" name="gameover" sid="9225595920325593" static="0" type="number">0</variable>
         <variable constant="0" name="starty" sid="6229139512912421" static="0" type="number">0</variable>
         <variable constant="0" name="distractiontimer" sid="9953980892936328" static="0" type="number">5</variable>
+        <variable constant="0" name="distractiontimer3" sid="8009779390747302" static="0" type="number">5</variable>
         <variable constant="0" name="distractionFlag" sid="1006666110128287" static="0" type="number">0</variable>
         <variable constant="0" name="startx" sid="4092887536894462" static="0" type="number">0</variable>
         <event-group description="" sid="7083047555710293" title="Level 3">
@@ -245,13 +246,18 @@
                 <condition id="-6" name="Every X seconds" sid="4261237164667775" type="System">
                     <param id="0" name="Interval (seconds)">7</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="498923729414808" type="System">
+                    <param id="0" name="Variable">SoundOn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Play" sid="7492087556590215" type="Audio">
                     <param id="0" name="Audio file">sheep</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                    <param id="1" name="Tag (optional)">&quot;baa&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -430,20 +436,6 @@
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="3628322264314562">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="4137939185067063" type="System" />
-                <condition id="-8" name="Is boolean instance variable set" sid="9357035584171269" type="distraction2">
-                    <param id="0" name="Instance variable">grabbed</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Set position" sid="4885760590269574" type="distraction2">
-                    <param id="0" name="X">touch.X</param>
-                    <param id="1" name="Y">Touch.Y</param>
-                </action>
-            </actions>
         </event-block>
     </events>
 </c2eventsheet>

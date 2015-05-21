@@ -299,13 +299,18 @@
                 <condition id="-6" name="Every X seconds" sid="9041646316576915" type="System">
                     <param id="0" name="Interval (seconds)">7</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="7677505211989696" type="System">
+                    <param id="0" name="Variable">SoundOn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Play" sid="95359633632228" type="Audio">
                     <param id="0" name="Audio file">sheep</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                    <param id="1" name="Tag (optional)">&quot;baa&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -473,11 +478,11 @@
                                     <param id="0" name="Angle">angle(startx, starty, touch.X, touch.Y)</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="3402484831539602" type="System">
-                                    <param id="0" name="Variable">startx2</param>
+                                    <param id="0" name="Variable">startx</param>
                                     <param id="1" name="Value">touch.X</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="285476128333213" type="System">
-                                    <param id="0" name="Variable">starty2</param>
+                                    <param id="0" name="Variable">starty</param>
                                     <param id="1" name="Value">touch.Y</param>
                                 </action>
                             </actions>
@@ -494,11 +499,11 @@
                                     <param id="1" name="Value">1</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="1680776239820495" type="System">
-                                    <param id="0" name="Variable">startx2</param>
+                                    <param id="0" name="Variable">startx</param>
                                     <param id="1" name="Value">touch.X</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="2879167332620739" type="System">
-                                    <param id="0" name="Variable">starty2</param>
+                                    <param id="0" name="Variable">starty</param>
                                     <param id="1" name="Value">touch.Y</param>
                                 </action>
                             </actions>
@@ -513,11 +518,11 @@
                                     <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="5457099147218801" type="System">
-                                    <param id="0" name="Variable">startx2</param>
+                                    <param id="0" name="Variable">startx</param>
                                     <param id="1" name="Value">touch.X</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="6048293600561036" type="System">
-                                    <param id="0" name="Variable">starty2</param>
+                                    <param id="0" name="Variable">starty</param>
                                     <param id="1" name="Value">touch.Y</param>
                                 </action>
                                 <action behavior="Physics" id="5" name="Apply impulse at angle" sid="633933896565539" type="distraction2">
@@ -566,7 +571,6 @@
         <event-block sid="7470493207275546">
             <conditions>
                 <condition id="-3" name="Is on-screen" sid="6061085232653744" type="distraction" />
-                <condition id="-3" name="Is on-screen" sid="2449239146520182" type="distraction2" />
                 <condition id="-14" name="Compare variable" sid="6100671428947923" type="System">
                     <param id="0" name="Variable">distractiontimer2</param>
                     <param id="1" name="Comparison">4</param>
@@ -596,7 +600,7 @@
                 <event-block sid="4078566660151387">
                     <conditions>
                         <condition id="-8" name="Compare two values" sid="5081035181086233" type="System">
-                            <param id="0" name="First value">distractiontimer</param>
+                            <param id="0" name="First value">distractiontimer2</param>
                             <param id="1" name="Comparison">0</param>
                             <param id="2" name="Second value">0</param>
                         </condition>
@@ -611,6 +615,73 @@
                             <param id="1" name="Value">0</param>
                         </action>
                         <action id="-2" name="Go to layout" sid="3887859445505967" type="System">
+                            <param id="0" name="Layout">Guessing Page</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="2562839355481778">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="1213320330391872" type="System" />
+                <condition id="-8" name="Is boolean instance variable set" sid="7994641507397133" type="distraction2">
+                    <param id="0" name="Instance variable">grabbed</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="2323834642847332" type="distraction2">
+                    <param id="0" name="X">touch.X</param>
+                    <param id="1" name="Y">Touch.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="5348558566072149">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="4003168120911395" type="distraction2" />
+                <condition id="-14" name="Compare variable" sid="2085605017099712" type="System">
+                    <param id="0" name="Variable">distractiontimer3</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="6806324574876029" type="System">
+                    <param id="0" name="Variable">distractionFlag2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="5602399820416313">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="2238432034234188" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="7926428758848339" type="System">
+                            <param id="0" name="Variable">distractiontimer3</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9846161328175437">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7281377574637693" type="System">
+                            <param id="0" name="First value">distractiontimer3</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5275532695581309" type="System">
+                            <param id="0" name="Variable">gameover</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2349915623820238" type="System">
+                            <param id="0" name="Variable">distractionFlag2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="5062046745725575" type="System">
                             <param id="0" name="Layout">Guessing Page</param>
                         </action>
                     </actions>
