@@ -260,7 +260,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3580749323199944" speed="5">
-                    <frame duration="1" hotspotX="0.501085" hotspotY="0.5" original-source="C:\Users\Judy W\Documents\Google Drive\BCIT CST\Term2\Comp2910\cloud.png">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.501961" original-source="C:\Users\Judy W\Desktop\cloud.png">
                         <collision-poly>
                             <point x="0.139647" y="0.215347" />
                             <point x="0.499197" y="0.0866337" />
@@ -742,11 +742,11 @@
                             <point x="0.74613" y="0.860714" />
                             <point x="0.390093" y="0.892857" />
                             <point x="0.291022" y="0.196429" />
-						</collision-poly>
-					</frame>
-				</animation>
-			</animation-folder>
-		</object-type>
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
         <object-type name="Sprite4" sid="5343651916928902">
             <plugin id="Sprite" />
             <animation-folder>
@@ -867,11 +867,11 @@
                             <point x="0.5" y="0.976549" />
                             <point x="0.265504" y="0.770519" />
                             <point x="0.0406977" y="0.499162" />
-						</collision-poly>
-					</frame>
-				</animation>
-			</animation-folder>
-		</object-type>
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
         <object-type name="Player6_1" sid="4257007999810086">
             <plugin id="Sprite" />
             <animation-folder>
@@ -923,7 +923,7 @@
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Judy W\Desktop\ss.png" />
                 </animation>
             </animation-folder>
-		</object-type>
+        </object-type>
         <object-type name="Player8_1" sid="4236892498499815">
             <plugin id="Sprite" />
             <animation-folder>
@@ -1360,7 +1360,7 @@
                     </frame>
                 </animation>
             </animation-folder>
-		</object-type>
+        </object-type>
         <object-type name="goldSheep" sid="4751444296524702">
             <plugin id="Sprite" />
             <instance-variables>
@@ -1439,7 +1439,7 @@
                     </frame>
                 </animation>
             </animation-folder>
-			</object-type>
+        </object-type>
         <object-type name="SaveState" sid="4398715646906095">
             <plugin id="WebStorage" />
         </object-type>
@@ -1470,14 +1470,14 @@
         <event-sheet>Level Bonus Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
-        <global-instance type="Mouse" uid="101" />
-        <global-instance type="AJAX" uid="102" />
-        <global-instance type="Touch" uid="103">
+        <global-instance type="Mouse" uid="203" />
+        <global-instance type="AJAX" uid="204" />
+        <global-instance type="Touch" uid="205">
             <properties>
                 <use-mouse-input>Yes</use-mouse-input>
             </properties>
         </global-instance>
-        <global-instance type="Audio" uid="104">
+        <global-instance type="Audio" uid="206">
             <properties>
                 <timescale-audio>Off</timescale-audio>
                 <saveload>All</saveload>
@@ -1491,7 +1491,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
-        <global-instance type="SaveState" uid="19" />
+        <global-instance type="SaveState" uid="207" />
     </global-instances>
     <sounds-folder>
         <file name="amok.m4a" />

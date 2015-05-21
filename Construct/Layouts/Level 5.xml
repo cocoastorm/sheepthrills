@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Background" uid="19">
+                <instance type="Background" uid="169">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -51,7 +51,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite2" uid="134">
+                <instance type="Sprite2" uid="170">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -112,7 +112,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SideBars" uid="135">
+                <instance type="SideBars" uid="171">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -141,7 +141,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SideBars" uid="136">
+                <instance type="SideBars" uid="172">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -170,7 +170,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SideBars" uid="137">
+                <instance type="SideBars" uid="173">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -199,7 +199,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SideBars" uid="138">
+                <instance type="SideBars" uid="174">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -228,7 +228,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="blueSheep" uid="139">
+                <instance type="blueSheep" uid="175">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -289,7 +289,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Counter" uid="140">
+                <instance type="Counter" uid="176">
                     <properties>
                         <text></text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -316,7 +316,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Timer" uid="141">
+                <instance type="Timer" uid="177">
                     <properties>
                         <text>Timer</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -343,7 +343,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="distraction" uid="142">
+                <instance type="distraction" uid="178">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -399,7 +399,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="redSheep" uid="143">
+                <instance type="redSheep" uid="179">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -460,7 +460,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="distraction2" uid="144">
+                <instance type="distraction2" uid="180">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -516,7 +516,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="goldSheep" uid="148">
+                <instance type="goldSheep" uid="181">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -577,7 +577,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="distraction3" uid="149">
+                <instance type="distraction3" uid="182">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -633,7 +633,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Cloud" uid="145">
+                <instance type="Cloud" uid="183">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -646,16 +646,16 @@
                         <x>240</x>
                         <y>264</y>
                         <z>0</z>
-                        <width>463.31137085</width>
-                        <height>300.445892334</height>
+                        <width>400.088012695</width>
+                        <height>338.149993896</height>
                         <depth>0</depth>
-                        <hotspotX>0.501084626</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501960814</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Instruction" uid="146">
+                <instance type="Instruction" uid="184">
                     <properties>
                         <text>Count the Golden Sheep!</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -682,7 +682,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Level" uid="147">
+                <instance type="Level" uid="185">
                     <properties>
                         <text>Level 5</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -697,11 +697,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>81</x>
+                        <x>107</x>
                         <y>248</y>
                         <z>0</z>
-                        <width>299</width>
-                        <height>151</height>
+                        <width>251</width>
+                        <height>143</height>
                         <depth>0</depth>
                         <hotspotX>0</hotspotX>
                         <hotspotY>0</hotspotY>
