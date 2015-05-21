@@ -381,7 +381,6 @@
         <event-block sid="3508631172348678">
             <conditions>
                 <condition id="-3" name="Is on-screen" sid="8258023597365908" type="distraction" />
-                <condition id="-3" name="Is on-screen" sid="923213557265276" type="distraction2" />
                 <condition id="-14" name="Compare variable" sid="8654809786692626" type="System">
                     <param id="0" name="Variable">distractiontimer</param>
                     <param id="1" name="Comparison">5</param>
