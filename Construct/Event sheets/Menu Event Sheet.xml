@@ -123,7 +123,12 @@
                             <param id="2" name="Value">1</param>
                         </condition>
                     </conditions>
-                    <actions />
+                    <actions>
+                        <action id="5" name="Set frame" sid="6734527672791089" type="MuteButton">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="2" name="Stop" sid="1964372124590229" type="MuteButton" />
+                    </actions>
                 </event-block>
             </sub-events>
         </event-block>
@@ -260,6 +265,40 @@
                 <action id="-9" name="Set value" sid="552472144866159" type="System">
                     <param id="0" name="Variable">A3</param>
                     <param id="1" name="Value">SaveState.LocalValue(&quot;A3&quot;)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3839434723573502">
+            <conditions>
+                <condition id="3" inverted="1" name="Local key exists" sid="2413404547013704" type="SaveState">
+                    <param id="0" name="Key">&quot;key_values&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Set local value" sid="6716403577076641" type="SaveState">
+                    <param id="0" name="Key">&quot;bestScore&quot;</param>
+                    <param id="1" name="Value">BestScore.Text</param>
+                </action>
+                <action id="0" name="Set local value" sid="8228238453203823" type="SaveState">
+                    <param id="0" name="Key">&quot;distractions&quot;</param>
+                    <param id="1" name="Value">distractions_f</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="3740543790081877">
+            <conditions>
+                <condition id="3" name="Local key exists" sid="8906247396437774" type="SaveState">
+                    <param id="0" name="Key">&quot;key_values&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="927564886445612" type="System">
+                    <param id="0" name="Variable">distractions_f</param>
+                    <param id="1" name="Value">SaveState.LocalValue(&quot;distractions&quot;)</param>
+                </action>
+                <action id="-9" name="Set value" sid="5595098062776642" type="System">
+                    <param id="0" name="Variable">bestScore</param>
+                    <param id="1" name="Value">SaveState.LocalValue(&quot;bestScore&quot;)</param>
                 </action>
             </actions>
         </event-block>

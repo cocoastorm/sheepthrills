@@ -306,11 +306,11 @@
                         <x>241</x>
                         <y>264</y>
                         <z>0</z>
-                        <width>463.31137085</width>
-                        <height>300.445892334</height>
+                        <width>400.088012695</width>
+                        <height>338.149993896</height>
                         <depth>0</depth>
-                        <hotspotX>0.501084626</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501960814</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
@@ -346,7 +346,7 @@
                     <properties>
                         <text>Timer</text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>Arial,-30,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Center</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -384,8 +384,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>82</x>
-                        <y>248</y>
+                        <x>89</x>
+                        <y>256</y>
                         <z>0</z>
                         <width>299</width>
                         <height>151</height>

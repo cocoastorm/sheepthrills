@@ -3,108 +3,280 @@
     <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
     <name>Help Event Sheet</name>
     <events>
-        <variable constant="0" name="home" sid="5167870966033603" static="0" type="number">0</variable>
+        <variable constant="0" name="Layer" sid="5167870966033603" static="0" type="number">1</variable>
         <variable constant="0" name="forward" sid="3764358782649141" static="0" type="number">0</variable>
-        <event-block sid="7173149930997694">
+        <event-block disabled="1" sid="329047461873444">
             <conditions>
-                <condition id="3" name="On touched object" sid="1643855625733496" type="Touch">
-                    <param id="0" name="Object">home</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="5443091619753824" type="System">
-                    <param id="0" name="Variable">home</param>
+                <condition id="-14" name="Compare variable" sid="3149141936737583" type="System">
+                    <param id="0" name="Variable">Layer</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
+                    <param id="2" name="Value">2</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block disabled="1" sid="4330734622797511">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="3001204680923782" type="Touch">
+                            <param id="0" name="Object">forward</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="8960615104041056" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7109697909444513" type="System">
+                            <param id="0" name="Seconds">0.1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5366197292261625" type="System">
+                            <param id="0" name="Variable">Layer</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block disabled="1" sid="879841442237057">
+            <conditions>
+                <condition id="17" name="On tap object" sid="7420389949431976" type="Touch">
+                    <param id="0" name="Object">HomeButton</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="725501385366778" type="System">
+                    <param id="0" name="Variable">Layer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
                 </condition>
             </conditions>
             <actions>
-                <action id="-2" name="Go to layout" sid="8127964249807295" type="System">
+                <action id="-2" name="Go to layout" sid="5175675717317705" type="System">
                     <param id="0" name="Layout">Menu Screen</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="4477254528772149" type="System">
+                    <param id="0" name="Layer">1</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="654971771254328" type="System">
+                    <param id="0" name="Layer">2</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="1094355117354209" type="System">
+                    <param id="0" name="Layer">3</param>
+                    <param id="1" name="Visibility">0</param>
+                </action>
+                <action id="-16" name="Wait" sid="6659431326079543" type="System">
+                    <param id="0" name="Seconds">0.1</param>
+                </action>
+                <action id="-9" name="Set value" sid="9129627994204335" type="System">
+                    <param id="0" name="Variable">Layer</param>
+                    <param id="1" name="Value">1</param>
                 </action>
             </actions>
         </event-block>
-        <event-block sid="97148716603483">
+        <event-block sid="2096807285997828">
             <conditions>
-                <condition id="3" name="On touched object" sid="9402189616188855" type="Touch">
-                    <param id="0" name="Object">HomeButton</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="2396738631113117" type="System">
-                    <param id="0" name="Variable">home</param>
+                <condition id="-14" name="Compare variable" sid="6168163201956214" type="System">
+                    <param id="0" name="Variable">Layer</param>
                     <param id="1" name="Comparison">0</param>
                     <param id="2" name="Value">1</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-2" name="Go to layout" sid="8238885539396373" type="System">
-                    <param id="0" name="Layout">Menu Screen</param>
-                </action>
-                <action id="-9" name="Set value" sid="2933875270735261" type="System">
-                    <param id="0" name="Variable">home</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-4" name="Set layer visible" sid="9439070338979478" type="System">
-                    <param id="0" name="Layer">1</param>
-                    <param id="1" name="Visibility">0</param>
-                </action>
-                <action id="-4" name="Set layer visible" sid="9895993249233753" type="System">
-                    <param id="0" name="Layer">0</param>
-                    <param id="1" name="Visibility">1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="7060248970746666">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="7513036910330195" type="Touch">
+                            <param id="0" name="Object">HomeButton</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="1711850041553433" type="HomeButton">
+                            <param id="0" name="Instance variable">layer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="5900561214891092" type="System">
+                            <param id="0" name="Layout">Menu Screen</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="410773295592477">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="2494261153776356" type="Touch">
+                            <param id="0" name="Object">forward</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="7945520091241311" type="forward">
+                            <param id="0" name="Instance variable">Layer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="9600301245617234" type="System">
+                            <param id="0" name="Layer">1</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="6784913337266461" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7039581146523079" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3767707147294563" type="System">
+                            <param id="0" name="Variable">Layer</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
-        <event-block sid="2719180287821586">
+        <event-block sid="9859596955766698">
             <conditions>
-                <condition id="3" name="On touched object" sid="1188107883006334" type="Touch">
-                    <param id="0" name="Object">forward</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="9873263234575346" type="System">
-                    <param id="0" name="Variable">forward</param>
+                <condition id="-14" name="Compare variable" sid="15267916103298" type="System">
+                    <param id="0" name="Variable">Layer</param>
                     <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">0</param>
+                    <param id="2" name="Value">2</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="304871398758096" type="System">
-                    <param id="0" name="Variable">home</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-                <action id="-4" name="Set layer visible" sid="7100560225640648" type="System">
-                    <param id="0" name="Layer">0</param>
-                    <param id="1" name="Visibility">0</param>
-                </action>
-                <action id="-4" name="Set layer visible" sid="4422390462231341" type="System">
-                    <param id="0" name="Layer">1</param>
-                    <param id="1" name="Visibility">1</param>
-                </action>
-                <action id="-9" name="Set value" sid="7912407191771444" type="System">
-                    <param id="0" name="Variable">forward</param>
-                    <param id="1" name="Value">1</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="8340274614611056">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="1472216005756696" type="Touch">
+                            <param id="0" name="Object">forward</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="6751975603571333" type="forward">
+                            <param id="0" name="Instance variable">Layer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="3627438765629521" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="4595203449630176" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="5346627096599623" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1121825640657546" type="System">
+                            <param id="0" name="Variable">Layer</param>
+                            <param id="1" name="Value">3</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5325595554275985">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="3857314120483317" type="Touch">
+                            <param id="0" name="Object">backward</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="6029869443846981" type="backward">
+                            <param id="0" name="Instance variable">Layer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="3142254187634639" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="4153235771715843" type="System">
+                            <param id="0" name="Layer">1</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="5987703365116314" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="636227614369318" type="System">
+                            <param id="0" name="Variable">Layer</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
-        <event-block sid="1931060443431065">
+        <event-block sid="1897644440209331">
             <conditions>
-                <condition id="3" name="On touched object" sid="5575390914668685" type="Touch">
-                    <param id="0" name="Object">backward</param>
+                <condition id="-14" name="Compare variable" sid="9656072000796794" type="System">
+                    <param id="0" name="Variable">Layer</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">3</param>
                 </condition>
             </conditions>
-            <actions>
-                <action id="-4" name="Set layer visible" sid="940456918324595" type="System">
-                    <param id="0" name="Layer">1</param>
-                    <param id="1" name="Visibility">0</param>
-                </action>
-                <action id="-4" name="Set layer visible" sid="6266653824821952" type="System">
-                    <param id="0" name="Layer">0</param>
-                    <param id="1" name="Visibility">1</param>
-                </action>
-                <action id="-9" name="Set value" sid="8729938332986891" type="System">
-                    <param id="0" name="Variable">home</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-                <action id="-9" name="Set value" sid="5442344456300742" type="System">
-                    <param id="0" name="Variable">forward</param>
-                    <param id="1" name="Value">0</param>
-                </action>
-            </actions>
+            <actions />
+            <sub-events>
+                <event-block sid="5541853288842071">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="88550030204804" type="Touch">
+                            <param id="0" name="Object">HomeButton</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="4824631555947267" type="HomeButton">
+                            <param id="0" name="Instance variable">layer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="8820834014957358" type="System">
+                            <param id="0" name="Layout">Menu Screen</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="560128284477868" type="System">
+                            <param id="0" name="Layer">1</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="2423735098444258" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="3281793609024268" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7186049906682211" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4623858911478153" type="System">
+                            <param id="0" name="Variable">Layer</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1041625694075617">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="6285895185994882" type="Touch">
+                            <param id="0" name="Object">backward</param>
+                        </condition>
+                        <condition id="-7" name="Compare instance variable" sid="6981086247534385" type="backward">
+                            <param id="0" name="Instance variable">Layer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-4" name="Set layer visible" sid="9858726647925744" type="System">
+                            <param id="0" name="Layer">3</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="1572107403984877" type="System">
+                            <param id="0" name="Layer">2</param>
+                            <param id="1" name="Visibility">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="7728869342804692" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5197714775834768" type="System">
+                            <param id="0" name="Variable">Layer</param>
+                            <param id="1" name="Value">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
         </event-block>
     </events>
 </c2eventsheet>

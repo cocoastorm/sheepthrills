@@ -73,7 +73,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SideBars" uid="152">
+                <instance type="SideBars" uid="188">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -102,7 +102,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SideBars" uid="153">
+                <instance type="SideBars" uid="189">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -131,7 +131,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SideBars" uid="154">
+                <instance type="SideBars" uid="190">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -160,7 +160,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SideBars" uid="155">
+                <instance type="SideBars" uid="191">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -189,7 +189,68 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Counter" uid="157">
+                <instance type="blueSheep" uid="192">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <instance-variables>
+                        <Bounces>0</Bounces>
+                    </instance-variables>
+                    <behavior-instances>
+                        <behavior-instance type="Bullet">
+                            <properties>
+                                <speed>500</speed>
+                                <acceleration>0</acceleration>
+                                <gravity>0</gravity>
+                                <bounce-off-solids>Yes</bounce-off-solids>
+                                <set-angle>Yes</set-angle>
+                                <initial-state>Disabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="BoundToLayout">
+                            <properties>
+                                <bound-by>Origin</bound-by>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Solid">
+                            <properties>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                        <behavior-instance type="Physics">
+                            <properties>
+                                <immovable>Yes</immovable>
+                                <collision-mask>Circle</collision-mask>
+                                <prevent-rotation>Yes</prevent-rotation>
+                                <density>1</density>
+                                <friction>0</friction>
+                                <elasticity>0</elasticity>
+                                <linear-damping>0</linear-damping>
+                                <angular-damping>0</angular-damping>
+                                <bullet>Yes</bullet>
+                                <initial-state>Enabled</initial-state>
+                            </properties>
+                        </behavior-instance>
+                    </behavior-instances>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>221</x>
+                        <y>241</y>
+                        <z>0</z>
+                        <width>90</width>
+                        <height>77</height>
+                        <depth>0</depth>
+                        <hotspotX>0.549839199</hotspotX>
+                        <hotspotY>0.461832047</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Counter" uid="193">
                     <properties>
                         <text></text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -216,7 +277,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Timer" uid="158">
+                <instance type="Timer" uid="194">
                     <properties>
                         <text>Timer</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -615,7 +676,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Cloud" uid="164">
+                <instance type="Cloud" uid="200">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -628,16 +689,16 @@
                         <x>249</x>
                         <y>292</y>
                         <z>0</z>
-                        <width>463.31137085</width>
-                        <height>300.445892334</height>
+                        <width>400.088012695</width>
+                        <height>338.149993896</height>
                         <depth>0</depth>
-                        <hotspotX>0.501084626</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501960814</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Instruction" uid="165">
+                <instance type="Instruction" uid="201">
                     <properties>
                         <text>Count! </text>
                         <initial-visibility>Visible</initial-visibility>
@@ -664,7 +725,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Level" uid="166">
+                <instance type="Level" uid="202">
                     <properties>
                         <text>Level Bonus</text>
                         <initial-visibility>Visible</initial-visibility>

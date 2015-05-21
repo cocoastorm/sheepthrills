@@ -29,7 +29,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Background" uid="33">
+                <instance type="Background" uid="64">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -70,7 +70,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="WhiteBackground" uid="34">
+                <instance type="WhiteBackground" uid="65">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -92,7 +92,7 @@
                         <opacity>0.699999988</opacity>
                     </world>
                 </instance>
-                <instance type="Numbers" uid="57">
+                <instance type="Numbers" uid="66">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -117,7 +117,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Numbers" uid="58">
+                <instance type="Numbers" uid="67">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -142,7 +142,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Numbers" uid="59">
+                <instance type="Numbers" uid="68">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -167,7 +167,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Numbers" uid="60">
+                <instance type="Numbers" uid="69">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -192,7 +192,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Numbers" uid="61">
+                <instance type="Numbers" uid="70">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -217,7 +217,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Numbers" uid="62">
+                <instance type="Numbers" uid="71">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -242,7 +242,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Numbers" uid="63">
+                <instance type="Numbers" uid="72">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -267,7 +267,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Numbers" uid="64">
+                <instance type="Numbers" uid="73">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -292,7 +292,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Numbers" uid="65">
+                <instance type="Numbers" uid="74">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -317,7 +317,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Ok" uid="66">
+                <instance type="Ok" uid="75">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -339,7 +339,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Backspace" uid="67">
+                <instance type="Backspace" uid="76">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -361,7 +361,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Numbers" uid="68">
+                <instance type="Numbers" uid="77">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -386,7 +386,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Sprite12" uid="35">
+                <instance type="Sprite12" uid="78">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -427,7 +427,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="number" uid="69">
+                <instance type="number" uid="79">
                     <properties>
                         <text>0</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -454,7 +454,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="number" uid="70">
+                <instance type="number" uid="80">
                     <properties>
                         <text>1</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -481,7 +481,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="number" uid="71">
+                <instance type="number" uid="81">
                     <properties>
                         <text>2</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -508,7 +508,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="number" uid="72">
+                <instance type="number" uid="82">
                     <properties>
                         <text>3</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -535,7 +535,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="number" uid="73">
+                <instance type="number" uid="93">
                     <properties>
                         <text>6</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -562,7 +562,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="number" uid="74">
+                <instance type="number" uid="94">
                     <properties>
                         <text>5</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -589,7 +589,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="number" uid="75">
+                <instance type="number" uid="95">
                     <properties>
                         <text>4</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -616,7 +616,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="number" uid="76">
+                <instance type="number" uid="96">
                     <properties>
                         <text>7</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -643,7 +643,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="number" uid="77">
+                <instance type="number" uid="97">
                     <properties>
                         <text>8</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -670,7 +670,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="number" uid="78">
+                <instance type="number" uid="98">
                     <properties>
                         <text>9</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -697,7 +697,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="number" uid="79">
+                <instance type="number" uid="101">
                     <properties>
                         <text>OK</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -724,7 +724,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ShowUp" uid="80">
+                <instance type="ShowUp" uid="102">
                     <properties>
                         <text>0</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -751,7 +751,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="number" uid="81">
+                <instance type="number" uid="103">
                     <properties>
                         <text>CLR</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -778,7 +778,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Counter" uid="23">
+                <instance type="Counter" uid="104">
                     <properties>
                         <text></text>
                         <initial-visibility>Invisible</initial-visibility>
@@ -805,11 +805,11 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Stats" uid="82">
+                <instance type="Stats" uid="105">
                     <properties>
                         <text></text>
                         <initial-visibility>Visible</initial-visibility>
-                        <font>Arial,-16</font>
+                        <font>Arial,-19,400,0</font>
                         <color>0,0,0</color>
                         <horizontal-alignment>Left</horizontal-alignment>
                         <vertical-alignment>Top</vertical-alignment>
@@ -820,8 +820,8 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>21</x>
-                        <y>112</y>
+                        <x>23</x>
+                        <y>267</y>
                         <z>0</z>
                         <width>437</width>
                         <height>30</height>
@@ -851,7 +851,7 @@
             <blend-mode>0</blend-mode>
             <effect-fallback>0</effect-fallback>
             <instances>
-                <instance type="Cloud" uid="93">
+                <instance type="Cloud" uid="162">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -861,25 +861,28 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>240</x>
-                        <y>275</y>
+                        <x>231</x>
+                        <y>283</y>
                         <z>0</z>
-                        <width>461</width>
-                        <height>400</height>
+                        <width>455.960510254</width>
+                        <height>387.566436768</height>
                         <depth>0</depth>
-                        <hotspotX>0.501084626</hotspotX>
-                        <hotspotY>0.5</hotspotY>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.501960814</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="HomeButton" uid="94">
+                <instance type="HomeButton" uid="163">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
                         <initial-frame>0</initial-frame>
                         <collisions>Enabled</collisions>
                     </properties>
+                    <instance-variables>
+                        <layer>1</layer>
+                    </instance-variables>
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
@@ -895,7 +898,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ReplayButton" uid="95">
+                <instance type="ReplayButton" uid="164">
                     <properties>
                         <initial-visibility>Visible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -917,7 +920,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="ScoreDisplay" uid="96">
+                <instance type="ScoreDisplay" uid="165">
                     <properties>
                         <text>Score : 0</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -944,7 +947,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="BestScore" uid="97">
+                <instance type="BestScore" uid="166">
                     <properties>
                         <text>Best: 0</text>
                         <initial-visibility>Visible</initial-visibility>
@@ -971,7 +974,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="TryAgain" uid="98">
+                <instance type="TryAgain" uid="167">
                     <properties>
                         <text>Try Again! </text>
                         <initial-visibility>Visible</initial-visibility>
@@ -998,7 +1001,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="SubmitScore" uid="105">
+                <instance type="SubmitScore" uid="168">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
