@@ -621,7 +621,7 @@
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9090724971458071" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.500421" hotspotY="0.500414" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -679,8 +679,8 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1955765046706797" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.501433" hotspotY="0.501002" />
+                    <frame duration="1" hotspotX="0.501433" hotspotY="0.501002" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -713,6 +713,85 @@
                 </animation>
             </animation-folder>
         </object-type>
+        <object-type name="goldSheep" sid="4751444296524702">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Bounces" sid="5741846998583125" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="2680618329817628">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="2445283666970299">
+                    <behavior id="bound" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="8840802785641506">
+                    <behavior id="solid" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="5943266633770476">
+                    <behavior id="Physics" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5554696022625067" speed="5">
+                    <frame duration="1" hotspotX="0.549839" hotspotY="0.461832" original-source="E:\Users\Amanda\Documents\Google Drive\BCIT CST\Term2\Comp2910\sheep.png">
+                        <collision-poly>
+                            <point x="0.131833" y="0.183206" />
+                            <point x="0.398714" y="0.00381682" />
+                            <point x="0.781351" y="0.0992363" />
+                            <point x="0.977492" y="0.431298" />
+                            <point x="0.864952" y="0.698473" />
+                            <point x="0.44373" y="0.820611" />
+                            <point x="0.199357" y="0.660305" />
+                            <point x="0.106109" y="0.385496" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="distraction3" sid="8655310799668252">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="grabbed" sid="6422795621331829" type="boolean" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Bullet" sid="3979740900274001">
+                    <behavior id="Bullet" />
+                </behavior-type>
+                <behavior-type name="Physics" sid="8630553999403459">
+                    <behavior id="Physics" />
+                </behavior-type>
+                <behavior-type name="Solid" sid="8048540998624459">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="7085246972405525" speed="0">
+                    <frame duration="1" hotspotX="0.503876" hotspotY="0.501433" original-source="C:\Users\Jcullen\Downloads\carrot.png">
+                        <collision-poly>
+                            <point x="0.178295" y="0.0659026" />
+                            <point x="0.496124" y="0.00573066" />
+                            <point x="0.837209" y="0.0601719" />
+                            <point x="0.635659" y="0.498567" />
+                            <point x="0.573643" y="0.842407" />
+                            <point x="0.496124" y="0.942693" />
+                            <point x="0.341085" y="0.873926" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.503876" hotspotY="0.501433" original-source="C:\Users\Jcullen\Downloads\carrot.png">
+                        <collision-poly>
+                            <point x="0.178295" y="0.0659026" />
+                            <point x="0.496124" y="0.00573066" />
+                            <point x="0.837209" y="0.0601719" />
+                            <point x="0.635659" y="0.498567" />
+                            <point x="0.573643" y="0.842407" />
+                            <point x="0.496124" y="0.942693" />
+                            <point x="0.341085" y="0.873926" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
     </object-folder>
     <families />
     <layout-folder>
@@ -724,6 +803,8 @@
         <layout>Help.xml</layout>
         <layout>Score Leaderboard.xml</layout>
         <layout>Guessing Page.xml</layout>
+        <layout>Level 5.xml</layout>
+        <layout>Level Bonus.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Menu Event Sheet.xml</event-sheet>
@@ -734,6 +815,8 @@
         <event-sheet>Level 2 Event Sheet.xml</event-sheet>
         <event-sheet>Level 3 Event Sheet.xml</event-sheet>
         <event-sheet>Level 4 Event Sheet.xml</event-sheet>
+        <event-sheet>Level 5 Event Sheet.xml</event-sheet>
+        <event-sheet>Level Bonus Event Sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="101" />
