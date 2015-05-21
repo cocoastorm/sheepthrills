@@ -48,6 +48,10 @@
                             <param id="0" name="Variable">Level</param>
                             <param id="1" name="Value">6</param>
                         </action>
+                        <action id="-9" name="Set value" sid="9253266904436423" type="System">
+                            <param id="0" name="Variable">Bounces</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block disabled="1" sid="5929936325700093">
@@ -364,10 +368,6 @@
                                     <param id="0" name="Layout">Guessing Page</param>
                                 </action>
                                 <action id="-45" name="Reset persisted objects" sid="4225628974910152" type="System" />
-                                <action id="-9" name="Set value" sid="4761197023715707" type="System">
-                                    <param id="0" name="Variable">Bounces</param>
-                                    <param id="1" name="Value">0</param>
-                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
