@@ -1655,6 +1655,7 @@
         <layout>Guessing Page.xml</layout>
         <layout>Level 5.xml</layout>
         <layout>Level 6.xml</layout>
+        <layout>Achievements.xml</layout>
     </layout-folder>
     <event-folder>
         <event-sheet>Menu Event Sheet.xml</event-sheet>
@@ -1667,6 +1668,7 @@
         <event-sheet>Level 4 Event Sheet.xml</event-sheet>
         <event-sheet>Level 5 Event Sheet.xml</event-sheet>
         <event-sheet>Level 6 Event Sheet.xml</event-sheet>
+        <event-sheet>Acheivements Event sheet.xml</event-sheet>
     </event-folder>
     <global-instances>
         <global-instance type="Mouse" uid="205" />

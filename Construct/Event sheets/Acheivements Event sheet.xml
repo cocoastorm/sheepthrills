@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Acheivements Event sheet</name>
+    <events>
+        <event-block sid="335981962326261">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9258827342735369" type="System">
+                    <param id="0" name="Variable">A1</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Y&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="6929313781037239" type="Player1_1">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="1154731375454666">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="9670789831619414" type="System">
+                    <param id="0" name="Variable">A2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Y&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="2882906483143731" type="Player1_2">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="9718933867250064">
+            <conditions>
+                <condition id="-14" name="Compare variable" sid="5292294125367754" type="System">
+                    <param id="0" name="Variable">A3</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">&quot;Y&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="8945798692915541" type="Player1_3">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
