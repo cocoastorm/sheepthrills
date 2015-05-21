@@ -6,6 +6,9 @@
         <variable constant="0" name="starty2" sid="7720711916630867" static="0" type="number">0</variable>
         <variable constant="0" name="distractionFlag2" sid="9125128496003615" static="0" type="number">0</variable>
         <variable constant="0" name="distractiontimer2" sid="4837523300897373" static="0" type="number">5</variable>
+        <variable constant="0" name="distractiontimer4" sid="1119678710657604" static="0" type="number">5</variable>
+        <variable constant="0" name="distractiontimer5" sid="5944006406609023" static="0" type="number">5</variable>
+        <variable constant="0" name="distractiontimer6" sid="3702002546322773" static="0" type="number">5</variable>
         <variable constant="0" name="startx2" sid="2752399850508038" static="0" type="number">0</variable>
         <event-group description="" sid="8315073479829271" title="Level 4">
             <sub-events>
@@ -620,20 +623,6 @@
                     </actions>
                 </event-block>
             </sub-events>
-        </event-block>
-        <event-block sid="2562839355481778">
-            <conditions>
-                <condition id="-1" name="Every tick" sid="1213320330391872" type="System" />
-                <condition id="-8" name="Is boolean instance variable set" sid="7994641507397133" type="distraction2">
-                    <param id="0" name="Instance variable">grabbed</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-3" name="Set position" sid="2323834642847332" type="distraction2">
-                    <param id="0" name="X">touch.X</param>
-                    <param id="1" name="Y">Touch.Y</param>
-                </action>
-            </actions>
         </event-block>
         <event-block sid="5348558566072149">
             <conditions>

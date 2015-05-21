@@ -481,6 +481,59 @@
                         </event-block>
                     </sub-events>
                 </event-block>
+                <event-block sid="2640746276446552">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="2776665604633249" type="distraction" />
+                        <condition id="-14" name="Compare variable" sid="2815030480937203" type="System">
+                            <param id="0" name="Variable">distractiontimer4</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5617548133954237" type="System">
+                            <param id="0" name="Variable">distractionFlag2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="6161969223989929">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="5958472155304136" type="System">
+                                    <param id="0" name="Interval (seconds)">1.0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="6776719582352802" type="System">
+                                    <param id="0" name="Variable">distractiontimer2</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9653645923901093">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="9683017023451733" type="System">
+                                    <param id="0" name="First value">distractiontimer4</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="6927751262151167" type="System">
+                                    <param id="0" name="Variable">gameover</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="4762804569516565" type="System">
+                                    <param id="0" name="Variable">distractiontimer2</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="4825233249013228" type="System">
+                                    <param id="0" name="Layout">Guessing Page</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
         </event-group>
         <event-group description="" sid="323599179307759" title="Distraction 3">
@@ -608,63 +661,61 @@
                         </action>
                     </actions>
                 </event-block>
+                <event-block sid="5237918461509972">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="9544605179088705" type="distraction2" />
+                        <condition id="-14" name="Compare variable" sid="8826031431745931" type="System">
+                            <param id="0" name="Variable">distractiontimer5</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="2730963239321212" type="System">
+                            <param id="0" name="Variable">distractionFlag2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="2309829483894965">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="3840667983161798" type="System">
+                                    <param id="0" name="Interval (seconds)">1.0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="8485537897199063" type="System">
+                                    <param id="0" name="Variable">distractiontimer2</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1701045937017389">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="7041153626028098" type="System">
+                                    <param id="0" name="First value">distractiontimer5</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="5916346293612251" type="System">
+                                    <param id="0" name="Variable">gameover</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="2914046724991274" type="System">
+                                    <param id="0" name="Variable">distractiontimer2</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="8851633277193885" type="System">
+                                    <param id="0" name="Layout">Guessing Page</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
             </sub-events>
         </event-group>
-        <event-block sid="2640746276446552">
-            <conditions>
-                <condition id="-3" name="Is on-screen" sid="2776665604633249" type="distraction" />
-                <condition id="-3" name="Is on-screen" sid="6902425009163913" type="distraction2" />
-                <condition id="-3" name="Is on-screen" sid="3590627076643773" type="distraction3" />
-                <condition id="-14" name="Compare variable" sid="2815030480937203" type="System">
-                    <param id="0" name="Variable">distractiontimer2</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Value">0</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="5617548133954237" type="System">
-                    <param id="0" name="Variable">distractionFlag2</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">1</param>
-                </condition>
-            </conditions>
-            <actions />
-            <sub-events>
-                <event-block sid="6161969223989929">
-                    <conditions>
-                        <condition id="-6" name="Every X seconds" sid="5958472155304136" type="System">
-                            <param id="0" name="Interval (seconds)">1.0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-11" name="Subtract from" sid="6776719582352802" type="System">
-                            <param id="0" name="Variable">distractiontimer2</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                    </actions>
-                </event-block>
-                <event-block sid="9653645923901093">
-                    <conditions>
-                        <condition id="-8" name="Compare two values" sid="9683017023451733" type="System">
-                            <param id="0" name="First value">distractiontimer</param>
-                            <param id="1" name="Comparison">0</param>
-                            <param id="2" name="Second value">0</param>
-                        </condition>
-                    </conditions>
-                    <actions>
-                        <action id="-9" name="Set value" sid="6927751262151167" type="System">
-                            <param id="0" name="Variable">gameover</param>
-                            <param id="1" name="Value">1</param>
-                        </action>
-                        <action id="-9" name="Set value" sid="4762804569516565" type="System">
-                            <param id="0" name="Variable">distractiontimer2</param>
-                            <param id="1" name="Value">0</param>
-                        </action>
-                        <action id="-2" name="Go to layout" sid="4825233249013228" type="System">
-                            <param id="0" name="Layout">Guessing Page</param>
-                        </action>
-                    </actions>
-                </event-block>
-            </sub-events>
-        </event-block>
         <event-group description="" sid="8004678820309828" title="distraction 4">
             <sub-events>
                 <event-block sid="4301724615385432">
@@ -789,6 +840,59 @@
                             <param id="1" name="Y">Touch.Y</param>
                         </action>
                     </actions>
+                </event-block>
+                <event-block sid="1873663827538991">
+                    <conditions>
+                        <condition id="-3" name="Is on-screen" sid="5710536115526592" type="distraction3" />
+                        <condition id="-14" name="Compare variable" sid="2150271264617648" type="System">
+                            <param id="0" name="Variable">distractiontimer6</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="7426268931812568" type="System">
+                            <param id="0" name="Variable">distractionFlag2</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="6399978057460195">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="7378050555078814" type="System">
+                                    <param id="0" name="Interval (seconds)">1.0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="8655217837352212" type="System">
+                                    <param id="0" name="Variable">distractiontimer2</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4577144846422663">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="280581308568154" type="System">
+                                    <param id="0" name="First value">distractiontimer6</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Second value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="9524301110448056" type="System">
+                                    <param id="0" name="Variable">gameover</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="6607565554475509" type="System">
+                                    <param id="0" name="Variable">distractiontimer2</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-2" name="Go to layout" sid="7511485228197096" type="System">
+                                    <param id="0" name="Layout">Guessing Page</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
                 </event-block>
             </sub-events>
         </event-group>
