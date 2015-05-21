@@ -695,7 +695,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Player1_1" uid="19">
+                <instance type="Player1_1" uid="23">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -739,7 +739,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Player3_1" uid="134">
+                <instance type="Player3_1" uid="29">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -761,7 +761,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Player4_1" uid="135">
+                <instance type="Player4_1" uid="33">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -783,7 +783,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Player5_1" uid="136">
+                <instance type="Player5_1" uid="34">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -805,7 +805,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Player6_1" uid="137">
+                <instance type="Player6_1" uid="35">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -827,7 +827,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Player7_1" uid="138">
+                <instance type="Player7_1" uid="57">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -849,7 +849,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Player8_1" uid="139">
+                <instance type="Player8_1" uid="58">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -871,7 +871,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Player9_1" uid="140">
+                <instance type="Player9_1" uid="59">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -893,7 +893,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Player10_1" uid="141">
+                <instance type="Player10_1" uid="60">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -915,7 +915,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Player1_2" uid="142">
+                <instance type="Player1_2" uid="61">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -937,7 +937,7 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Player2_2" uid="143">
+                <instance type="Player2_2" uid="62">
                     <properties>
                         <initial-visibility>Invisible</initial-visibility>
                         <initial-animation>Default</initial-animation>
@@ -1360,7 +1360,7 @@
         </layer>
     </layers>
     <nonworld-instances>
-        <instance type="Array" uid="29">
+        <instance type="Array" uid="63">
             <properties>
                 <width>50</width>
                 <height>1</height>

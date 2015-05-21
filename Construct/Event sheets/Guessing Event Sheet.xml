@@ -24,6 +24,9 @@
                 <action id="0" name="Set text" sid="9652533700149844" type="ScoreDisplay">
                     <param id="0" name="Text">&quot;Score: &quot; &amp;Score</param>
                 </action>
+                <action id="0" name="Set text" sid="886845112095781" type="BestScore">
+                    <param id="0" name="Text">&quot;Best: &quot; &amp;bestScore</param>
+                </action>
             </actions>
         </event-block>
         <event-block sid="4342982227214508">
@@ -606,6 +609,22 @@
                 <action id="-9" name="Set value" sid="6440805572361232" type="System">
                     <param id="0" name="Variable">A1</param>
                     <param id="1" name="Value">&quot;Y&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <variable constant="0" name="bestScore" sid="8664646883187763" static="0" type="number">0</variable>
+        <event-block sid="7330158222757137">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="7512323652612676" type="System">
+                    <param id="0" name="First value">Score</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Second value">bestScore</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="8229166437434865" type="System">
+                    <param id="0" name="Variable">bestScore</param>
+                    <param id="1" name="Value">Score</param>
                 </action>
             </actions>
         </event-block>
