@@ -524,7 +524,7 @@
                                     <param id="1" name="Value">1</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="4762804569516565" type="System">
-                                    <param id="0" name="Variable">distractiontimer2</param>
+                                    <param id="0" name="Variable">distractionFlag2</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="-2" name="Go to layout" sid="4825233249013228" type="System">
@@ -704,7 +704,7 @@
                                     <param id="1" name="Value">1</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="2914046724991274" type="System">
-                                    <param id="0" name="Variable">distractiontimer2</param>
+                                    <param id="0" name="Variable">distractionFlag2</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="-2" name="Go to layout" sid="8851633277193885" type="System">
@@ -884,7 +884,7 @@
                                     <param id="1" name="Value">1</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="6607565554475509" type="System">
-                                    <param id="0" name="Variable">distractiontimer2</param>
+                                    <param id="0" name="Variable">distractionFlag2</param>
                                     <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="-2" name="Go to layout" sid="7511485228197096" type="System">
