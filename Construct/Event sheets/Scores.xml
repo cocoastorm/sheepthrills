@@ -184,5 +184,437 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="8172844459122778" title="Achievement#1">
+            <sub-events>
+                <event-block sid="2082140876245467">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7038517674662144" type="System">
+                            <param id="0" name="First value">Array.At(2)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5204157691558719" type="Player1_1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1191896421922327">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="195690183262107" type="System">
+                            <param id="0" name="First value">Array.At(7)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6831443925172164" type="Player2_1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2718896180964214">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="3349849666505929" type="System">
+                            <param id="0" name="First value">Array.At(12)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9611326051596383" type="Player3_1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8558568739590494">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="5025901454025933" type="System">
+                            <param id="0" name="First value">Array.At(17)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="3429430008398368" type="Player4_1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5311883365689266">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="8973672820875978" type="System">
+                            <param id="0" name="First value">Array.At(22)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9752926860286436" type="Player5_1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2201534922246698">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4477967658171927" type="System">
+                            <param id="0" name="First value">Array.At(27)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4718038644449911" type="Player6_1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1777283079153561">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="6213718160488802" type="System">
+                            <param id="0" name="First value">Array.At(32)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9211992356932713" type="Player7_1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5375421339928993">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="5850972916394522" type="System">
+                            <param id="0" name="First value">Array.At(37)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4566683222109143" type="Player8_1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9267319100970924">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="5118875921924879" type="System">
+                            <param id="0" name="First value">Array.At(42)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="9347831358821913" type="Player9_1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4240906465735552">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="5545663068971817" type="System">
+                            <param id="0" name="First value">Array.At(47)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7835763733246343" type="Player10_1">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="6504968786153917" title="Achievement #2">
+            <sub-events>
+                <event-block sid="1696321784229755">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="34191982197337" type="System">
+                            <param id="0" name="First value">Array.At(3)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6630925166471851" type="Player1_2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3981844457848266">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="8900123974068594" type="System">
+                            <param id="0" name="First value">Array.At(8)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5708834207289597" type="Player2_2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3470960084889341">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="6192406706032605" type="System">
+                            <param id="0" name="First value">Array.At(13)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1786761408133342" type="Player3_2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2057741440061452">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2738301854191833" type="System">
+                            <param id="0" name="First value">Array.At(18)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7751293738521425" type="Player4_2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7959073193604507">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7432115813171566" type="System">
+                            <param id="0" name="First value">Array.At(23)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5330241081533318" type="Player5_2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8068438904906707">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4019454795485765" type="System">
+                            <param id="0" name="First value">Array.At(28)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4119288936504313" type="Player6_2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7796683791515186">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2354007846558667" type="System">
+                            <param id="0" name="First value">Array.At(33)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7106443561734179" type="Player7_2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3742412409119652">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="977719011773325" type="System">
+                            <param id="0" name="First value">Array.At(38)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4689389883721198" type="Player8_2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6493702167792365">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="5948384885796093" type="System">
+                            <param id="0" name="First value">Array.At(43)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5205785041408464" type="Player9_2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3662902017970887">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4498193249357507" type="System">
+                            <param id="0" name="First value">Array.At(48)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7686561002389901" type="Player10_2">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="7308090221308663" title="Achievement #3">
+            <sub-events>
+                <event-block sid="1696321784229755">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="34191982197337" type="System">
+                            <param id="0" name="First value">Array.At(4)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="6630925166471851" type="Player1_3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3981844457848266">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="8900123974068594" type="System">
+                            <param id="0" name="First value">Array.At(9)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5708834207289597" type="Player2_3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3470960084889341">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="6192406706032605" type="System">
+                            <param id="0" name="First value">Array.At(14)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="1786761408133342" type="Player3_3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2057741440061452">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2738301854191833" type="System">
+                            <param id="0" name="First value">Array.At(19)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7751293738521425" type="Player4_3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7959073193604507">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7432115813171566" type="System">
+                            <param id="0" name="First value">Array.At(24)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5330241081533318" type="Player5_3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8068438904906707">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4019454795485765" type="System">
+                            <param id="0" name="First value">Array.At(29)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4119288936504313" type="Player6_3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7796683791515186">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="2354007846558667" type="System">
+                            <param id="0" name="First value">Array.At(34)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7106443561734179" type="Player7_3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3742412409119652">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="977719011773325" type="System">
+                            <param id="0" name="First value">Array.At(39)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="4689389883721198" type="Player8_3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6493702167792365">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="5948384885796093" type="System">
+                            <param id="0" name="First value">Array.At(44)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="5205785041408464" type="Player9_3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3662902017970887">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="4498193249357507" type="System">
+                            <param id="0" name="First value">Array.At(49)</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">&quot;Y&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="7686561002389901" type="Player10_3">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
