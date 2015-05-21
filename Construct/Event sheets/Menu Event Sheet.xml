@@ -173,6 +173,10 @@
                     <param id="0" name="Tag">&quot;bgm&quot;</param>
                     <param id="1" name="State">0</param>
                 </action>
+                <action id="2" name="Set muted" sid="9780283549892617" type="Audio">
+                    <param id="0" name="Tag">&quot;baa&quot;</param>
+                    <param id="1" name="State">0</param>
+                </action>
                 <action id="5" name="Set frame" sid="2640575822771897" type="MuteButton">
                     <param id="0" name="Frame number">0</param>
                 </action>
@@ -199,6 +203,10 @@
             <actions>
                 <action id="2" name="Set muted" sid="6214719643044503" type="Audio">
                     <param id="0" name="Tag">&quot;bgm&quot;</param>
+                    <param id="1" name="State">1</param>
+                </action>
+                <action id="2" name="Set muted" sid="5469641227678614" type="Audio">
+                    <param id="0" name="Tag">&quot;baa&quot;</param>
                     <param id="1" name="State">1</param>
                 </action>
                 <action id="5" name="Set frame" sid="2076503693448385" type="MuteButton">

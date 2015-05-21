@@ -299,13 +299,18 @@
                 <condition id="-6" name="Every X seconds" sid="9041646316576915" type="System">
                     <param id="0" name="Interval (seconds)">7</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="7677505211989696" type="System">
+                    <param id="0" name="Variable">SoundOn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Play" sid="95359633632228" type="Audio">
                     <param id="0" name="Audio file">sheep</param>
                     <param id="2" name="Loop">0</param>
                     <param id="3" name="Volume">0</param>
-                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                    <param id="1" name="Tag (optional)">&quot;baa&quot;</param>
                 </action>
             </actions>
         </event-block>
@@ -473,11 +478,11 @@
                                     <param id="0" name="Angle">angle(startx, starty, touch.X, touch.Y)</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="3402484831539602" type="System">
-                                    <param id="0" name="Variable">startx2</param>
+                                    <param id="0" name="Variable">startx</param>
                                     <param id="1" name="Value">touch.X</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="285476128333213" type="System">
-                                    <param id="0" name="Variable">starty2</param>
+                                    <param id="0" name="Variable">starty</param>
                                     <param id="1" name="Value">touch.Y</param>
                                 </action>
                             </actions>
@@ -494,11 +499,11 @@
                                     <param id="1" name="Value">1</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="1680776239820495" type="System">
-                                    <param id="0" name="Variable">startx2</param>
+                                    <param id="0" name="Variable">startx</param>
                                     <param id="1" name="Value">touch.X</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="2879167332620739" type="System">
-                                    <param id="0" name="Variable">starty2</param>
+                                    <param id="0" name="Variable">starty</param>
                                     <param id="1" name="Value">touch.Y</param>
                                 </action>
                             </actions>
@@ -513,11 +518,11 @@
                                     <param id="1" name="Value">0</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="5457099147218801" type="System">
-                                    <param id="0" name="Variable">startx2</param>
+                                    <param id="0" name="Variable">startx</param>
                                     <param id="1" name="Value">touch.X</param>
                                 </action>
                                 <action id="-9" name="Set value" sid="6048293600561036" type="System">
-                                    <param id="0" name="Variable">starty2</param>
+                                    <param id="0" name="Variable">starty</param>
                                     <param id="1" name="Value">touch.Y</param>
                                 </action>
                                 <action behavior="Physics" id="5" name="Apply impulse at angle" sid="633933896565539" type="distraction2">
