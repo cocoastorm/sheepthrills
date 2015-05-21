@@ -449,6 +449,9 @@
         </object-type>
         <object-type name="HomeButton" sid="2732876267406503">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="layer" sid="9343009569372954" type="number" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3856355291779822" speed="5">
                     <frame duration="1" hotspotX="0.502283" hotspotY="0.502415" original-source="C:\Users\Amanda\Desktop\home.png">
@@ -528,6 +531,9 @@
         </object-type>
         <object-type name="forward" sid="2083479296981463">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Layer" sid="7439903946361916" type="number" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9712483910289968" speed="5">
                     <frame duration="1" hotspotX="0.502008" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\arrow_right_button_0012_Layer-5.png">
@@ -545,6 +551,9 @@
         </object-type>
         <object-type name="backward" sid="1380369716822014">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Layer" sid="9622166554275257" type="number" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2819406630650874" speed="5">
                     <frame duration="1" hotspotX="0.502008" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\arrow_left_button_0011_Layer-5-copy.png">
@@ -621,7 +630,7 @@
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="9090724971458071" speed="0">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.500421" hotspotY="0.500414" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -679,8 +688,8 @@
             </behaviors>
             <animation-folder>
                 <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1955765046706797" speed="0">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.501433" hotspotY="0.501002" />
+                    <frame duration="1" hotspotX="0.501433" hotspotY="0.501002" />
                 </animation>
             </animation-folder>
         </object-type>
@@ -710,6 +719,66 @@
                             <point x="0.101563" y="0.5" />
                         </collision-poly>
                     </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="How2PlayInstructions" sid="66433405781529">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Inst_CountSheep" sid="4806010002793407">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Inst_Bouncing" sid="1598523937002888">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6484610731029518" speed="5">
+                    <frame duration="1" hotspotX="0.74613" hotspotY="0.196429" original-source="C:\Users\Judy W\Desktop\image.png">
+                        <collision-poly>
+                            <point x="0.74613" y="0.692857" />
+                            <point x="0.229102" y="0.507143" />
+                            <point x="0.294118" y="0.196429" />
+                            <point x="0.377709" y="0.0571429" />
+                            <point x="0.74613" y="0.860714" />
+                            <point x="0.390093" y="0.892857" />
+                            <point x="0.291022" y="0.196429" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Inst_FlickDistraction" sid="8895231929043358">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Finger" sid="8451924638120225">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="2619150186102768" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.500838" original-source="C:\Users\Judy W\Desktop\5TRKXRbac.png">
+                        <collision-poly>
+                            <point x="0.30814" y="0.266332" />
+                            <point x="0.5" y="0.0184255" />
+                            <point x="0.627907" y="0.321608" />
+                            <point x="0.96124" y="0.499162" />
+                            <point x="0.932171" y="0.941374" />
+                            <point x="0.5" y="0.976549" />
+                            <point x="0.265504" y="0.770519" />
+                            <point x="0.0406977" y="0.499162" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Inst_Distraction2" sid="7880099393091188">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="Inst_Points" sid="9831363617663919">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="ss" sid="3717714672891599">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="6743527062689726" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Judy W\Desktop\ss.png" />
                 </animation>
             </animation-folder>
         </object-type>
