@@ -1,0 +1,796 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Level 5 Event Sheet</name>
+    <events>
+        <event-group description="" sid="9335202095259117" title="Level 5">
+            <sub-events>
+                <event-block sid="9692680843726961">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="3152250745031036" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="9666171859639922" type="Counter">
+                            <param id="0" name="Text">Bounces</param>
+                        </action>
+                        <action id="0" name="Set text" sid="4565449900659402" type="Timer">
+                            <param id="0" name="Text">Timer</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="2209672830811122" type="Counter">
+                            <param id="0" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8509586817304485">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="4237248298900819" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-16" name="Wait" sid="4384508758392893" type="System">
+                            <param id="0" name="Seconds">3</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="9127477866316205" type="Cloud" />
+                        <action id="-9" name="Destroy" sid="8141721097743529" type="Level" />
+                        <action id="-9" name="Set value" sid="5928178959199875" type="System">
+                            <param id="0" name="Variable">inputFlag</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8774554698550549" type="System">
+                            <param id="0" name="Variable">lastInput</param>
+                            <param id="1" name="Value">&quot;number&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2922479867732713" type="System">
+                            <param id="0" name="Variable">textbox</param>
+                            <param id="1" name="Value">&quot;&quot;</param>
+                        </action>
+                        <action id="-10" name="Add to" sid="5419093040786372" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5929936325700093">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="1691344995584003" type="Cloud" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="2825825168478903" type="Sprite2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="5274054781491622" type="Sprite2">
+                            <param id="0" name="Angle">random(0, 361)</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="2109220506336855" type="Sprite2">
+                            <param id="0" name="Setting">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="9864149455032603" type="Instruction" />
+                        <action id="-9" name="Set value" sid="708963529888344" type="System">
+                            <param id="0" name="Variable">TimerStart</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="398837770092636" type="Sprite2">
+                            <param id="0" name="Speed">random(600, 750)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2840909328631354" type="System">
+                            <param id="0" name="Variable">distractionFlag2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4062187894112005">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="3185125601235423" type="Cloud" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="413580711082565" type="blueSheep">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="2500586617070051" type="blueSheep">
+                            <param id="0" name="Angle">random(0, 361)</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="3405485650520188" type="blueSheep">
+                            <param id="0" name="Setting">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="1240502438352333" type="Instruction" />
+                        <action id="-9" name="Set value" sid="9551946348666944" type="System">
+                            <param id="0" name="Variable">TimerStart</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="3995300922166139" type="blueSheep">
+                            <param id="0" name="Speed">random(600, 750)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3941170496453305" type="System">
+                            <param id="0" name="Variable">distractionFlag2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8765499888593506">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="3423342868746947" type="Cloud" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="2575098733783677" type="goldSheep">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="9317066582868292" type="goldSheep">
+                            <param id="0" name="Angle">random(0, 361)</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="9422990268482805" type="goldSheep">
+                            <param id="0" name="Setting">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="2812285142462752" type="Instruction" />
+                        <action id="-9" name="Set value" sid="1844540491405953" type="System">
+                            <param id="0" name="Variable">TimerStart</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="6952652401644703" type="goldSheep">
+                            <param id="0" name="Speed">random(600, 750)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2385954859633253" type="System">
+                            <param id="0" name="Variable">distractionFlag2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3527068037067722">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="2603100700965344" type="Cloud" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="6451579037896176" type="distraction">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="1443358340950328" type="distraction">
+                            <param id="0" name="Angle">random(0, 361)</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="3082205344424861" type="distraction">
+                            <param id="0" name="Setting">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="559880342859522" type="Instruction" />
+                        <action id="-9" name="Set value" sid="4420782712388945" type="System">
+                            <param id="0" name="Variable">TimerStart</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="4824753212166219" type="distraction">
+                            <param id="0" name="Speed">random(400, 500)</param>
+                        </action>
+                        <action disabled="1" id="5" name="Set frame" sid="8509088469830263" type="distraction">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9791822886880634" type="System">
+                            <param id="0" name="Variable">distractionFlag2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7606943522955625">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="8231535546543717" type="Cloud" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="4054994142197016" type="distraction2">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="7227717667050377" type="distraction2">
+                            <param id="0" name="Angle">random(0, 361)</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="585436521515413" type="distraction2">
+                            <param id="0" name="Setting">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="3028773680084342" type="Instruction" />
+                        <action id="-9" name="Set value" sid="4504497798479967" type="System">
+                            <param id="0" name="Variable">TimerStart</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="6073696887676118" type="distraction2">
+                            <param id="0" name="Speed">random(400, 500)</param>
+                        </action>
+                        <action disabled="1" id="5" name="Set frame" sid="3510965313665769" type="distraction2">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="5258342630036874" type="System">
+                            <param id="0" name="Variable">distractionFlag2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3983030462179074">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="1585366163530004" type="Cloud" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="7792214953780288" type="distraction3">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="6381243621534969" type="distraction3">
+                            <param id="0" name="Angle">random(0, 361)</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="7385478044688446" type="distraction3">
+                            <param id="0" name="Setting">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="3548712074186201" type="Instruction" />
+                        <action id="-9" name="Set value" sid="3984111085300567" type="System">
+                            <param id="0" name="Variable">TimerStart</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="196008773154712" type="distraction3">
+                            <param id="0" name="Speed">random(400, 500)</param>
+                        </action>
+                        <action disabled="1" id="5" name="Set frame" sid="9262234916280269" type="distraction3">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4252946455445955" type="System">
+                            <param id="0" name="Variable">distractionFlag2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5586092674814092">
+                    <conditions>
+                        <condition id="-19" name="On destroyed" sid="2124475582375216" type="Cloud" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="377566267260727" type="redSheep">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-8" name="Set angle" sid="8461868417385712" type="redSheep">
+                            <param id="0" name="Angle">random(0, 361)</param>
+                        </action>
+                        <action behavior="Physics" id="21" name="Set immovable" sid="102758702556113" type="redSheep">
+                            <param id="0" name="Setting">0</param>
+                        </action>
+                        <action id="-9" name="Destroy" sid="2318838851717168" type="Instruction" />
+                        <action id="-9" name="Set value" sid="6710892305479865" type="System">
+                            <param id="0" name="Variable">TimerStart</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action behavior="Bullet" id="0" name="Set speed" sid="4662070110347291" type="redSheep">
+                            <param id="0" name="Speed">random(600, 750)</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="8462589161936428" type="System">
+                            <param id="0" name="Variable">distractionFlag2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5391746582622498">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="4934297273736105" type="goldSheep">
+                            <param id="0" name="Object">SideBars</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Add to" sid="7426902611449751" type="goldSheep">
+                            <param id="0" name="Instance variable">Bounces</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9559797545309266" type="System">
+                            <param id="0" name="Variable">Bounces</param>
+                            <param id="1" name="Value">goldSheep.Bounces</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7647196209192064">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="4238479176642536" type="System">
+                            <param id="0" name="Variable">TimerStart</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="4958083147695204" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Value">10</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="505264195978375" type="System">
+                            <param id="0" name="Variable">TimerStart</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6396160613269926" type="System">
+                            <param id="0" name="Variable">distractiontimer</param>
+                            <param id="1" name="Value">5</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6773243467964073">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="7767331535267498" type="System">
+                            <param id="0" name="Variable">Timer</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="3044368594529103">
+                            <conditions>
+                                <condition id="-6" name="Every X seconds" sid="1056874976384492" type="System">
+                                    <param id="0" name="Interval (seconds)">1.0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="7888827907965675" type="System">
+                                    <param id="0" name="Variable">Timer</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="900682824140833">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="5876456456623527" type="System">
+                                    <param id="0" name="Variable">Timer</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Destroy" sid="6238349524727024" type="Sprite2" />
+                                <action id="-2" name="Go to layout" sid="7097043353998557" type="System">
+                                    <param id="0" name="Layout">Guessing Page</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="988496769081799">
+            <conditions>
+                <condition id="-6" name="Every X seconds" sid="734325261887631" type="System">
+                    <param id="0" name="Interval (seconds)">7</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="3027300667381197" type="System">
+                    <param id="0" name="Variable">SoundOn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="889032886894213" type="Audio">
+                    <param id="0" name="Audio file">sheep</param>
+                    <param id="2" name="Loop">0</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;baa&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-group description="" sid="2361837386601297" title="Distraction 3">
+            <sub-events>
+                <event-block sid="8187824826530592">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="9321972624051893" type="System" />
+                        <condition id="-8" name="Is boolean instance variable set" sid="9322342645204945" type="distraction">
+                            <param id="0" name="Instance variable">grabbed</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="7999880082168982" type="distraction">
+                            <param id="0" name="X">touch.X</param>
+                            <param id="1" name="Y">Touch.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="5034855308816102">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="4461197185680449" type="Touch">
+                            <param id="0" name="Object">distraction</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="7474518556007918" type="distraction">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="4087048661591295" type="distraction">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action behavior="Physics" id="12" name="Set world gravity" sid="6983852740088027" type="distraction">
+                            <param id="0" name="Gravity">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="6148892607281668" type="distraction">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="2604512196447716">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="383959406514309" type="System" />
+                                <condition id="-8" name="Compare two values" sid="2391645688865784" type="System">
+                                    <param id="0" name="First value">distance(startx, starty, touch.X, touch.Y)</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">50</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-8" name="Set angle" sid="4067423924711524" type="distraction">
+                                    <param id="0" name="Angle">angle(startx, starty, touch.X, touch.Y)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="2130185237515552" type="System">
+                                    <param id="0" name="Variable">startx</param>
+                                    <param id="1" name="Value">touch.X</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="5621910198010825" type="System">
+                                    <param id="0" name="Variable">starty</param>
+                                    <param id="1" name="Value">touch.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4465919891801112">
+                            <conditions>
+                                <condition id="10" name="On Nth touch start" sid="7879802122061173" type="Touch">
+                                    <param id="0" name="Touch number">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="4025022005584108" type="distraction">
+                                    <param id="0" name="Instance variable">grabbed</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="7240375625255928" type="System">
+                                    <param id="0" name="Variable">startx</param>
+                                    <param id="1" name="Value">touch.X</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="1980850958872037" type="System">
+                                    <param id="0" name="Variable">starty</param>
+                                    <param id="1" name="Value">touch.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="4435351661003094">
+                            <conditions>
+                                <condition id="1" name="On any touch end" sid="7056243958884098" type="Touch" />
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="1158815626631096" type="distraction">
+                                    <param id="0" name="Instance variable">grabbed</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="7286915696614491" type="System">
+                                    <param id="0" name="Variable">startx</param>
+                                    <param id="1" name="Value">touch.X</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="122389486901428" type="System">
+                                    <param id="0" name="Variable">starty</param>
+                                    <param id="1" name="Value">touch.Y</param>
+                                </action>
+                                <action behavior="Physics" id="5" name="Apply impulse at angle" sid="3327597664851085" type="distraction">
+                                    <param id="0" name="Impulse">distance(touch.X, touch.Y, startx, starty) / 1000</param>
+                                    <param id="1" name="Angle">Sprite.Angle</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="8694575903208134" type="distraction">
+                                    <param id="0" name="Object">SideBars</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="2266738238597172">
+                                    <conditions>
+                                        <condition id="-4" name="Is outside layout" sid="7028770706022932" type="distraction" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="5557530015243699" type="distraction" />
+                                        <action id="-10" name="Add to" sid="8949553416355717" type="System">
+                                            <param id="0" name="Variable">Score</param>
+                                            <param id="1" name="Value">100</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="323599179307759" title="Distraction 3">
+            <sub-events>
+                <event-block sid="8832081655817032">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="1902280626994574" type="Touch">
+                            <param id="0" name="Object">distraction2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="8150821275518847" type="distraction2">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="8180177467573004" type="distraction2">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action behavior="Physics" id="12" name="Set world gravity" sid="4060186890057243" type="distraction2">
+                            <param id="0" name="Gravity">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="9487712033623202" type="distraction2">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="8792721758042698">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="633029880974269" type="System" />
+                                <condition id="-8" name="Compare two values" sid="4604818012259468" type="System">
+                                    <param id="0" name="First value">distance(startx, starty, touch.X, touch.Y)</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">50</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-8" name="Set angle" sid="9752051558930219" type="distraction2">
+                                    <param id="0" name="Angle">angle(startx, starty, touch.X, touch.Y)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="3402484831539602" type="System">
+                                    <param id="0" name="Variable">startx</param>
+                                    <param id="1" name="Value">touch.X</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="285476128333213" type="System">
+                                    <param id="0" name="Variable">starty</param>
+                                    <param id="1" name="Value">touch.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="243111328356956">
+                            <conditions>
+                                <condition id="10" name="On Nth touch start" sid="3947899073898047" type="Touch">
+                                    <param id="0" name="Touch number">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="850157179003316" type="distraction2">
+                                    <param id="0" name="Instance variable">grabbed</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="1680776239820495" type="System">
+                                    <param id="0" name="Variable">startx</param>
+                                    <param id="1" name="Value">touch.X</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="2879167332620739" type="System">
+                                    <param id="0" name="Variable">starty</param>
+                                    <param id="1" name="Value">touch.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9410029453271665">
+                            <conditions>
+                                <condition id="1" name="On any touch end" sid="5138704782479771" type="Touch" />
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="8030847327328089" type="distraction2">
+                                    <param id="0" name="Instance variable">grabbed</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="5457099147218801" type="System">
+                                    <param id="0" name="Variable">startx</param>
+                                    <param id="1" name="Value">touch.X</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="6048293600561036" type="System">
+                                    <param id="0" name="Variable">starty</param>
+                                    <param id="1" name="Value">touch.Y</param>
+                                </action>
+                                <action behavior="Physics" id="5" name="Apply impulse at angle" sid="633933896565539" type="distraction2">
+                                    <param id="0" name="Impulse">distance(touch.X, touch.Y, startx, starty) / 1000</param>
+                                    <param id="1" name="Angle">Sprite.Angle</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="5740175876037994" type="distraction2">
+                                    <param id="0" name="Object">SideBars</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="3778720539619209">
+                                    <conditions>
+                                        <condition id="-4" name="Is outside layout" sid="236607079600339" type="distraction2" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="3772339860860952" type="distraction2" />
+                                        <action id="-10" name="Add to" sid="4653969619292379" type="System">
+                                            <param id="0" name="Variable">Score</param>
+                                            <param id="1" name="Value">100</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="7610245057928418">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="5186981814993881" type="System" />
+                        <condition id="-8" name="Is boolean instance variable set" sid="3600181556057516" type="distraction2">
+                            <param id="0" name="Instance variable">grabbed</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="1434549077674714" type="distraction2">
+                            <param id="0" name="X">touch.X</param>
+                            <param id="1" name="Y">Touch.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="2640746276446552">
+            <conditions>
+                <condition id="-3" name="Is on-screen" sid="2776665604633249" type="distraction" />
+                <condition id="-3" name="Is on-screen" sid="6902425009163913" type="distraction2" />
+                <condition id="-3" name="Is on-screen" sid="3590627076643773" type="distraction3" />
+                <condition id="-14" name="Compare variable" sid="2815030480937203" type="System">
+                    <param id="0" name="Variable">distractiontimer2</param>
+                    <param id="1" name="Comparison">4</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="5617548133954237" type="System">
+                    <param id="0" name="Variable">distractionFlag2</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions />
+            <sub-events>
+                <event-block sid="6161969223989929">
+                    <conditions>
+                        <condition id="-6" name="Every X seconds" sid="5958472155304136" type="System">
+                            <param id="0" name="Interval (seconds)">1.0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-11" name="Subtract from" sid="6776719582352802" type="System">
+                            <param id="0" name="Variable">distractiontimer2</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="9653645923901093">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="9683017023451733" type="System">
+                            <param id="0" name="First value">distractiontimer</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6927751262151167" type="System">
+                            <param id="0" name="Variable">gameover</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="4762804569516565" type="System">
+                            <param id="0" name="Variable">distractiontimer2</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="4825233249013228" type="System">
+                            <param id="0" name="Layout">Guessing Page</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="8004678820309828" title="distraction 4">
+            <sub-events>
+                <event-block sid="4301724615385432">
+                    <conditions>
+                        <condition id="4" name="Is touching object" sid="3556508010698856" type="Touch">
+                            <param id="0" name="Object">distraction3</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Bullet" id="5" name="Set enabled" sid="5414138694745521" type="distraction3">
+                            <param id="0" name="State">0</param>
+                        </action>
+                        <action behavior="Physics" id="27" name="Set enabled" sid="9506257565599757" type="distraction3">
+                            <param id="0" name="Mode">1</param>
+                        </action>
+                        <action behavior="Physics" id="12" name="Set world gravity" sid="4416736853731051" type="distraction3">
+                            <param id="0" name="Gravity">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="6649258009268737" type="distraction3">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="3011294902296264">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="2162369063181384" type="System" />
+                                <condition id="-8" name="Compare two values" sid="4623949424311513" type="System">
+                                    <param id="0" name="First value">distance(startx, starty, touch.X, touch.Y)</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Second value">50</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-8" name="Set angle" sid="3832919699443011" type="distraction3">
+                                    <param id="0" name="Angle">angle(startx, starty, touch.X, touch.Y)</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="3537063354556012" type="System">
+                                    <param id="0" name="Variable">startx</param>
+                                    <param id="1" name="Value">touch.X</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="3199255458287923" type="System">
+                                    <param id="0" name="Variable">starty</param>
+                                    <param id="1" name="Value">touch.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1443797840945547">
+                            <conditions>
+                                <condition id="10" name="On Nth touch start" sid="859395910871978" type="Touch">
+                                    <param id="0" name="Touch number">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="5832992966156658" type="distraction3">
+                                    <param id="0" name="Instance variable">grabbed</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="7365910847137188" type="System">
+                                    <param id="0" name="Variable">startx</param>
+                                    <param id="1" name="Value">touch.X</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="6333750381016265" type="System">
+                                    <param id="0" name="Variable">starty</param>
+                                    <param id="1" name="Value">touch.Y</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="1344689069554542">
+                            <conditions>
+                                <condition id="1" name="On any touch end" sid="8667040073002898" type="Touch" />
+                            </conditions>
+                            <actions>
+                                <action id="-13" name="Set boolean" sid="7725524695756343" type="distraction3">
+                                    <param id="0" name="Instance variable">grabbed</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="5526092803216519" type="System">
+                                    <param id="0" name="Variable">startx</param>
+                                    <param id="1" name="Value">touch.X</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="1965595472077673" type="System">
+                                    <param id="0" name="Variable">starty</param>
+                                    <param id="1" name="Value">touch.Y</param>
+                                </action>
+                                <action behavior="Physics" id="5" name="Apply impulse at angle" sid="699411851524096" type="distraction3">
+                                    <param id="0" name="Impulse">distance(touch.X, touch.Y, startx, starty) / 1000</param>
+                                    <param id="1" name="Angle">Sprite.Angle</param>
+                                    <param id="2" name="Image point">0</param>
+                                </action>
+                                <action behavior="Physics" id="23" name="Enable/disable collisions" sid="7783053484015407" type="distraction3">
+                                    <param id="0" name="Object">SideBars</param>
+                                    <param id="1" name="State">0</param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <event-block sid="5966367849393597">
+                                    <conditions>
+                                        <condition id="-4" name="Is outside layout" sid="5230102266029189" type="distraction3" />
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Destroy" sid="6431816000160872" type="distraction3" />
+                                        <action id="-10" name="Add to" sid="4337201092931516" type="System">
+                                            <param id="0" name="Variable">Score</param>
+                                            <param id="1" name="Value">100</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="220745365110373">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="955414961883305" type="System" />
+                        <condition id="-8" name="Is boolean instance variable set" sid="8731736382033552" type="distraction3">
+                            <param id="0" name="Instance variable">grabbed</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-3" name="Set position" sid="6137632582695027" type="distraction3">
+                            <param id="0" name="X">touch.X</param>
+                            <param id="1" name="Y">Touch.Y</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
