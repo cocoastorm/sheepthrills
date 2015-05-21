@@ -19,6 +19,7 @@
         <plugin author="Scirra" id="Text" version="1">Text</plugin>
         <plugin author="Scirra" id="TextBox" version="1">Text box</plugin>
         <plugin author="Scirra" id="Touch" version="1">Touch</plugin>
+        <plugin author="Zack0Wack0/Scirra" id="WebStorage" version="1">WebStorage</plugin>
     </used-plugins>
     <used-behaviors>
         <behavior author="Scirra" id="Bullet" version="1">Bullet</behavior>
@@ -791,6 +792,9 @@
                     </frame>
                 </animation>
             </animation-folder>
+			</object-type>
+        <object-type name="SaveState" sid="4398715646906095">
+            <plugin id="WebStorage" />
         </object-type>
     </object-folder>
     <families />
@@ -840,6 +844,7 @@
                 <roll-off-factor>1</roll-off-factor>
             </properties>
         </global-instance>
+        <global-instance type="SaveState" uid="19" />
     </global-instances>
     <sounds-folder>
         <file name="amok.m4a" />
