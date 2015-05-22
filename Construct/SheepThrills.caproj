@@ -751,8 +751,20 @@
         <object-type name="Player1_1" sid="8680960041412312">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1864836215589199" speed="5">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1864836215589199" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment1.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.343333" y="0.343333" />
                             <point x="0.5" y="0.02" />
@@ -977,8 +989,20 @@
         <object-type name="Player1_2" sid="1612804427599145">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1635195520698414" speed="5">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="1635195520698414" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievment2.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.343333" y="0.343333" />
                             <point x="0.5" y="0.02" />
@@ -1167,8 +1191,20 @@
         <object-type name="Player1_3" sid="9961789561531937">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3233227033854538" speed="5">
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3233227033854538" speed="5">
                     <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievement3.png">
+                        <collision-poly>
+                            <point x="0.343333" y="0.343333" />
+                            <point x="0.5" y="0.02" />
+                            <point x="0.656667" y="0.343333" />
+                            <point x="0.743333" y="0.5" />
+                            <point x="0.75" y="0.75" />
+                            <point x="0.5" y="0.683333" />
+                            <point x="0.25" y="0.75" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5">
                         <collision-poly>
                             <point x="0.343333" y="0.343333" />
                             <point x="0.5" y="0.02" />
@@ -1727,6 +1763,9 @@
                     </frame>
                 </animation>
             </animation-folder>
+        </object-type>
+        <object-type name="Text4" sid="9056378140103117">
+            <plugin id="Text" />
         </object-type>
     </object-folder>
     <families />
