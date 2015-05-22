@@ -315,6 +315,7 @@
                     <param id="0" name="Variable">distractions_f</param>
                     <param id="1" name="Value">SaveState.LocalValue(&quot;distractions&quot;)</param>
                 </action>
+			</actions>
         </event-block>
         <event-block sid="3705501361895672">
             <conditions>
