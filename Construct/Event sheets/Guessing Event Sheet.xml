@@ -566,6 +566,10 @@
                             <param id="0" name="Variable">inputFlag</param>
                             <param id="1" name="Value">0</param>
                         </action>
+                        <action id="-9" name="Set value" sid="3686572160272856" type="System">
+                            <param id="0" name="Variable">cameFrom</param>
+                            <param id="1" name="Value">&quot;level&quot;</param>
+                        </action>
                     </actions>
                 </event-block>
             </sub-events>
@@ -592,113 +596,45 @@
                 </action>
             </actions>
         </event-block>
-        <event-group description="" sid="4604804498390785" title="Achievements" />
-        <event-block sid="9189745271002174">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="6337476816311867" type="System">
-                    <param id="0" name="Variable">accuracy</param>
-                    <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">90</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="5902509102642121" type="System">
-                    <param id="0" name="Variable">Level</param>
-                    <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">2</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="6440805572361232" type="System">
-                    <param id="0" name="Variable">A1</param>
-                    <param id="1" name="Value">&quot;Y&quot;</param>
-                </action>
-                <action id="0" name="Set local value" sid="4834576242967704" type="SaveState">
-                    <param id="0" name="Key">&quot;A1&quot;</param>
-                    <param id="1" name="Value">A1</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="2833564185642156">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="4625261219373339" type="System">
-                    <param id="0" name="Variable">distractions_f</param>
-                    <param id="1" name="Comparison">0</param>
-                    <param id="2" name="Value">2</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="9467422028615642" type="System">
-                    <param id="0" name="Variable">Level</param>
-                    <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">2</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="9357646025565159" type="System">
-                    <param id="0" name="Variable">accuracy</param>
-                    <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">80</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="3512380559025681" type="System">
-                    <param id="0" name="Variable">accuracy</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">100</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="5608002109752217" type="System">
-                    <param id="0" name="Variable">A2</param>
-                    <param id="1" name="Value">&quot;Y&quot;</param>
-                </action>
-                <action id="0" name="Set local value" sid="724449190079048" type="SaveState">
-                    <param id="0" name="Key">&quot;A2&quot;</param>
-                    <param id="1" name="Value">A2</param>
-                </action>
-            </actions>
-        </event-block>
-        <event-block sid="7526381297894827">
-            <conditions>
-                <condition id="-14" name="Compare variable" sid="1867824392925882" type="System">
-                    <param id="0" name="Variable">Level</param>
-                    <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">5</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="3644227196616856" type="System">
-                    <param id="0" name="Variable">accuracy</param>
-                    <param id="1" name="Comparison">5</param>
-                    <param id="2" name="Value">80</param>
-                </condition>
-                <condition id="-14" name="Compare variable" sid="7538036509221662" type="System">
-                    <param id="0" name="Variable">accuracy</param>
-                    <param id="1" name="Comparison">3</param>
-                    <param id="2" name="Value">100</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="2010329758568843" type="System">
-                    <param id="0" name="Variable">A3</param>
-                    <param id="1" name="Value">&quot;Y&quot;</param>
-                </action>
-                <action id="0" name="Set local value" sid="9956609797280782" type="SaveState">
-                    <param id="0" name="Key">&quot;A3&quot;</param>
-                    <param id="1" name="Value">A3</param>
-                </action>
-            </actions>
-        </event-block>
-        <variable constant="0" name="bestScore" sid="8664646883187763" static="0" type="number">0</variable>
-        <event-block sid="7330158222757137">
-            <conditions>
-                <condition id="-8" name="Compare two values" sid="7512323652612676" type="System">
-                    <param id="0" name="First value">Score</param>
-                    <param id="1" name="Comparison">4</param>
-                    <param id="2" name="Second value">bestScore</param>
-                </condition>
-            </conditions>
-            <actions>
-                <action id="-9" name="Set value" sid="8229166437434865" type="System">
-                    <param id="0" name="Variable">bestScore</param>
-                    <param id="1" name="Value">Score</param>
-                </action>
-                <action id="0" name="Set local value" sid="8718328503861114" type="SaveState">
-                    <param id="0" name="Key">&quot;bestScore&quot;</param>
-                    <param id="1" name="Value">bestScore</param>
-                </action>
-            </actions>
-        </event-block>
+        <event-group description="" sid="4604804498390785" title="Achievements">
+            <sub-events>
+                <event-block sid="9189745271002174">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="6337476816311867" type="System">
+                            <param id="0" name="Variable">accuracy</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">90</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5902509102642121" type="System">
+                            <param id="0" name="Variable">Level</param>
+                            <param id="1" name="Comparison">5</param>
+                            <param id="2" name="Value">2</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="6440805572361232" type="System">
+                            <param id="0" name="Variable">A1</param>
+                            <param id="1" name="Value">&quot;Y&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <variable constant="0" name="bestScore" sid="8664646883187763" static="0" type="number">0</variable>
+                <event-block sid="7330158222757137">
+                    <conditions>
+                        <condition id="-8" name="Compare two values" sid="7512323652612676" type="System">
+                            <param id="0" name="First value">Score</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Second value">bestScore</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8229166437434865" type="System">
+                            <param id="0" name="Variable">bestScore</param>
+                            <param id="1" name="Value">Score</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
