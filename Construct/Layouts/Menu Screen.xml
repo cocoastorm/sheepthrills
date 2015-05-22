@@ -73,50 +73,6 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
-                <instance type="Achievements" uid="215">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>328</x>
-                        <y>536</y>
-                        <z>0</z>
-                        <width>143</width>
-                        <height>89</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501483679</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
-                <instance type="Leaderboard" uid="216">
-                    <properties>
-                        <initial-visibility>Visible</initial-visibility>
-                        <initial-animation>Default</initial-animation>
-                        <initial-frame>0</initial-frame>
-                        <collisions>Enabled</collisions>
-                    </properties>
-                    <blend-mode>0</blend-mode>
-                    <effect-fallback>0</effect-fallback>
-                    <world>
-                        <x>141.197998047</x>
-                        <y>536</y>
-                        <z>0</z>
-                        <width>143</width>
-                        <height>89</height>
-                        <depth>0</depth>
-                        <hotspotX>0.501483679</hotspotX>
-                        <hotspotY>0.5</hotspotY>
-                        <angle>0</angle>
-                        <opacity>1</opacity>
-                    </world>
-                </instance>
             </instances>
             <effects />
         </layer>
@@ -242,6 +198,50 @@
                         <depth>0</depth>
                         <hotspotX>0.5</hotspotX>
                         <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Achievements" uid="215">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>2</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>326</x>
+                        <y>501</y>
+                        <z>0</z>
+                        <width>143</width>
+                        <height>89</height>
+                        <depth>0</depth>
+                        <hotspotX>0.459940642</hotspotX>
+                        <hotspotY>0.256756753</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Leaderboard" uid="216">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>2</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>135</x>
+                        <y>500</y>
+                        <z>0</z>
+                        <width>143</width>
+                        <height>89</height>
+                        <depth>0</depth>
+                        <hotspotX>0.459940642</hotspotX>
+                        <hotspotY>0.256756753</hotspotY>
                         <angle>0</angle>
                         <opacity>1</opacity>
                     </world>
