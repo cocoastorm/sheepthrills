@@ -26,6 +26,9 @@
                         <action id="-15" name="Set visible" sid="2209672830811122" type="Counter">
                             <param id="0" name="Visibility">0</param>
                         </action>
+                        <action id="0" name="Set text" sid="945738294660836" type="ScoreDisplay">
+                            <param id="0" name="Text">Score</param>
+                        </action>
                     </actions>
                 </event-block>
                 <event-block sid="8509586817304485">
@@ -248,10 +251,6 @@
                                 <action id="-2" name="Go to layout" sid="7097043353998557" type="System">
                                     <param id="0" name="Layout">Guessing Page</param>
                                 </action>
-                                <action id="0" name="Set local value" sid="3457640972696248" type="SaveState">
-                                    <param id="0" name="Key">&quot;distractions&quot;</param>
-                                    <param id="1" name="Value">distractions_f</param>
-                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -453,10 +452,6 @@
                         </action>
                         <action id="-2" name="Go to layout" sid="9309707776235905" type="System">
                             <param id="0" name="Layout">Guessing Page</param>
-                        </action>
-                        <action id="0" name="Set local value" sid="5730771607393719" type="SaveState">
-                            <param id="0" name="Key">&quot;distractions&quot;</param>
-                            <param id="1" name="Value">distractions_f</param>
                         </action>
                     </actions>
                 </event-block>
