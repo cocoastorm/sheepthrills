@@ -189,6 +189,11 @@
                 <condition id="17" name="On tap object" sid="1493320111658759" type="Touch">
                     <param id="0" name="Object">Sprite9</param>
                 </condition>
+                <condition id="-14" name="Compare variable" sid="9414210423881763" type="System">
+                    <param id="0" name="Variable">SoundOn</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
             </conditions>
             <actions>
                 <action id="0" name="Play" sid="355255649178724" type="Audio">

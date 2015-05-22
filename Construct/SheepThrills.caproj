@@ -619,6 +619,9 @@
         </object-type>
         <object-type name="SubmitScore" sid="2637708611933731">
             <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="Layer" sid="1187173761563172" type="number" />
+            </instance-variables>
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="4287598488906605" speed="5">
                     <frame duration="1" hotspotX="0.501229" hotspotY="0.504274" original-source="C:\Users\Judy W\Desktop\submit_button_0001_Submit.png" />
