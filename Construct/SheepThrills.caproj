@@ -1645,17 +1645,41 @@
         <object-type name="Achievements" sid="7884902554710709">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5341419576953711" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievements_button.png">
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5341419576953711" speed="5">
+                    <frame duration="1" hotspotX="0.459941" hotspotY="0.256757">
                         <collision-poly>
-                            <point x="0.55625" y="0.417188" />
-                            <point x="0.5" y="0.41875" />
-                            <point x="0.433333" y="0.425" />
-                            <point x="0.833333" y="0.5" />
-                            <point x="0.65" y="0.7375" />
-                            <point x="0.5" y="0.746875" />
-                            <point x="0.364583" y="0.726563" />
-                            <point x="0.239583" y="0.5" />
+                            <point x="0.540059" y="0.0180194" />
+                            <point x="0.459941" y="0.0225225" />
+                            <point x="0.364985" y="0.0405405" />
+                            <point x="0.934718" y="0.256757" />
+                            <point x="0.67359" y="0.941441" />
+                            <point x="0.459941" y="0.968468" />
+                            <point x="0.267062" y="0.909911" />
+                            <point x="0.0890203" y="0.256757" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.46" hotspotY="0.256522" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievements_button.png">
+                        <collision-poly>
+                            <point x="0.540059" y="0.0180194" />
+                            <point x="0.459941" y="0.0225225" />
+                            <point x="0.364985" y="0.0405405" />
+                            <point x="0.934718" y="0.256757" />
+                            <point x="0.67359" y="0.941441" />
+                            <point x="0.459941" y="0.968468" />
+                            <point x="0.267062" y="0.909911" />
+                            <point x="0.0890203" y="0.256757" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.459941" hotspotY="0.256757">
+                        <collision-poly>
+                            <point x="0.540059" y="0.0180194" />
+                            <point x="0.459941" y="0.0225225" />
+                            <point x="0.364985" y="0.0405405" />
+                            <point x="0.934718" y="0.256757" />
+                            <point x="0.67359" y="0.941441" />
+                            <point x="0.459941" y="0.968468" />
+                            <point x="0.267062" y="0.909911" />
+                            <point x="0.0890203" y="0.256757" />
                         </collision-poly>
                     </frame>
                 </animation>
@@ -1664,17 +1688,41 @@
         <object-type name="Leaderboard" sid="6797448641696653">
             <plugin id="Sprite" />
             <animation-folder>
-                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3866503219594141" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\leaderboad_button.png">
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3866503219594141" speed="5">
+                    <frame duration="1" hotspotX="0.459941" hotspotY="0.256757">
                         <collision-poly>
-                            <point x="0.55625" y="0.417188" />
-                            <point x="0.5" y="0.41875" />
-                            <point x="0.433333" y="0.425" />
-                            <point x="0.833333" y="0.5" />
-                            <point x="0.65" y="0.7375" />
-                            <point x="0.5" y="0.746875" />
-                            <point x="0.364583" y="0.726563" />
-                            <point x="0.239583" y="0.5" />
+                            <point x="0.540059" y="0.0180194" />
+                            <point x="0.459941" y="0.0225225" />
+                            <point x="0.364985" y="0.0405405" />
+                            <point x="0.934718" y="0.256757" />
+                            <point x="0.67359" y="0.941441" />
+                            <point x="0.459941" y="0.968468" />
+                            <point x="0.267062" y="0.909911" />
+                            <point x="0.0890203" y="0.256757" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.46" hotspotY="0.256522" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\leaderboad_button.png">
+                        <collision-poly>
+                            <point x="0.540059" y="0.0180194" />
+                            <point x="0.459941" y="0.0225225" />
+                            <point x="0.364985" y="0.0405405" />
+                            <point x="0.934718" y="0.256757" />
+                            <point x="0.67359" y="0.941441" />
+                            <point x="0.459941" y="0.968468" />
+                            <point x="0.267062" y="0.909911" />
+                            <point x="0.0890203" y="0.256757" />
+                        </collision-poly>
+                    </frame>
+                    <frame duration="1" hotspotX="0.459941" hotspotY="0.256757">
+                        <collision-poly>
+                            <point x="0.540059" y="0.0180194" />
+                            <point x="0.459941" y="0.0225225" />
+                            <point x="0.364985" y="0.0405405" />
+                            <point x="0.934718" y="0.256757" />
+                            <point x="0.67359" y="0.941441" />
+                            <point x="0.459941" y="0.968468" />
+                            <point x="0.267062" y="0.909911" />
+                            <point x="0.0890203" y="0.256757" />
                         </collision-poly>
                     </frame>
                 </animation>
