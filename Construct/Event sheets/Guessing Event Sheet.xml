@@ -24,9 +24,6 @@
                 <action id="0" name="Set text" sid="9652533700149844" type="ScoreDisplay">
                     <param id="0" name="Text">&quot;Score: &quot; &amp;Score</param>
                 </action>
-                <action id="0" name="Set text" sid="886845112095781" type="BestScore">
-                    <param id="0" name="Text">&quot;Best: &quot; &amp;bestScore</param>
-                </action>
             </actions>
         </event-block>
         <event-block sid="4342982227214508">
