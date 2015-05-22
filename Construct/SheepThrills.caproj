@@ -1682,7 +1682,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="5341419576953711" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievements_button.png">
+                    <frame duration="1" hotspotX="0.501484" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\achievements_button.png">
                         <collision-poly>
                             <point x="0.55625" y="0.417188" />
                             <point x="0.5" y="0.41875" />
@@ -1701,7 +1701,7 @@
             <plugin id="Sprite" />
             <animation-folder>
                 <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="3866503219594141" speed="5">
-                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\leaderboad_button.png">
+                    <frame duration="1" hotspotX="0.501484" hotspotY="0.5" original-source="C:\Users\Dhivya\Documents\CST_2\COMP2910\graphics\leaderboad_button.png">
                         <collision-poly>
                             <point x="0.55625" y="0.417188" />
                             <point x="0.5" y="0.41875" />
