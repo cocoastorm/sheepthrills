@@ -212,7 +212,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>150</x>
-                        <y>200</y>
+                        <y>150</y>
                         <z>0</z>
                         <width>96</width>
                         <height>32</height>
@@ -239,7 +239,7 @@
                     <effect-fallback>0</effect-fallback>
                     <world>
                         <x>150</x>
-                        <y>150</y>
+                        <y>200</y>
                         <z>0</z>
                         <width>96</width>
                         <height>32</height>
