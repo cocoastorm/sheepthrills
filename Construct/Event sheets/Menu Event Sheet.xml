@@ -277,7 +277,7 @@
             <actions>
                 <action id="0" name="Set local value" sid="6716403577076641" type="SaveState">
                     <param id="0" name="Key">&quot;bestScore&quot;</param>
-                    <param id="1" name="Value">BestScore.Text</param>
+                    <param id="1" name="Value">bestScore</param>
                 </action>
                 <action id="0" name="Set local value" sid="8228238453203823" type="SaveState">
                     <param id="0" name="Key">&quot;distractions&quot;</param>

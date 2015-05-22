@@ -291,6 +291,10 @@
                                 <action id="-2" name="Go to layout" sid="7097043353998557" type="System">
                                     <param id="0" name="Layout">Guessing Page</param>
                                 </action>
+                                <action id="0" name="Set local value" sid="8808685226080454" type="SaveState">
+                                    <param id="0" name="Key">&quot;distractions&quot;</param>
+                                    <param id="1" name="Value">distractions_f</param>
+                                </action>
                             </actions>
                         </event-block>
                     </sub-events>
@@ -680,6 +684,10 @@
                         </action>
                         <action id="-2" name="Go to layout" sid="5062046745725575" type="System">
                             <param id="0" name="Layout">Guessing Page</param>
+                        </action>
+                        <action id="0" name="Set local value" sid="9625137203226225" type="SaveState">
+                            <param id="0" name="Key">&quot;distractions&quot;</param>
+                            <param id="1" name="Value">distractions_f</param>
                         </action>
                     </actions>
                 </event-block>

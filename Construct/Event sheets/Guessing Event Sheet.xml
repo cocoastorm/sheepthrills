@@ -630,6 +630,10 @@
                     <param id="0" name="Variable">bestScore</param>
                     <param id="1" name="Value">Score</param>
                 </action>
+                <action id="0" name="Set local value" sid="8718328503861114" type="SaveState">
+                    <param id="0" name="Key">&quot;bestScore&quot;</param>
+                    <param id="1" name="Value">bestScore</param>
+                </action>
             </actions>
         </event-block>
     </events>
