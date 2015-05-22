@@ -423,6 +423,69 @@
                                 </action>
                             </actions>
                         </event-block>
+                        <event-block sid="1400063758719062">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="4543197140972547" type="System">
+                                    <param id="0" name="Variable">distractions_f</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="4156839638564352" type="System">
+                                    <param id="0" name="Variable">Level</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">2</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="8330594036343717" type="System">
+                                    <param id="0" name="Variable">accuracy</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">80</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="4976571060938233" type="System">
+                                    <param id="0" name="Variable">accuracy</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">100</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="413070247253325" type="System">
+                                    <param id="0" name="Variable">A2</param>
+                                    <param id="1" name="Value">&quot;Y&quot;</param>
+                                </action>
+                                <action id="0" name="Set local value" sid="4125148250614182" type="SaveState">
+                                    <param id="0" name="Key">&quot;A2&quot;</param>
+                                    <param id="1" name="Value">A2</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="9451228675603627">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="6768676587093343" type="System">
+                                    <param id="0" name="Variable">Level</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">5</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="257895300584627" type="System">
+                                    <param id="0" name="Variable">accuracy</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Value">80</param>
+                                </condition>
+                                <condition id="-14" name="Compare variable" sid="7818987151059572" type="System">
+                                    <param id="0" name="Variable">accuracy</param>
+                                    <param id="1" name="Comparison">3</param>
+                                    <param id="2" name="Value">100</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="7137758620003404" type="System">
+                                    <param id="0" name="Variable">A3</param>
+                                    <param id="1" name="Value">&quot;Y&quot;</param>
+                                </action>
+                                <action id="0" name="Set local value" sid="513927803050166" type="SaveState">
+                                    <param id="0" name="Key">&quot;A3&quot;</param>
+                                    <param id="1" name="Value">A3</param>
+                                </action>
+                            </actions>
+                        </event-block>
                     </sub-events>
                 </event-block>
             </sub-events>
@@ -613,6 +676,10 @@
                 <action id="-9" name="Set value" sid="6440805572361232" type="System">
                     <param id="0" name="Variable">A1</param>
                     <param id="1" name="Value">&quot;Y&quot;</param>
+                </action>
+                <action id="0" name="Set local value" sid="4834576242967704" type="SaveState">
+                    <param id="0" name="Key">&quot;A1&quot;</param>
+                    <param id="1" name="Value">A1</param>
                 </action>
             </actions>
         </event-block>
