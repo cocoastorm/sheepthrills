@@ -322,5 +322,280 @@
                 </action>
             </actions>
         </event-block>
+        <event-group description="" sid="8499039975007269" title="Play Button">
+            <sub-events>
+                <event-block sid="1401261957086163">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="7170445060173334" type="Touch">
+                            <param id="0" name="Object">PlayButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="5062082231147623" type="PlayButton">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="7649743203800379" type="System">
+                            <param id="0" name="Layout">Level 1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1548060053241426">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="4040193893727761" type="Mouse">
+                            <param id="0" name="Object">PlayButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="4839705009419434" type="PlayButton">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4755114029647675">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="4141667346069664" type="Mouse">
+                            <param id="0" name="Object">PlayButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="9629833288563918" type="PlayButton">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4684002569549832">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="4372397696395447" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">PlayButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="1851662888675961" type="System">
+                            <param id="0" name="Layout">Level 1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="4130493753509093" type="PlayButton">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="7166764775705286" title="HowTo Button">
+            <sub-events>
+                <event-block sid="621735673897557">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="8987773952780825" type="Touch">
+                            <param id="0" name="Object">HowToButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="5620161634154541" type="HowToButton">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="6363947577230983" type="System">
+                            <param id="0" name="Layout">Help</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8711336075220978">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="9527842508579437" type="Mouse">
+                            <param id="0" name="Object">HowToButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="1156314582740756" type="HowToButton">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3093349526765564">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="4076155687272118" type="Mouse">
+                            <param id="0" name="Object">HowToButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="4185427111114549" type="HowToButton">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="6708881244427247" type="System">
+                            <param id="0" name="Variable">forward</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3048924058271312">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="4217107732800656" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">HowToButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="3938256540778031" type="System">
+                            <param id="0" name="Layout">Help</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="4789308464328243" title="Achievement Button">
+            <sub-events>
+                <event-block sid="2227207998247519">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="6645265468558513" type="Touch">
+                            <param id="0" name="Object">Achievements</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="6878310252525844" type="PlayButton">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="2668747814960241" type="System">
+                            <param id="0" name="Layout">Achievements</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3359758990523557">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="4527469699991708" type="Mouse">
+                            <param id="0" name="Object">Achievements</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="3616218105595758" type="Achievements">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1907731909658117">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="6133808881345384" type="Mouse">
+                            <param id="0" name="Object">Achievements</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="2140969027175179" type="Achievements">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="4325195762263543" title="Leaderboard Button">
+            <sub-events>
+                <event-block sid="4086291269172658">
+                    <conditions>
+                        <condition id="3" name="On touched object" sid="864826445278328" type="Touch">
+                            <param id="0" name="Object">Leaderboard</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="48173768514104" type="HowToButton">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="4871629469298459" type="System">
+                            <param id="0" name="Layout">Score Leaderboard</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1843942045044889">
+                    <conditions>
+                        <condition id="7" name="Cursor is over object" sid="986853548813502" type="Mouse">
+                            <param id="0" name="Object">Leaderboard</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="5438164112992501" type="Leaderboard">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="6427038624347285">
+                    <conditions>
+                        <condition id="7" inverted="1" name="Cursor is over object" sid="2712884650747679" type="Mouse">
+                            <param id="0" name="Object">Leaderboard</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="6389593181202776" type="Leaderboard">
+                            <param id="0" name="Frame number">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="5944868479983858" title="Mute Button">
+            <sub-events>
+                <event-block sid="2505914591358898">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="7510453891927312" type="Touch">
+                            <param id="0" name="Object">MuteButton</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5543313230630563" type="System">
+                            <param id="0" name="Variable">SoundOn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set muted" sid="7153311523469318" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="9780283549892617" type="Audio">
+                            <param id="0" name="Tag">&quot;baa&quot;</param>
+                            <param id="1" name="State">0</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="2640575822771897" type="MuteButton">
+                            <param id="0" name="Frame number">0</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="5215826555448655" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="2466166425025747" type="System">
+                            <param id="0" name="Variable">SoundOn</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4030783826477023">
+                    <conditions>
+                        <condition id="17" name="On tap object" sid="3533025021315634" type="Touch">
+                            <param id="0" name="Object">MuteButton</param>
+                        </condition>
+                        <condition id="-14" name="Compare variable" sid="5835354573217274" type="System">
+                            <param id="0" name="Variable">SoundOn</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="2" name="Set muted" sid="6214719643044503" type="Audio">
+                            <param id="0" name="Tag">&quot;bgm&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="2" name="Set muted" sid="5469641227678614" type="Audio">
+                            <param id="0" name="Tag">&quot;baa&quot;</param>
+                            <param id="1" name="State">1</param>
+                        </action>
+                        <action id="5" name="Set frame" sid="2076503693448385" type="MuteButton">
+                            <param id="0" name="Frame number">1</param>
+                        </action>
+                        <action id="-16" name="Wait" sid="4089858175852765" type="System">
+                            <param id="0" name="Seconds">0.01</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="3211460390318435" type="System">
+                            <param id="0" name="Variable">SoundOn</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
     </events>
 </c2eventsheet>
