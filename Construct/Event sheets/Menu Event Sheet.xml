@@ -15,6 +15,10 @@
                 <action id="5" name="Set frame" sid="5043333606480184" type="PlayButton">
                     <param id="0" name="Frame number">2</param>
                 </action>
+                <action id="-9" name="Set value" sid="3729543745750382" type="System">
+                    <param id="0" name="Variable">Score</param>
+                    <param id="1" name="Value">0</param>
+                </action>
             </actions>
             <sub-events>
                 <event-block sid="7833153276965431">
