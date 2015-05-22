@@ -73,6 +73,50 @@
                         <opacity>1</opacity>
                     </world>
                 </instance>
+                <instance type="Achievements" uid="215">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>325</x>
+                        <y>501</y>
+                        <z>0</z>
+                        <width>199.249847412</width>
+                        <height>265.666473389</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
+                <instance type="Leaderboard" uid="216">
+                    <properties>
+                        <initial-visibility>Visible</initial-visibility>
+                        <initial-animation>Default</initial-animation>
+                        <initial-frame>0</initial-frame>
+                        <collisions>Enabled</collisions>
+                    </properties>
+                    <blend-mode>0</blend-mode>
+                    <effect-fallback>0</effect-fallback>
+                    <world>
+                        <x>131</x>
+                        <y>500</y>
+                        <z>0</z>
+                        <width>206.873153687</width>
+                        <height>275.830871582</height>
+                        <depth>0</depth>
+                        <hotspotX>0.5</hotspotX>
+                        <hotspotY>0.5</hotspotY>
+                        <angle>0</angle>
+                        <opacity>1</opacity>
+                    </world>
+                </instance>
             </instances>
             <effects />
         </layer>
@@ -124,11 +168,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>135</x>
-                        <y>425</y>
+                        <x>141.197998047</x>
+                        <y>417.468261719</y>
                         <z>0</z>
-                        <width>171</width>
-                        <height>106</height>
+                        <width>143</width>
+                        <height>89</height>
                         <depth>0</depth>
                         <hotspotX>0.50140059</hotspotX>
                         <hotspotY>0.5</hotspotY>
@@ -146,11 +190,11 @@
                     <blend-mode>0</blend-mode>
                     <effect-fallback>0</effect-fallback>
                     <world>
-                        <x>330</x>
-                        <y>425</y>
+                        <x>328</x>
+                        <y>418</y>
                         <z>0</z>
-                        <width>171</width>
-                        <height>106</height>
+                        <width>143</width>
+                        <height>89</height>
                         <depth>0</depth>
                         <hotspotX>0.501474917</hotspotX>
                         <hotspotY>0.5</hotspotY>

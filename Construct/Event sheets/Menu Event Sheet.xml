@@ -302,5 +302,35 @@
                 </action>
             </actions>
         </event-block>
+        <event-block sid="4086291269172658">
+            <conditions>
+                <condition id="3" name="On touched object" sid="864826445278328" type="Touch">
+                    <param id="0" name="Object">Leaderboard</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="48173768514104" type="HowToButton">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="4871629469298459" type="System">
+                    <param id="0" name="Layout">Score Leaderboard</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="2227207998247519">
+            <conditions>
+                <condition id="3" name="On touched object" sid="6645265468558513" type="Touch">
+                    <param id="0" name="Object">Achievements</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="6878310252525844" type="PlayButton">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="2668747814960241" type="System">
+                    <param id="0" name="Layout">Achievements</param>
+                </action>
+            </actions>
+        </event-block>
     </events>
 </c2eventsheet>
